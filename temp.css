@@ -1,0 +1,13 @@
+body{
+ font-family: 'Hack','Noto Naskh Arabic',serif;
+}
+
+button{
+ display:none;
+}
+.target{
+ color:brown;
+}
+.mother{
+ color:green;
+}
