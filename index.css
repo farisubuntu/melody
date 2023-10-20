@@ -61,7 +61,7 @@ div.divider{
  justify-content: space-around;
  align-self:center;
 }
-.header-link-wrapper>a:hover{
+h2:hover{
  background-color: teal;
 }
 
