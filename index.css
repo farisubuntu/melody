@@ -1,0 +1,87 @@
+body {
+ font-family: 'Hack', 'Noto Naskh Arabic', serif;
+ direction: rtl;
+ background-color: burlywood;
+}
+
+.header-img {
+ width: 50px;
+ max-height: 100px;
+ flex: 1;
+}
+
+.header-link-wrapper {
+ flex: 4;
+}
+
+.header-link-wrapper>a {
+ color: white;
+
+}
+
+ .page-header-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  flex-wrap: wrap;
+  text-decoration: none;
+  background-color: teal;
+  text-align: center;
+  /* font-size: 2rem; */
+ }
+
+div.divider{
+ width:100%;
+ display: block;
+}
+
+ .lessons-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  column-gap: 0.2rem;
+  row-gap: 0.2rem;
+ }
+
+ .lesson>header {
+  text-align: center;
+  background-color: blue;
+  color: white;
+  flex:1;
+ }
+
+
+.lesson{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-self:center;
+
+ 
+ 
+}
+
+
+
+ @media only screen and (max-width:400px) {
+
+  .lesson{
+   flex:100%;
+  }
+ }
+ @media only screen and (min-width:401px){
+
+  .lesson{
+   flex:45%;
+  }
+ }
+ @media only screen and (min-width:800px){
+
+  
+  .lesson{
+   flex:15%;
+  }
+ }
