@@ -85,3 +85,6 @@ div.divider{
    flex:15%;
   }
  }
+.lesson:hover{
+ font-size:1rem;
+}
