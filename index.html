@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Mondly - My Course</title>
+ <style>
+  body {
+   font-family: 'Hack', 'Noto Naskh Arabic', serif;
+   direction: rtl;
+   background-color: burlywood;
+  }
+
+
+
+  .page-header-wrapper {
+   display: flex;
+   justify-content: space-between;
+   color: white;
+   text-decoration: none;
+   background-color: teal;
+   text-align: center;
+   font-size: 2rem;
+  }
+  .header-img{
+   width:50px;
+   height: 100px;
+   flex:1;
+  }
+  .header-link-wrapper{
+   flex:4;
+  }
+  .header-link-wrapper>a{
+   color:white;
+   margin-top:1rem;
+  }
+  .lesson {
+   width: 300px;
+   height: 300px;
+  }
+
+  .lesson>header {
+   text-align: center;
+   background-color: blue;
+   color: white
+  }
+
+  .lessons-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   column-gap: 2rem;
+   row-gap: 2rem;
+  }
+ </style>
+</head>
+
+<body>
+ <div class="page-header-wrapper">
+  <header class="header-link-wrapper"><a href="https://app.mondly.com/home" target="_blank" rel="noreferrer nopener" >Go to My Mondly Course at www.mondly</a></header>
+  <img class="header-img" src="mondly-logo.jpeg" alt="">
+ </div>
+
+ 
+ <div class="lessons-wrapper">
+  <div id="lesson1" class="lesson container">
+   <header>
+    <h2>المفردات الأساسية</h2>
+   </header>
+  </div>
+  <div id="lesson2" class="lesson container">
+   <header>
+    <h2>الأسرة</h2>
+   </header>
+  </div>
+  <div id="lesson3" class="lesson container">
+   <header>
+    <h2></h2>
+   </header>
+  </div>
+  <div id="lesson4" class="lesson container">
+   <header>
+    <h2></h2>
+   </header>
+  </div>
+ </div>
+ </header>
+
+</body>
+
+</html>
