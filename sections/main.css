@@ -126,3 +126,20 @@ body header {
   background-color: lightgrey;
   border:1px solid blue;
 }
+
+@media screen and (max-width:500px){
+  .target{
+    flex:6 4;
+    padding: unset;
+    font-size: 13px;
+  }
+  .mother{
+    flex:3 2;
+    padding: unset;
+    font-size: 13px;
+  }
+  p.title{
+    flex:1 1;
+  }
+
+}
