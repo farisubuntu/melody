@@ -1,0 +1,57 @@
+*{
+ box-sizing: border-box;
+
+}
+body,.Nastaliq{
+ font-family: 'Noto Naskh Arabic', serif;
+ font-size: 16px;
+}
+.toctitle{
+ color:white;
+ background-color: teal;
+}
+h2{
+ color:gold;
+ background-color: blue;
+ padding-right:1rem;
+}
+
+span[lang="ur"]{
+ color:red;
+ font-size: 1rem;
+}
+i{
+ color:green;
+}
+
+div.page-wrapper{
+ display: flex;
+ flex-direction: column;
+}
+tr{
+ text-align: center;
+}
+tr th{
+ border:1px solid silver;
+ color:blue;
+}
+tr td{
+ border:1px solid silver;
+}
+h3{
+ border:1px solid gold;
+ padding:0.5rem;
+}
+h4{
+ border:1px dashed silver;
+}
+footer{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ background-color: silver;
+}
+footer>p:hover{
+ background-color: gold;
+ color:red;
+}
