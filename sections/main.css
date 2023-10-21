@@ -1,0 +1,128 @@
+body {
+  font-family: 'Hack', 'Noto Naskh Arabic', serif;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  padding:1rem;
+}
+
+div{
+  width:100%;
+
+}
+.btn,
+.clearfix {
+  display: none;
+}
+
+body header {
+  text-align: center;
+  background-color: teal;
+  color: white;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.target {
+  color: blue;
+  flex: 50%;
+  border-bottom: 1px solid silver;
+  padding-right: 1rem;
+}
+
+.mother {
+  color: green;
+  flex: 50%;
+  border-bottom: 1px solid silver;
+  padding-right: 1rem;
+  background-color: azure;
+
+}
+
+.text {
+  display: flex;
+}
+
+.text:hover {
+  background-color: yellow;
+  font-size: larger;
+}
+
+.words.is-content-card {
+  background-color: beige;
+}
+
+.verbs {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.verb-name {
+  text-align: center;
+  padding: 1rem;
+  background-color: honeydew;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.verb-name>* {
+  flex: 1;
+}
+
+.verb-tenses-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.verb-titles {
+  display: none;
+}
+
+.sep {
+  height: 5px;
+  background-color: goldenrod;
+}
+.verb-tenses {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  text-align: center;
+}
+
+.tense {
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.tense .conj {
+  flex: 5;
+  align-self: center;  
+
+}
+.tense p.title{
+  flex:2;
+  border:2px solid blue;
+  border-radius:15px;
+  background-color: indianred;
+  color:white;
+}
+
+.conj-inner *:hover {
+  background-color: yellow;
+  font-size: large;
+}
+
+.conj{
+  background-color: lightgrey;
+  border:1px solid blue;
+}

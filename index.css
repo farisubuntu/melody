@@ -36,7 +36,7 @@ div.divider{
  height: 20px;
 }
 
- .lessons-wrapper {
+ .sections-wrapper {
   min-height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +47,7 @@ div.divider{
   row-gap: 0.2rem;
  }
 
- .lesson>header {
+ .section>header {
   text-align: center;
   background-color: blue;
   color: white;
@@ -55,33 +55,41 @@ div.divider{
  }
 
 
-.lesson{
+.section{
  display: flex;
  flex-direction: column;
  justify-content: space-around;
  align-self:center;
 }
-h2:hover{
+.section header:hover{
  background-color: teal;
+ color:brown;
+ font-size: larger;
+ height: 100%;
 }
 
+.current a{
+ background-color: darkgreen;
+ color:white;
+ padding:1rem;
+}
 
  @media only screen and (max-width:400px) {
 
-  .lesson{
+  .section{
    flex:100%;
   }
  }
  @media only screen and (min-width:401px){
 
-  .lesson{
+  .section{
    flex:45%;
   }
  }
  @media only screen and (min-width:800px){
 
   
-  .lesson{
+  .section{
    flex:15%;
   }
  }
