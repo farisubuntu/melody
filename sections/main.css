@@ -5,6 +5,10 @@ body {
   flex-direction: column;
   padding:1rem;
 }
+body > .page-header{
+  color:white;
+  background-color: blue;
+}
 
 div{
   width:100%;
@@ -126,6 +130,8 @@ body header {
   background-color: lightgrey;
   border:1px solid blue;
 }
+
+
 
 @media screen and (max-width:500px){
   .target{

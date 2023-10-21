@@ -73,6 +73,10 @@ div.divider{
  color:white;
  padding:1rem;
 }
+.completed a{
+ background-color:yellow;
+ border-radius:15px;
+}
 
  @media only screen and (max-width:400px) {
 
@@ -93,3 +97,4 @@ div.divider{
    flex:15%;
   }
  }
+
