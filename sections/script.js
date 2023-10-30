@@ -22,6 +22,5 @@ function appendTenseTitles() {
    tense.append(elem);
   }
 
-
  }
 }
