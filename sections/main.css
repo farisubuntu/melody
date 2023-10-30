@@ -149,3 +149,7 @@ body header {
   }
 
 }
+
+.verbs.hide{
+  display:none;
+}
