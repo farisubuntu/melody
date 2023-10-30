@@ -65,6 +65,7 @@ body header {
 
 
 .verb-name {
+  font-size: 2rem;
   text-align: center;
   padding: 1rem;
   background-color: honeydew;
@@ -134,10 +135,12 @@ body header {
   display: flex;
   justify-content: center;
   column-gap: 1rem;
-  padding: 1px;
+  padding: 10px;
+  flex-wrap: wrap;
 }
 .wrapper{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 1rem;
