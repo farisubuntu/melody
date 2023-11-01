@@ -160,12 +160,13 @@ body header {
   .target{
     flex:6 4;
     padding: unset;
-    font-size: 13px;
+    /* font-size: 16px; */
+    font-size: 1.5rem;
   }
   .mother{
     flex:3 2;
     padding: unset;
-    font-size: 13px;
+    /* font-size: 16px; */
   }
   p.title{
     flex:1 1;
