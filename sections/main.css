@@ -155,6 +155,9 @@ body header {
   color:green;
 }
 
+.text .target{
+  font-size:1.3rem;
+}
 
 @media screen and (max-width:500px){
   .target{
