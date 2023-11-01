@@ -80,7 +80,7 @@ function createStickyButtons(){
  console.log('createStickyButtons()...');
  var str=`
    <button id="toggle" class="sticky-btn" onclick="toggleCol(this);">إخفاء</button>
-   <a id="home" class="sticky-btn" href="../index.html">الصفحة الرئيسية </a>
+   <button id="home" class="sticky-btn"><a href="../index.html">الصفحة الرئيسية </a></button>
  `;
  var divBox=document.createElement('div');
  divBox.setAttribute('class','btns-wrapper');
