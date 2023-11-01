@@ -160,36 +160,21 @@ body header {
 }
 
 .btns-wrapper{
-float:left;
+ position: fixed;
+ top: 20px;
+ left: 10px;
+ background-color: green;
+ color: white;
+ padding: 10px 20px;
+ border-radius: 10px;
+ cursor: pointer;
+ transition: 0.3s ease;
 }
-
-.sticky-btn {
- position: -webkit-sticky;
+button#home{
  position: sticky;
- top:0;
- left:10px;
- text-decoration: none; 
- border: none; 
- padding: 12px 40px; 
- font-size: 16px; 
- background-color: green; 
- color: #fff; 
- border-radius: 5px; 
- box-shadow: 7px 60px 28px 1px rgba(50, 0, 0, 0.24); 
- cursor: pointer; 
- outline: none; 
- transition: 0.6s all; 
-} 
-
-/* Adding transformation when the button is active */ 
-
-.sticky-btn:active { 
- transform: scale(0.98); 
- /* Scaling button to 0.98 to its original size */ 
- box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
- /* Lowering the shadow */ 
-} 
-
+ bottom: 20px;
+ right:20px;
+}
 
 @media screen and (max-width:500px){
   .target{

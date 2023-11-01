@@ -8,6 +8,7 @@
 var state;
 
 onload = function () {
+ createStickyButtons();
  appendTenseTitles();
  state = 2;
 }
@@ -66,11 +67,25 @@ function toggle(col) {
    i.style.visibility = "visible";
   });
  }
-
 }
 function toggleCol(btn) {
  
  if(state<0){state=2;}
  toggle(state);
  state--;
+}
+
+// create sticky buttons:
+function createStickyButtons(){
+ console.log('createStickyButtons()...');
+ var str=`
+   <button id="toggle" class="sticky-btn" onclick="toggleCol(this);">إخفاء</button>
+   <a id="home" class="sticky-btn" href="../index.html">الصفحة الرئيسية </a>
+ `;
+ var divBox=document.createElement('div');
+ divBox.setAttribute('class','btns-wrapper');
+ divBox.innerHTML=str;
+ var location=document.querySelector('#media-bar');
+ location.insertAdjacentElement("afterend",divBox);
+
 }
