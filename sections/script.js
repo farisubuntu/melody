@@ -14,6 +14,7 @@ function appendTenseTitles() {
    
    var elem = document.createElement('p');
    elem.setAttribute('class','title');
+   
    var node = '';
    if (k == 0) { node = document.createTextNode('الماضي'); }
    if (k == 1) { node = document.createTextNode('الحاضر'); }
