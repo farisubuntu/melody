@@ -1,5 +1,15 @@
-onload=function(){
+
+/**
+ * state=2
+ * 0=> all visible
+ * 1=> target visible
+ * 2=> mother visible
+ */
+var state;
+
+onload = function () {
  appendTenseTitles();
+ state = 2;
 }
 console.log('starting script');
 function appendTenseTitles() {
@@ -10,11 +20,11 @@ function appendTenseTitles() {
    // var past=verb_tenses[i].children[0];
    // var present=verb_tenses[i].children[1];
    // var futue=verb_tenses[i].children[2];
-   var tense=verb_tenses[i].children[k];
-   
+   var tense = verb_tenses[i].children[k];
+
    var elem = document.createElement('p');
-   elem.setAttribute('class','title');
-   
+   elem.setAttribute('class', 'title');
+
    var node = '';
    if (k == 0) { node = document.createTextNode('الماضي'); }
    if (k == 1) { node = document.createTextNode('الحاضر'); }
@@ -27,3 +37,49 @@ function appendTenseTitles() {
 }
 
 
+
+// Toggle button:
+
+function toggle(col) {
+ if (col == "target") {
+  document.querySelectorAll('.text .target').forEach(function (i) {
+   i.style.visibility = "hidden";
+  });
+  document.querySelectorAll('.text .mother').forEach(function (i) {
+   i.style.visibility = "visible";
+  });
+ }
+ if (col == "mother") {
+  document.querySelectorAll('.text .target').forEach(function (i) {
+   i.style.visibility = "visible";
+  });
+  document.querySelectorAll('.text .mother').forEach(function (i) {
+   i.style.visibility = "hidden";
+  });
+ }
+ else {
+  // all visible
+  document.querySelectorAll('.text .target').forEach(function (i) {
+   i.style.visibility = "visible";
+  });
+  document.querySelectorAll('.text .mother').forEach(function (i) {
+   i.style.visibility = "visible";
+  });
+ }
+
+}
+function toogleCol(btn) {
+ if (state == 2) {
+  toggle('target');
+  state = 1;
+ }
+ else if (state == 1) {
+  toggle('mother');
+  state = 0;
+ }
+ else {
+  toggle('allvisible');
+  state=2;
+ }
+
+}
