@@ -41,7 +41,7 @@ function appendTenseTitles() {
 // Toggle button:
 
 function toggle(col) {
- if (col == "target") {
+ if (col == 1) {
   document.querySelectorAll('.text .target').forEach(function (i) {
    i.style.visibility = "hidden";
   });
@@ -49,7 +49,7 @@ function toggle(col) {
    i.style.visibility = "visible";
   });
  }
- if (col == "mother") {
+ if (col == 2) {
   document.querySelectorAll('.text .target').forEach(function (i) {
    i.style.visibility = "visible";
   });
@@ -57,7 +57,7 @@ function toggle(col) {
    i.style.visibility = "hidden";
   });
  }
- else {
+ if (col == 0) {
   // all visible
   document.querySelectorAll('.text .target').forEach(function (i) {
    i.style.visibility = "visible";
@@ -68,18 +68,9 @@ function toggle(col) {
  }
 
 }
-function toogleCol(btn) {
- if (state == 2) {
-  toggle('target');
-  state = 1;
- }
- else if (state == 1) {
-  toggle('mother');
-  state = 0;
- }
- else {
-  toggle('allvisible');
-  state=2;
- }
-
+function toggleCol(btn) {
+ 
+ if(state<0){state=2;}
+ toggle(state);
+ state--;
 }
