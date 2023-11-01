@@ -1,4 +1,6 @@
+
 <?php
+
 class RootObject
 {
 	public ?Category $category;
