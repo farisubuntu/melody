@@ -175,6 +175,9 @@ body header {
   .word-inner{
     font-size: larger;
   }
+  .conj.mother,.conj.target{
+    flex:1 1 40%;
+  }
 
 }
 
