@@ -158,18 +158,22 @@ body header {
 
 @media screen and (max-width:500px){
   .target{
-    flex:6 4;
-    padding: unset;
+    flex:1 1 50%;
+    /* flex:6 4 10%; */
+    /* padding: unset; */
     /* font-size: 16px; */
-    font-size: 1.5rem;
   }
   .mother{
-    flex:3 2;
-    padding: unset;
+    /* flex:6 3 10%; */
+    /* padding: unset; */
     /* font-size: 16px; */
   }
   p.title{
-    flex:1 1;
+    /* flex:1 1 20px; */
+   
+  }
+  .word-inner{
+    font-size: larger;
   }
 
 }
