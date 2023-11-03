@@ -81,6 +81,11 @@ function createStickyButtons(){
  var str=`
    <button id="toggle" class="sticky-btn" onclick="toggleCol(this);">إخفاء</button>
    <button id="home" class="sticky-btn"><a href="../index.html">الصفحة الرئيسية </a></button>
+   <details class="sticky-btn">
+ <summary>جداول</summary>
+ <li><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
+ <li><a href="#">empty</a></li> 
+</details>
  `;
  var divBox=document.createElement('div');
  divBox.setAttribute('class','btns-wrapper');
