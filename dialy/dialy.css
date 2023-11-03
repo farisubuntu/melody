@@ -1,37 +1,74 @@
-body{
+body {
  font-size: 16px;
 }
-body header{
- border:1px solid black;
- text-align: center;
- }
 
- #output{
-  border:1px solid blue;
-  direction: ltr!important;
- }
- .image-wrapper img{
-  width:100px;
-  height: 100px
- }
- 
-.lesson-wrapper{
+body > header {
+ border: 1px solid black;
+ text-align: center;
+ background-color: blue;
+ color:white;
+}
+
+.lesson-wrapper>header{
+ background-color: teal;
+ color:white;
+}
+
+#output {
+ border: 1px solid blue;
+ direction: ltr !important;
+}
+
+.image-wrapper img {
+ width: 75px;
+ height: 75px;
+}
+
+.lesson-wrapper {
  display: flex;
  flex-direction: column;
  text-align: center;
- }
+}
 
 
- .words{
-  display: flex;
-  flex-direction: column;
+.words {
+ display: flex;
+ flex-direction: column;
 
- }
- .word{
-  display: flex;
-  justify-content: space-evenly;
- }
- .word *{
-  flex:1;
- }
+}
 
+.word {
+ font-size: 1.5rem;
+ border: 1px solid green;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+.word * {
+ flex: 1;
+}
+
+.phrases {
+ font-size: 1.3rem;
+ display: flex;
+ flex-direction: column;
+}
+
+.phrase {
+
+ display: flex;
+ flex: 1;
+ text-align: right;
+}
+
+.phrase .q,
+.phrase .a {
+ flex: 1;
+}
+
+.phrase:hover {
+ background-color: black;
+ color: yellow;
+ font-size: larger;
+}
