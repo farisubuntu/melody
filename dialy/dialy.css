@@ -1,0 +1,37 @@
+body{
+ font-size: 16px;
+}
+body header{
+ border:1px solid black;
+ text-align: center;
+ }
+
+ #output{
+  border:1px solid blue;
+  direction: ltr!important;
+ }
+ .image-wrapper img{
+  width:100px;
+  height: 100px
+ }
+ 
+.lesson-wrapper{
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ }
+
+
+ .words{
+  display: flex;
+  flex-direction: column;
+
+ }
+ .word{
+  display: flex;
+  justify-content: space-evenly;
+ }
+ .word *{
+  flex:1;
+ }
+
