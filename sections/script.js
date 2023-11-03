@@ -84,9 +84,12 @@ function createStickyButtons(){
    <details class="sticky-btn">
  <summary>جداول</summary>
  <li><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
+ <li><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
  <li><a href="#">empty</a></li> 
+
 </details>
  `;
+ 
  var divBox=document.createElement('div');
  divBox.setAttribute('class','btns-wrapper');
  divBox.innerHTML=str;
