@@ -5,7 +5,7 @@ body {
 
 }
 
-.page-header-wrapper{
+.header-link-wrapper{
  display: none;
 }
 
@@ -20,13 +20,17 @@ body {
  justify-content: center;
  width:30%;
  font-size: 1.4rem;
- padding: 1rem;
  margin:0 auto;
+ padding:0;
 }
+
+#btn-return a{
+  width:100%;
+}
+
 .top>span,
 .top>p {
  color:greenyellow;
-
 }
 .overlay {
   height: 100%;
@@ -36,7 +40,8 @@ body {
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+  /* background-color: rgba(0,0,0); */
+  color:grey;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -53,7 +58,7 @@ body {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: yellow;
   display: block;
   transition: 0.3s;
 }
@@ -68,7 +73,9 @@ body {
   right: 45px;
   font-size: 60px;
 }
-
+.completed *{
+ color:yellow;
+}
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
