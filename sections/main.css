@@ -1,165 +1,172 @@
-html{
-  font-size: 16px;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+/* ---------- */
+html {
+ font-size: 16px;
 }
+
 body {
-  font-family: 'Hack', 'Noto Naskh Arabic', serif;
-  background-color: rgb(38, 35, 31);
-  display: flex;
-  flex-direction: column;
-  padding:0.3rem;
+ font-family: 'Noto Naskh Arabic', serif;
+ background-color: rgb(38, 35, 31);
+ display: flex;
+ flex-direction: column;
+ padding: 0.3rem;
 }
-.page-header header{
-  color:white;
-  background-color: #3D588C;
-  border-radius: 15px 30px;
-  margin-bottom: 1rem;
+
+.page-header header {
+ color: white;
+ background-color: #3D588C;
+ border-radius: 15px 30px;
+ margin-bottom: 1rem;
 }
 
 .btn,
 .clearfix {
-  display: none;
+ display: none;
 }
 
 body header {
-  text-align: center;
-  background-color: teal;
-  color: white;
+ text-align: center;
+ background-color: teal;
+ color: white;
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
-  padding-right: 5px;
+ display: flex;
+ flex-direction: column;
+ padding-right: 5px;
 }
 
 .target {
-  color: blue;
-  flex: 50%;
-  border-bottom: 1px solid silver;
-  padding-right: 1rem;
+ color: blue;
+ flex: 50%;
+ border-bottom: 1px solid silver;
+ padding-right: 1rem;
 }
 
 .mother {
-  color: green;
-  flex: 50%;
-  border-bottom: 1px solid silver;
-  padding-right: 1rem;
-  background-color: azure;
+ color: green;
+ flex: 50%;
+ border-bottom: 1px solid silver;
+ padding-right: 1rem;
+ background-color: azure;
 
 }
 
 .text {
-  display: flex;
+ display: flex;
 }
 
 .text:hover {
-  background-color: yellow;
-  font-size: larger;
+ background-color: yellow;
+ font-size: larger;
 }
 
 .words.is-content-card {
-  background-color: beige;
+ background-color: beige;
 }
 
 .verbs {
-  display: flex;
-  flex-direction: column;
-  
+ display: flex;
+ flex-direction: column;
+
 }
 
 
 .verb-name {
-  font-size: 2rem;
-  text-align: center;
-  padding: 1rem;
-  background-color: honeydew;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+ font-size: 2rem;
+ text-align: center;
+ padding: 1rem;
+ background-color: honeydew;
+ margin-top: 1rem;
+ margin-bottom: 1rem;
 }
 
 .verb-name>* {
-  flex: 1;
+ flex: 1;
 }
 
 .verb-tenses-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- 
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+
 }
 
 .verb-titles {
-  display: none;
+ display: none;
 }
 
 .sep {
-  height: 5px;
-  background-color: goldenrod;
+ height: 5px;
+ background-color: goldenrod;
 }
+
 .verb-tenses {
-  display: flex;
-  flex-direction: column;
-  /* width: 100%; */
-  text-align: center;
+ display: flex;
+ flex-direction: column;
+ /* width: 100%; */
+ text-align: center;
 }
 
 .tense {
-  background-color: #F6F1F4;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+ background-color: #F6F1F4;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
 }
 
 
 .tense .conj {
-  flex: 5;
-  align-self: center;  
+ flex: 5;
+ align-self: center;
 
 }
-.tense p.title{
-  flex:2;
-  border:2px solid blue;
-  border-radius:15px;
-  background-color: indianred;
-  color:white;
+
+.tense p.title {
+ flex: 2;
+ border: 2px solid blue;
+ border-radius: 15px;
+ background-color: indianred;
+ color: white;
 }
 
 .conj-inner *:hover {
-  background-color: yellow;
-  font-size: large;
+ background-color: yellow;
+ font-size: large;
 }
 
-.conj{
-  background-color: lightgrey;
-  border:1px solid blue;
+.conj {
+ background-color: lightgrey;
+ border: 1px solid blue;
 }
 
-#media-bar
-{
-  display: flex;
-  justify-content: center;
-  column-gap: 1rem;
-  padding: 10px;
-  flex-wrap: wrap;
-}
-.wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 1rem;
-  border:1px solid green;
-  padding:0.1rem;
-}
-.wrapper .audio-no{
-  color:green;
+#media-bar {
+ display: flex;
+ justify-content: center;
+ column-gap: 1rem;
+ padding: 10px;
+ flex-wrap: wrap;
 }
 
-.text .target{
-  font-size:1.3rem;
+.wrapper {
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ justify-content: center;
+ margin-bottom: 1rem;
+ border: 1px solid green;
+ padding: 0.1rem;
 }
 
-.btns-wrapper{
+.wrapper .audio-no {
+ color: green;
+}
+
+.text .target {
+ font-size: 1.3rem;
+}
+
+.btns-wrapper {
  position: fixed;
  top: 20px;
  left: 10px;
@@ -168,58 +175,69 @@ body header {
  cursor: pointer;
  transition: 0.3s ease;
 }
-button#home{
+
+button#home {
  position: sticky;
  bottom: 20px;
- right:20px;
+ right: 20px;
 
 }
-.btns-wrapper .sticky-btn{
+
+.btns-wrapper .sticky-btn {
  border-radius: 15px;
  background-color: gold;
- color:green;
+ color: green;
  font-size: 1.1rem;
- padding:0 0.5rem;
+ padding: 0 0.5rem;
 }
 
-audio{
- width:80%;
+audio {
+ width: 80%;
 }
-.page-header{
+
+.page-header {
  display: flex;
  flex-direction: column;
 }
+
 /* top video player */
-.op-player{
+.op-player {
  /* height: 30px; */
- width:100%;
+ width: 100%;
  max-height: 5rem;
 }
-.video-wrapper video{
+
+.video-wrapper video {
  background-image: url('icons/video_player_bg.png');
 
 }
-@media screen and (max-width:500px){
-  .target{
-    flex:1 1 50%;
-    /* flex:6 4 10%; */
-    /* padding: unset; */
-    /* font-size: 16px; */
-  }
-  .mother{
-    /* flex:6 3 10%; */
-    /* padding: unset; */
-    /* font-size: 16px; */
-  }
-  p.title{
-    /* flex:1 1 20px; */
-   
-  }
-  .word-inner{
-    font-size: larger;
-  }
-  .conj.mother,.conj.target{
-    flex:1 1 40%;
-  }
+
+@media screen and (max-width:500px) {
+ .target {
+  flex: 1 1 50%;
+  /* flex:6 4 10%; */
+  /* padding: unset; */
+  /* font-size: 16px; */
+ }
+
+ .mother {
+  /* flex:6 3 10%; */
+  /* padding: unset; */
+  /* font-size: 16px; */
+ }
+
+ p.title {
+  /* flex:1 1 20px; */
+
+ }
+
+ .word-inner {
+  font-size: larger;
+ }
+
+ .conj.mother,
+ .conj.target {
+  flex: 1 1 40%;
+ }
 
 }

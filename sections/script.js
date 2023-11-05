@@ -7,6 +7,12 @@
  */
 var state;
 
+/**
+ * 0: default, noto naskh arabic
+ * 1: noto nastaliq urdu
+ */
+var selectedFont=0;
+
 onload = function () {
  createStickyButtons();
  appendTenseTitles();
@@ -79,13 +85,13 @@ function toggleCol(btn) {
 function createStickyButtons(){
  console.log('createStickyButtons()...');
  var str=`
+   <button class="sticky-btn" onclick="changeFont();">تبديل الخط</button>
    <button id="toggle" class="sticky-btn" onclick="toggleCol(this);">إخفاء</button>
    <button id="home" class="sticky-btn"><a href="../index.html">الصفحة الرئيسية </a></button>
    <details class="sticky-btn">
  <summary>جداول</summary>
  <li><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
  <li><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
- <li><a href="#">empty</a></li> 
 
 </details>
  `;
@@ -96,4 +102,22 @@ function createStickyButtons(){
  var location=document.querySelector('#media-bar');
  location.insertAdjacentElement("afterend",divBox);
 
+}
+
+function changeFont(){
+ console.log('changeFont() ');
+ if(selectedFont==0){
+  selectedFont=1;
+  document.querySelectorAll('.text .target').forEach(function (i) {
+   i.style.fontFamily="Noto Nastaliq Urdu, serif";
+  });
+ }
+ else{
+  
+  document.querySelectorAll('.text .target').forEach(function (i) {
+   i.style.fontFamily="Noto Naskh Arabic, serif";
+  });
+  
+  
+ }
 }
