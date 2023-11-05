@@ -113,7 +113,7 @@ function changeFont(){
   });
  }
  else{
-  
+  selectedFont=0;
   document.querySelectorAll('.text .target').forEach(function (i) {
    i.style.fontFamily="Noto Naskh Arabic, serif";
   });
