@@ -6,7 +6,22 @@ body {
  display: none;
 }
 
+.top{
+ background-image: url('sections/icons/night.jpg');
+ display: flex;
+ justify-content: flex-start;
+ flex-direction: column;
 
+}
+.top button{
+ padding: 1rem;
+ margin:0 auto;
+}
+.top>span,
+.top>p {
+ color:greenyellow;
+
+}
 .overlay {
   height: 100%;
   width: 0;
