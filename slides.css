@@ -1,5 +1,8 @@
 body {
  font-family: 'Noto Naskh Arabic', serif;
+ background-image: url('sections/icons/night.jpg');
+
+
 }
 
 .page-header-wrapper{
@@ -7,13 +10,16 @@ body {
 }
 
 .top{
- background-image: url('sections/icons/night.jpg');
  display: flex;
  justify-content: flex-start;
  flex-direction: column;
 
 }
-.top button{
+#btn-return {
+ display: flex;
+ justify-content: center;
+ width:30%;
+ font-size: 1.4rem;
  padding: 1rem;
  margin:0 auto;
 }
