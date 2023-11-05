@@ -1,0 +1,4 @@
+To joining mp3 files:
+https://linuxconfig.org/joining-mp3-music-files-to-a-single-track
+
+Use SoundCloud for audio files instead of github
