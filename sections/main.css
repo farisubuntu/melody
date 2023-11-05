@@ -8,9 +8,9 @@ body {
   flex-direction: column;
   padding:0.3rem;
 }
-.page-header{
+.page-header header{
   color:white;
-  background-color: rgb(136, 18, 18);
+  background-color: #3D588C;
   border-radius: 15px 30px;
   margin-bottom: 1rem;
 }
@@ -182,6 +182,23 @@ button#home{
  padding:0 0.5rem;
 }
 
+audio{
+ width:80%;
+}
+.page-header{
+ display: flex;
+ flex-direction: column;
+}
+/* top video player */
+.op-player{
+ /* height: 30px; */
+ width:100%;
+ max-height: 5rem;
+}
+.video-wrapper video{
+ background-image: url('icons/video_player_bg.png');
+
+}
 @media screen and (max-width:500px){
   .target{
     flex:1 1 50%;
