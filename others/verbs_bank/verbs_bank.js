@@ -1,3 +1,4 @@
+console.log('starting verbs_bank.js ....');
 
 /**
  * state=2
@@ -15,34 +16,8 @@ var selectedFont = 0;
 
 onload = function () {
  createStickyButtons();
- appendTenseTitles();
  state = 2;
 }
-console.log('starting script');
-function appendTenseTitles() {
- var verb_tenses = document.querySelectorAll('.verb-tenses');
-
- for (var i = 0; i < verb_tenses.length; i++) {
-  for (var k = 0; k < 3; k++) {
-   // var past=verb_tenses[i].children[0];
-   // var present=verb_tenses[i].children[1];
-   // var futue=verb_tenses[i].children[2];
-   var tense = verb_tenses[i].children[k];
-
-   var elem = document.createElement('p');
-   elem.setAttribute('class', 'title');
-
-   var node = '';
-   if (k == 0) { node = document.createTextNode('الماضي'); }
-   if (k == 1) { node = document.createTextNode('الحاضر'); }
-   if (k == 2) { node = document.createTextNode('المستقبل'); }
-   elem.appendChild(node);
-   tense.append(elem);
-  }
-
- }
-}
-
 
 
 // Toggle button:
@@ -87,12 +62,12 @@ function createStickyButtons() {
  var str = `
    <button class="sticky-btn" onclick="changeFont();">تبديل الخط</button>
    <button id="toggle" class="sticky-btn" onclick="toggleCol(this);">إخفاء</button>
-   <button id="home" class="sticky-btn"><a href="../index.html">الصفحة الرئيسية </a></button>
+   <button id="home" class="sticky-btn"><a href="../../index.html">الصفحة الرئيسية </a></button>
    <details class="sticky-btn">
  <summary>جداول</summary>
  <li><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
- <li><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
- <li><a href="../others/important_vocabularies.html">كلمات مهمة</a></li> 
+ <li><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li>
+ <li><a href="../others/important_vocabularies.html">كلمات مهمة</a></li>
 
 </details>
  `;
@@ -109,13 +84,14 @@ function changeFont() {
  console.log('changeFont() ');
  if (selectedFont == 0) {
   selectedFont = 1;
-  document.querySelectorAll('.text .target').forEach(function (i) {
+  document.querySelectorAll('.ur').forEach(function (i) {
    i.style.fontFamily = "Noto Nastaliq Urdu, serif";
   });
+
  }
  else {
   selectedFont = 0;
-  document.querySelectorAll('.text .target').forEach(function (i) {
+  document.querySelectorAll('.ur').forEach(function (i) {
    i.style.fontFamily = "Noto Naskh Arabic, serif";
   });
 
