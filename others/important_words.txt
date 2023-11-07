@@ -1,0 +1,331 @@
+ <div class="table-responsive wprt_style_display col-3">
+  <table>
+   <tbody>
+    <tr class="word">
+     <td class="en"><b>Mean</b></td>
+     <td class="ar"><b>مِین</b></td>
+     <td class="ur"><b>مطلب</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Before</b></td>
+     <td class="ar"><b>بی فور</b></td>
+     <td class="ur"><b>پہلے</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Move</b></td>
+     <td class="ar"><b>موو</b></td>
+     <td class="ur"><b>آگے بڑھنا ، اقدام</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Right</b></td>
+     <td class="ar"><b>رائٹ</b></td>
+     <td class="ur"><b>حق،درست</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Boy</b></td>
+     <td class="ar"><b>بوائے</b></td>
+     <td class="ur"><b>لڑکا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Old</b></td>
+     <td class="ar"><b>اولڈ</b></td>
+     <td class="ur"><b>پرانا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Too</b></td>
+     <td class="ar"><b>ٹُو</b></td>
+     <td class="ur"><b>بھی</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Same</b></td>
+     <td class="ar"><b>سیم</b></td>
+     <td class="ur"><b>ایک جیسا،ہی</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>She</b></td>
+     <td class="ar"><b>شی</b></td>
+     <td class="ur"><b>وہ</b> <b>(</b><b>لڑکی)</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>All</b></td>
+     <td class="ar"><b>آل</b></td>
+     <td class="ur"><b>تمام</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>There</b></td>
+     <td class="ar"><b>دیئر</b></td>
+     <td class="ur"><b>وہاں</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>When</b></td>
+     <td class="ar"><b>وّین</b></td>
+     <td class="ur"><b>جب،کب</b><b> (وقت)</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Up</b></td>
+     <td class="ar"><b>اپ</b></td>
+     <td class="ur"><b>اوپر</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Use</b></td>
+     <td class="ar"><b>یُوز</b></td>
+     <td class="ur"><b>استعمال کرنا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Your</b></td>
+     <td class="ar"><b>یُوئر</b></td>
+     <td class="ur"><b>آپکا، آپکی</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Way</b></td>
+     <td class="ar"><b>وے</b></td>
+     <td class="ur"><b>راستہ</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>About</b></td>
+     <td class="ar"><b>اباؤٹ</b></td>
+     <td class="ur"><b>کے بارے میں</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Many</b></td>
+     <td class="ar"><b>مینی</b></td>
+     <td class="ur"><b>بہت سے</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Then</b></td>
+     <td class="ar"><b>دین</b></td>
+     <td class="ur"><b>پھر</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Them</b></td>
+     <td class="ar"><b>دیم</b></td>
+     <td class="ur"><b>انہیں</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Write</b></td>
+     <td class="ar"><b>رائٹ</b></td>
+     <td class="ur"><b>لکھنا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Would</b></td>
+     <td class="ar"><b>وُوڈ</b></td>
+     <td class="ur"><b>ہوگا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Like</b></td>
+     <td class="ar"><b>لائق</b></td>
+     <td class="ur"><b>پسند کرنا ،کی طرح</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>So</b></td>
+     <td class="ar"><b>سو</b></td>
+     <td class="ur"><b>تو، اس لیے</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>These</b></td>
+     <td class="ar"><b>دیز</b></td>
+     <td class="ur"><b>یہ(زیادہ)</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Him</b></td>
+     <td class="ar"><b>ہِم</b></td>
+     <td class="ur"><b>اسے</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Two</b></td>
+     <td class="ar"><b>ٹُو</b></td>
+     <td class="ur"><b>دو</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Has</b></td>
+     <td class="ar"><b>ہیز</b></td>
+     <td class="ur"><b>رکھتا </b><b>ہے</b><b> (ملکیت)</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Look</b></td>
+     <td class="ar"><b>لُوک</b></td>
+     <td class="ur"><b>نظر،دیکھنا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>More</b></td>
+     <td class="ar"><b>مور</b></td>
+     <td class="ur"><b>مزید</b><b>/اور زیادہ</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>My</b></td>
+     <td class="ar"><b>مائی</b></td>
+     <td class="ur"><b>میرا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Over</b></td>
+     <td class="ar"><b>اوور</b></td>
+     <td class="ur"><b>زیادہ،پر</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Know</b></td>
+     <td class="ar"><b>نوو</b></td>
+     <td class="ur"><b>جانتے ہیں</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Water</b></td>
+     <td class="ar"><b>واٹر</b></td>
+     <td class="ur"><b>پانی</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Than</b></td>
+     <td class="ar"><b>دین</b></td>
+     <td class="ur"><b>سے</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Day</b></td>
+     <td class="ar"><b>ڈے</b></td>
+     <td class="ur"><b>دن</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Could</b></td>
+     <td class="ar"><b>کُوڈ</b></td>
+     <td class="ur"><b>کر </b><b>سکت</b><b>ا</b><b> تھا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Go</b></td>
+     <td class="ar"><b>گو</b></td>
+     <td class="ur"><b>جاؤ</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Come</b></td>
+     <td class="ar"><b>کم</b></td>
+     <td class="ur"><b>آنا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Did</b></td>
+     <td class="ar"><b>ڈِڈ</b></td>
+     <td class="ur"><b>کِیا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Number</b></td>
+     <td class="ar"><b>نمبر</b></td>
+     <td class="ur"><b>تعداد</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Sound</b></td>
+     <td class="ar"><b>ساؤنڈ</b></td>
+     <td class="ur"><b>آواز</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>No</b></td>
+     <td class="ar"><b>نو</b></td>
+     <td class="ur"><b>نہیں</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Most</b></td>
+     <td class="ar"><b>موسٹ</b></td>
+     <td class="ur"><b>سب سے زیادہ</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>People</b></td>
+     <td class="ar"><b>پیپل</b></td>
+     <td class="ur"><b>لوگ</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Call</b></td>
+     <td class="ar"><b>کال</b></td>
+     <td class="ur"><b>کال،بلانا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>First</b></td>
+     <td class="ar"><b>فرسٹ</b></td>
+     <td class="ur"><b>پہلا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Who</b></td>
+     <td class="ar"><b>ہُو</b></td>
+     <td class="ur"><b>کون</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>May</b></td>
+     <td class="ar"><b>مے</b></td>
+     <td class="ur"><b>ہو سکتا ہے</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Down</b></td>
+     <td class="ar"><b>ڈاؤن</b></td>
+     <td class="ur"><b>نیچے</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Her</b></td>
+     <td class="ar"><b>ہر</b></td>
+     <td class="ur"><b>اسکا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Long</b></td>
+     <td class="ar"><b>لانگ</b></td>
+     <td class="ur"><b>طویل</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Make</b></td>
+     <td class="ar"><b>میک</b></td>
+     <td class="ur"><b>بنانا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Thing</b></td>
+     <td class="ar"><b>تھِنگ</b></td>
+     <td class="ur"><b>چیز،بات</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>See</b></td>
+     <td class="ar"><b>سی</b></td>
+     <td class="ur"><b>دیکھنا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Large</b></td>
+     <td class="ar"><b>لارج</b></td>
+     <td class="ur"><b>بڑا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Spell</b></td>
+     <td class="ar"><b>سپیل</b></td>
+     <td class="ur"><b>جادو</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Add</b></td>
+     <td class="ar"><b>ایڈ</b></td>
+     <td class="ur"><b>شامل کرنا</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Even</b></td>
+     <td class="ar"><b>اِیون</b></td>
+     <td class="ur"><b>بھی</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Land</b></td>
+     <td class="ar"><b>لینڈ</b></td>
+     <td class="ur"><b>زمین</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Very</b></td>
+     <td class="ar"><b>ویری</b></td>
+     <td class="ur"><b>بہت</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Through</b></td>
+     <td class="ar"><b>تھرُو</b></td>
+     <td class="ur"><b>کے ذریعے</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Just</b></td>
+     <td class="ar"><b>جسٹ</b></td>
+     <td class="ur"><b>صرف</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Form</b></td>
+     <td class="ar"><b>فام</b></td>
+     <td class="ur"><b>فارم</b></td>
+    </tr>
+    <tr class="word">
+     <td class="en"><b>Sentence</b></td>
+     <td class="ar"><b>سینٹینس</b></td>
+     <td class="ur"><b>فقرہ، سزا</b></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>

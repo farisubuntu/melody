@@ -92,6 +92,7 @@ function createStickyButtons(){
  <summary>جداول</summary>
  <li><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
  <li><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
+ <li><a href="../others/important_vocabularies.html">كلمات مهمة</a></li> 
 
 </details>
  `;
