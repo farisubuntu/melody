@@ -160,9 +160,8 @@ function getSectionVariables() {
 
 function extractMinifierData() {
  getSectionVariables();
- var top_container = `
-<div id="top-container">
-   <section id="words-container" class="section">`;
+ var top_container = `<section id="words-container" class="section">`;
+ 
  //    append words
  var target;
  var mother;
@@ -179,8 +178,7 @@ function extractMinifierData() {
     </article>
     `;
  }
- top_container += `</section>
-    <section id="phrases-cotainer" class="section">`;
+ top_container += `<section id="phrases-cotainer" class="section">`;
  var phrase_target;
  var phrase_mother;
  for (var i = 0; i < phrases_array.length; i++) {
@@ -192,7 +190,7 @@ function extractMinifierData() {
            <div class="phrase-mother">${phrase_mother}</div>
           </article>`;
  }
- top_container += `</section></div>`;
+ top_container += `</section>`;
 
  
  // add 'pre' tag to append top_container output string
