@@ -1,7 +1,7 @@
 console.log('scripts/quick_selectors.js ......');
-var words_array;
-var images_array;
-var phrases_array;
+var words_array=[];
+var images_array=[];
+var phrases_array=[];
 
 function getSectionVariables() {
  //  select all words (one line container of (target,mother} =>
@@ -21,7 +21,7 @@ function getSectionVariables() {
   start = attrValue.indexOf('(') + 2;
   end = attrValue.indexOf(')');
   urlValue = attrValue.substring(start, end);
-  phrases_array[i] = urlValue;
+  images_array[i] = urlValue;
  }
 
  //------------------------
