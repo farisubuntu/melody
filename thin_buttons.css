@@ -93,6 +93,8 @@ body {
   /* color: #FFF; */
   transition: all 0.5s;
   /* position: relative; */
+  background-color:yellow;
+  opacity: 0.2;
 }
 .btn-two span {
   z-index: 2; 
@@ -194,5 +196,10 @@ align-items: center;
  
 }
 .footer-item{
+ background-color: firebrick;
+}
 
+.footer-item.big{
+ flex:2;
+ filter:invert();
 }
