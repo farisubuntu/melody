@@ -98,17 +98,18 @@ function toggleCol(btn) {
 // create sticky buttons:
 function createStickyButtons() {
  console.log('createStickyButtons()...');
- var str = `
+ var str = `<div class="btns-wrapper">
    <button class="sticky-btn" onclick="changeFont();">تبديل الخط</button>
    <button id="toggle" class="sticky-btn" onclick="toggleCol(this);">إخفاء</button>
    <button id="home" class="sticky-btn"><a href="../index.html">الصفحة الرئيسية </a></button>
    <details class="sticky-btn">
- <summary>روابط</summary>
+<summary>روابط</summary>
  <li><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
  <li><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
  <li><a href="../others/important_vocabularies.html">كلمات مهمة</a></li>
  
 </details>
+</div>
  `;
 
  var divBox = document.createElement('div');
@@ -135,3 +136,14 @@ function changeFont() {
  }
 }
 
+// colorize word-wrappers which have an image child.
+/*
+var words=document.querySelectorAll('.word-wrapper');
+words.forEach(function (i){
+  if(i.querySelector('img')!==null){
+    i.style.color='blue';
+    
+  }
+});
+
+*/

@@ -1,26 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
-
-
-/* ---- sticky buttons------ */
 html {
  font-size: 16px;
+ margin-left: 10px;
+ margin-right: 10px;
 }
 
-body {
- font-family: 'Noto Naskh Arabic', serif;
- /* background-color: rgb(38, 35, 31); */
- padding: 0.3rem;
-}
+/* ---- sticky buttons------ */
+
 
 .btns-wrapper {
- position: fixed;
- top: 20px;
- left: 10px;
- padding: 10px 20px;
- border-radius: 10px;
- cursor: pointer;
- transition: 0.3s ease;
+ float: right;
 }
+
+.sticky-btn {
+ border: 2px solid gray;
+ cursor: pointer;
+ padding: 2px 10px;
+ font-size: 1rem;
+ color: blue;
+ background-color: black;
+ opacity: 0.9;
+
+
+}
+
+.sticky-btn li a {
+ color: blue;
+ text-decoration: none;
+}
+
+.sticky-btn summary {
+ width: auto;
+}
+
+/* 
 
 button#home {
  position: sticky;
@@ -35,9 +48,12 @@ button#home {
  color: green;
  font-size: 1.1rem;
  padding: 0 0.5rem;
-}
+} */
+
+
 
 /* ----- images -------  */
+
 .image-wrapper {
  width: 60px;
 }
@@ -47,33 +63,45 @@ button#home {
 }
 
 /* ----- colors/fonts ------- */
+body {
+ font-family: 'Noto Naskh Arabic', serif;
+ background-image: url('primary_bg.jpeg');
+}
+
 .phrase-wrapper,
 .word-wrapper {
  border: 1px solid green;
 }
 
-.words-container {
- background-color: lightgray;
-}
 
-.phrases-container {
- background-color: lightsalmon;
-}
 
 /* --------- layouts -----------*/
 
+
 body,
-.lesson-wrapper{
+.lesson-wrapper {
  display: flex;
  flex-direction: column;
- flex-wrap:wrap;
- flex:1 ;
+ flex-wrap: wrap;
+ flex: 1;
 }
+
+.lesson-wrapper {
+ opacity: 1;
+ color:greenyellow;
+ font-size: 1.2rem;
+}
+
+.lesson-wrapper > header{
+ direction: ltr;
+ opacity: 0.5;
+}
+
 .words-container,
 .phrases-container {
- 
  display: flex;
  flex-direction: column;
+ flex: 1;
 
 }
 
@@ -81,21 +109,31 @@ body,
 
 /* media queries */
 
-@media screen and (width >=400px) {
+
+@media screen and (max-width:400px) {
  body {
   background-color: gold;
  }
+
+ .words-container,
+ .phrases-container {
+  
+ }
 }
 
-@media screen and (width >=600px) {
+@media screen and (max-width:600px) {
  body {
   background-color: silver;
  }
 }
 
-@media screen and (width >=800px) {
+@media screen and (min-width:800px) {
  body {
-  background-color: pink;
+  background-color: burlywood;
+ }
+
+ div[class~=target] {
+  color: brown;
  }
 
 
