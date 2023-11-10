@@ -1,0 +1,3 @@
+steps:
+make ????-??-??.html file
+copy to words_images_bank.html

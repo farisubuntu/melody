@@ -1,0 +1,2 @@
+- For dictionary, i will try `purecss` css framework 
+- dict.html use dict.js not main script.js

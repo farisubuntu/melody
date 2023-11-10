@@ -1,0 +1,39 @@
+/* src='undefined' */
+img[src="undefined"]{
+ display: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+/* ---------- */
+html {
+ font-size: 16px;
+}
+
+body {
+ font-family: 'Noto Naskh Arabic', serif;
+ /* background-color: rgb(38, 35, 31); */
+ padding: 0.3rem;
+}
+
+.btns-wrapper {
+ position: fixed;
+ top: 20px;
+ left: 10px;
+ padding: 10px 20px;
+ border-radius: 10px;
+ cursor: pointer;
+ transition: 0.3s ease;
+}
+
+button#home {
+ position: sticky;
+ bottom: 20px;
+ right: 20px;
+
+}
+.btns-wrapper .sticky-btn {
+ border-radius: 15px;
+ background-color: gold;
+ color: green;
+ font-size: 1.1rem;
+ padding: 0 0.5rem;
+}

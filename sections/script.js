@@ -174,11 +174,11 @@ function extractMinifierData() {
         <article class="word-wrapper">
           <div class="word-target">${target} </div>
           <div class="word-mother">${mother}</div>
-          <div><img src=${image_url} alt="word-image" height="auto" width="30px"></div>
+          <div><img src='${image_url}' alt="word-image" height="auto" width="30px"></div>
     </article>
     `;
  }
- top_container += `<section id="phrases-cotainer" class="section">`;
+ top_container += `</section><section id="phrases-cotainer" class="section">`;
  var phrase_target;
  var phrase_mother;
  for (var i = 0; i < phrases_array.length; i++) {
