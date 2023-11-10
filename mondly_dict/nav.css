@@ -1,6 +1,6 @@
 .sticky{
  border:5px solid silver;
- position:fixed;
+ position:sticky;
  top:0px;
  right:0px;
  opacity: 1;
@@ -9,23 +9,22 @@ nav  ul {
  list-style-type: none;
  display: flex;
  flex-wrap: wrap;
+ justify-content: space-between;
  padding: 0.2rem;
  margin: 0;
- 
- background-color: yellow;
+  background-color: yellow;
 }
 
-nav ul li {
- padding:0;
-
-
-}
 
 nav a {
  color: black;
  text-decoration: none;
 }
+.menu-item {
+ padding:0;
+ border:1px solid black;
 
+}
 nav a:hover {
  text-decoration: underline;
  color:red;

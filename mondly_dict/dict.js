@@ -148,7 +148,7 @@ function createStickyButtons() {
      <li class="menu-item"><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
      <li class="menu-item"><a href="../others/important_vocabularies.html">كلمات مهمة</a></li>
    </ul>
-    <li>الكلمات :<span class="total-words"> ${total_words}</span>العبارات :<span class="total_phrases"> ${total_phrases}</span></li>
+    <li class="counter">الكلمات :<span class="total-words"> ${total_words}</span>العبارات :<span class="total_phrases"> ${total_phrases}</span></li>
   </ul>
   
  </nav>
