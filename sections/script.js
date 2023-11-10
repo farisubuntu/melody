@@ -151,83 +151,73 @@ function getSectionVariables() {
  //------------------------
  // select all phrases (one line container of (text elements {target,mother} ) =>
  phrases_array = document.querySelectorAll('.phrase .text');
- /*
- console.log(`\n getSectionVariables() invoked, and:
-  words_array len: ${words_array.length}
-  images_container leng: ${images_container.length}
-  images_array leng: ${images_array.length}
-  phrases_array len: ${phrases_array.length}\n`);
 }
-*/
 
-// template
 
-function getDictionaryData() {
- getSectionVariables();  // this will fill global variable images_array,....
- words_len = words_array.length
- images_len = images_array.length
- phrases_len = phrases_array.length
- var top_container = `<div class="lesson-wrapper">
+ // template
+
+ function getDictionaryData() {
+  getSectionVariables();  // this will fill global variable images_array,....
+  words_len = words_array.length
+  images_len = images_array.length
+  phrases_len = phrases_array.length
+  var top_container = `<div class="lesson-wrapper"><!-- ${window.location.pathname} -->
  <header><p class="lesson-title">${window.location.pathname}</p></header>
  <section class="words-container">`;
 
- //    append words
- var target;
- var mother;
- var image_url;
- for (var i = 0; i < words_array.length; i++) {
-  target = words_array[i].querySelector('.target').innerText;
-  image_url = images_array[i];
-  mother = words_array[i].querySelector('.mother').innerText;
-  top_container += `
+  //    append words
+  var target;
+  var mother;
+  var image_url;
+  for (var i = 0; i < words_array.length; i++) {
+   target = words_array[i].querySelector('.target').innerText;
+   image_url = images_array[i];
+   mother = words_array[i].querySelector('.mother').innerText;
+   top_container += `
         <article class="word-wrapper">
           <div class="word-target">${target}</div>
           <div class="word-mother">${mother}</div>`;
-  if (i<images_len) {
-   top_container += `<div class="image-wrapper"><img src='${image_url}' alt="word-image" height="auto" width="30px"></div>
+   if (i < images_len) {
+    top_container += `<div class="image-wrapper"><img src='${image_url}' /"></div>
                  </article>`;
 
+   }
+   else {
+    top_container += `</article>`;
+   }
   }
-  else {
-   top_container += `</article>`;
-  }
- }
- top_container += `</section><section id="phrases-cotainer" class="section">`;
- var phrase_target;
- var phrase_mother;
- for (var i = 0; i < phrases_array.length; i++) {
-  phrase_target = phrases_array[i].querySelector('.target').innerText;
-  phrase_mother = phrases_array[i].querySelector('.mother').innerText;
-  top_container += `
-          <article class="phrase">
+  top_container += `</section><section class="phrases-container">`;
+  var phrase_target;
+  var phrase_mother;
+  for (var i = 0; i < phrases_array.length; i++) {
+   phrase_target = phrases_array[i].querySelector('.target').innerText;
+   phrase_mother = phrases_array[i].querySelector('.mother').innerText;
+   top_container += `
+          <article class="phrase-wrapper">
            <div class="phrase-target">${phrase_target}</div>
            <div class="phrase-mother">${phrase_mother}</div>
           </article>`;
+  }
+  top_container += `</section> </div><!-- end of lesson-wrapper --> `;
+
+
+  // add 'pre' tag to append top_container output string
+  // var pre_tag=document.createElement('pre');
+  // pre_tag.setAttribute('class','output');
+  document.body.innerHTML = '';
+  // document.body.append(pre_tag);
+  // pre_tag.textContent= top_container;
+  // pre_tag.style.backgroundColor='whitesmoke';
+  // pre_tag.style.color='green';
+
+  document.body.style.padding = '1.5rem';
+  document.body.style.color = 'green';
+  document.body.style.backgroundColor = 'whitesmoke';
+  document.body.style.border = '2px solid skyblue';
+  document.body.style.direction = 'ltr';
+
+  document.body.textContent = top_container;
+
+
  }
- top_container += `</section> </div><!-- end of lesson-wrapper --> `;
 
-
- // add 'pre' tag to append top_container output string
- // var pre_tag=document.createElement('pre');
- // pre_tag.setAttribute('class','output');
- document.body.innerHTML = '';
- // document.body.append(pre_tag);
- // pre_tag.textContent= top_container;
- // pre_tag.style.backgroundColor='whitesmoke';
- // pre_tag.style.color='green';
-
- document.body.style.padding = '1.5rem';
- document.body.style.color = 'green';
- document.body.style.backgroundColor = 'whitesmoke';
- document.body.style.border = '2px solid skyblue';
- document.body.style.direction = 'ltr';
-
- document.body.textContent = top_container;
-
-
-}
-
-
-function resetStyles() {
- document.body.style.all = 'unset';
-}

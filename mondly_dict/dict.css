@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
 
 
-/* ---------- */
+/* ---- sticky buttons------ */
 html {
  font-size: 16px;
 }
@@ -28,10 +28,75 @@ button#home {
  right: 20px;
 
 }
+
 .btns-wrapper .sticky-btn {
  border-radius: 15px;
  background-color: gold;
  color: green;
  font-size: 1.1rem;
  padding: 0 0.5rem;
+}
+
+/* ----- images -------  */
+.image-wrapper {
+ width: 60px;
+}
+
+.image-wrapper>img {
+ width: 100%;
+}
+
+/* ----- colors/fonts ------- */
+.phrase-wrapper,
+.word-wrapper {
+ border: 1px solid green;
+}
+
+.words-container {
+ background-color: lightgray;
+}
+
+.phrases-container {
+ background-color: lightsalmon;
+}
+
+/* --------- layouts -----------*/
+
+body,
+.lesson-wrapper{
+ display: flex;
+ flex-direction: column;
+ flex-wrap:wrap;
+ flex:1 ;
+}
+.words-container,
+.phrases-container {
+ 
+ display: flex;
+ flex-direction: column;
+
+}
+
+
+
+/* media queries */
+
+@media screen and (width >=400px) {
+ body {
+  background-color: gold;
+ }
+}
+
+@media screen and (width >=600px) {
+ body {
+  background-color: silver;
+ }
+}
+
+@media screen and (width >=800px) {
+ body {
+  background-color: pink;
+ }
+
+
 }
