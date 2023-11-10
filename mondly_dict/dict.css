@@ -1,8 +1,6 @@
-/* src='undefined' */
-img[src="undefined"]{
- display: none;
-}
 @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+
+
 /* ---------- */
 html {
  font-size: 16px;

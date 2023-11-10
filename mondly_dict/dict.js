@@ -1,3 +1,8 @@
+// remove 'undefind' images:
+
+
+
+/* -------------- Append Sticky Buttons ---------------- */
 /**
  * state=2
  * 0=> all visible
@@ -98,11 +103,11 @@ function createStickyButtons() {
    <button id="toggle" class="sticky-btn" onclick="toggleCol(this);">إخفاء</button>
    <button id="home" class="sticky-btn"><a href="../index.html">الصفحة الرئيسية </a></button>
    <details class="sticky-btn">
- <summary>جداول</summary>
+ <summary>روابط</summary>
  <li><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
  <li><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
- <li><a href="../others/important_vocabularies.html">كلمات مهمة</a></li> 
-
+ <li><a href="../others/important_vocabularies.html">كلمات مهمة</a></li>
+ 
 </details>
  `;
 

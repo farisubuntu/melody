@@ -23,9 +23,6 @@ function appendTenseTitles() {
 
  for (var i = 0; i < verb_tenses.length; i++) {
   for (var k = 0; k < 3; k++) {
-   // var past=verb_tenses[i].children[0];
-   // var present=verb_tenses[i].children[1];
-   // var futue=verb_tenses[i].children[2];
    var tense = verb_tenses[i].children[k];
 
    var elem = document.createElement('p');
@@ -97,7 +94,9 @@ function createStickyButtons() {
  <summary>جداول</summary>
  <li><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
  <li><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
- <li><a href="../others/important_vocabularies.html">كلمات مهمة</a></li> 
+ <li><a href="../others/important_vocabularies.html">كلمات مهمة</a></li>
+ <li><a href="../mondly_dict/dict.html">قاموس ماندلي</a></li>
+  
 
 </details>
  `;
@@ -126,6 +125,8 @@ function changeFont() {
  }
 }
 
+
+// ---------------------------------------
 var words_array = [];
 var images_array = [];
 var phrases_array = [];
@@ -137,9 +138,7 @@ function getSectionVariables() {
  //select all image urls for words, images_container[x].style.background-image=url("xxx")
  var images_container = document.querySelectorAll('.phrase-image');
  //  extract urls from images elements
- var attrValue;
- var start;
- var end;
+
  var urlValue;
 
  images_container.forEach(
@@ -154,14 +153,26 @@ function getSectionVariables() {
  //------------------------
  // select all phrases (one line container of (text elements {target,mother} ) =>
  phrases_array = document.querySelectorAll('.phrase .text');
+ /*
+ console.log(`\n getSectionVariables() invoked, and:
+  words_array len: ${words_array.length}
+  images_container leng: ${images_container.length}
+  images_array leng: ${images_array.length}
+  phrases_array len: ${phrases_array.length}\n`);
 }
+*/
 
 // template
 
-function extractMinifierData() {
- getSectionVariables();
- var top_container = `<section id="words-container" class="section">`;
- 
+function getDictionaryData() {
+ getSectionVariables();  // this will fill global variable images_array,....
+ words_len = words_array.length
+ images_len = images_array.length
+ phrases_len = phrases_array.length
+ var top_container = `<div class="lesson-wrapper">
+ <header><p class="lesson-title">${window.location.pathname}</p></header>
+ <section class="words-container">`;
+
  //    append words
  var target;
  var mother;
@@ -172,11 +183,16 @@ function extractMinifierData() {
   mother = words_array[i].querySelector('.mother').innerText;
   top_container += `
         <article class="word-wrapper">
-          <div class="word-target">${target} </div>
-          <div class="word-mother">${mother}</div>
-          <div><img src='${image_url}' alt="word-image" height="auto" width="30px"></div>
-    </article>
-    `;
+          <div class="word-target">${target}</div>
+          <div class="word-mother">${mother}</div>`;
+  if (i<images_len) {
+   top_container += `<div class="image-wrapper"><img src='${image_url}' alt="word-image" height="auto" width="30px"></div>
+                 </article>`;
+
+  }
+  else {
+   top_container += `</article>`;
+  }
  }
  top_container += `</section><section id="phrases-cotainer" class="section">`;
  var phrase_target;
@@ -190,30 +206,30 @@ function extractMinifierData() {
            <div class="phrase-mother">${phrase_mother}</div>
           </article>`;
  }
- top_container += `</section>`;
+ top_container += `</section> </div><!-- end of lesson-wrapper --> `;
 
- 
+
  // add 'pre' tag to append top_container output string
-// var pre_tag=document.createElement('pre');
-// pre_tag.setAttribute('class','output');
-document.body.innerHTML='';
-// document.body.append(pre_tag);
-// pre_tag.textContent= top_container;
-// pre_tag.style.backgroundColor='whitesmoke';
-// pre_tag.style.color='green';
+ // var pre_tag=document.createElement('pre');
+ // pre_tag.setAttribute('class','output');
+ document.body.innerHTML = '';
+ // document.body.append(pre_tag);
+ // pre_tag.textContent= top_container;
+ // pre_tag.style.backgroundColor='whitesmoke';
+ // pre_tag.style.color='green';
 
-document.body.style.padding='1.5rem';
-document.body.style.color='green';
-document.body.style.backgroundColor='whitesmoke';
-document.body.style.border='2px solid skyblue';
-document.body.style.direction='ltr';
+ document.body.style.padding = '1.5rem';
+ document.body.style.color = 'green';
+ document.body.style.backgroundColor = 'whitesmoke';
+ document.body.style.border = '2px solid skyblue';
+ document.body.style.direction = 'ltr';
 
-document.body.textContent=top_container;
+ document.body.textContent = top_container;
 
- 
+
 }
 
 
 function resetStyles() {
-document.body.style.all='unset';
+ document.body.style.all = 'unset';
 }
