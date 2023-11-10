@@ -96,8 +96,6 @@ function createStickyButtons() {
  <li><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
  <li><a href="../others/important_vocabularies.html">كلمات مهمة</a></li>
  <li><a href="../mondly_dict/dict.html">قاموس ماندلي</a></li>
-  
-
 </details>
  `;
 
