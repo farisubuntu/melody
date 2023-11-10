@@ -19,7 +19,7 @@ var state;
  */
 var selectedFont = 0;
 
-onload = function () {
+window.onload = function () {
  createStickyButtons();
  state = 4;
 }
@@ -95,30 +95,6 @@ function toggleCol(btn) {
  state--;
 }
 
-// create sticky buttons:
-function createStickyButtons() {
- console.log('createStickyButtons()...');
- var str = `<div class="btns-wrapper">
-   <button class="sticky-btn" onclick="changeFont();">تبديل الخط</button>
-   <button id="toggle" class="sticky-btn" onclick="toggleCol(this);">إخفاء</button>
-   <button id="home" class="sticky-btn"><a href="../index.html">الصفحة الرئيسية </a></button>
-   <details class="sticky-btn">
-<summary>روابط</summary>
- <li><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
- <li><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
- <li><a href="../others/important_vocabularies.html">كلمات مهمة</a></li>
- 
-</details>
-</div>
- `;
-
- var divBox = document.createElement('div');
- divBox.setAttribute('class', 'btns-wrapper');
- divBox.innerHTML = str;
- var location = document.querySelector('.page-header');
- location.insertAdjacentElement("afterend", divBox);
-
-}
 
 function changeFont() {
  console.log('changeFont() ');
@@ -147,3 +123,42 @@ words.forEach(function (i){
 });
 
 */
+
+// create sticky buttons:
+
+/* <header class="page-header">
+<h1>قاموس ماندلي</h1>
+</header> */
+
+
+function createStickyButtons() {
+ console.log('createStickyButtons()...');
+ // count words,phrases:
+ var total_words=document.querySelectorAll('.word-target').length;
+ var total_phrases=document.querySelectorAll('.phrase-target').length;
+ var str = `
+
+ <nav class="sticky">
+  <ul class="list-inline">
+   <li class="menu-item" onclick="changeFont();">تبديل الخط</li>
+   <li class="menu-item" id="toggle" onclick="toggleCol(this);">إخفاء</li>
+   <li class="menu-item" id="home"><a href="../index.html">الصفحة الرئيسية </a></li>
+   <ul class="sub-list"> 
+     <li class="menu-item"><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
+     <li class="menu-item"><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
+     <li class="menu-item"><a href="../others/important_vocabularies.html">كلمات مهمة</a></li>
+   </ul>
+    <li>الكلمات :<span class="total-words"> ${total_words}</span>العبارات :<span class="total_phrases"> ${total_phrases}</span></li>
+  </ul>
+  
+ </nav>
+ `;
+
+ var divBox = document.createElement('div');
+ divBox.setAttribute('id','navbar');
+ divBox.innerHTML = str;
+ var location = document.querySelector('body');
+ // location.insertAdjacentElement("afterend", divBox);
+ location.prepend(divBox);
+}
+

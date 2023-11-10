@@ -1,98 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+
 html {
  font-size: 16px;
- margin-left: 10px;
- margin-right: 10px;
+ /* margin-left: 10px;
+ margin-right: 10px; */
 }
-
-/* ---- sticky buttons------ */
-
-
-.btns-wrapper {
- float: right;
-}
-
-.sticky-btn {
- border: 2px solid gray;
- cursor: pointer;
- padding: 2px 10px;
- font-size: 1rem;
- color: blue;
- background-color: black;
- opacity: 0.9;
-
-
-}
-
-.sticky-btn li a {
- color: blue;
- text-decoration: none;
-}
-
-.sticky-btn summary {
- width: auto;
-}
-
-/* 
-
-button#home {
- position: sticky;
- bottom: 20px;
- right: 20px;
-
-}
-
-.btns-wrapper .sticky-btn {
- border-radius: 15px;
- background-color: gold;
- color: green;
- font-size: 1.1rem;
- padding: 0 0.5rem;
-} */
-
-
 
 /* ----- images -------  */
 
 .image-wrapper {
- width: 60px;
+ background-color: white;
+ width: 120px;
+ border: 1px solid brown;
+ border-radius: 50px;
 }
 
 .image-wrapper>img {
  width: 100%;
+
+
 }
 
 /* ----- colors/fonts ------- */
 body {
  font-family: 'Noto Naskh Arabic', serif;
- background-image: url('primary_bg.jpeg');
+ background-color: white;
+ background-image: url('bg-3.jpeg');
+ background-size: 90% 400px;
+  background-position: left top;
 }
-
 .phrase-wrapper,
 .word-wrapper {
  border: 1px solid green;
 }
 
-
+.total-words,
+.total_phrases {
+ color: blue;
+ padding-right: 6px;
+ padding-left: 6px;
+}
 
 /* --------- layouts -----------*/
 
-
-body,
-.lesson-wrapper {
- display: flex;
- flex-direction: column;
- flex-wrap: wrap;
- flex: 1;
-}
-
 .lesson-wrapper {
  opacity: 1;
- color:greenyellow;
+ color: greenyellow;
  font-size: 1.2rem;
 }
 
-.lesson-wrapper > header{
+.lesson-wrapper>header {
  direction: ltr;
  opacity: 0.5;
 }
@@ -111,29 +68,21 @@ body,
 
 
 @media screen and (max-width:400px) {
- body {
-  background-color: gold;
- }
+ body {}
 
  .words-container,
- .phrases-container {
-  
- }
+ .phrases-container {}
 }
 
 @media screen and (max-width:600px) {
- body {
-  background-color: silver;
- }
+ body {}
 }
 
 @media screen and (min-width:800px) {
- body {
-  background-color: burlywood;
- }
+ body {}
 
- div[class~=target] {
-  color: brown;
+ div[class$="target"] {
+  color: yellow;
  }
 
 
