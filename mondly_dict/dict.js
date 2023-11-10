@@ -20,7 +20,8 @@ var state;
 var selectedFont = 0;
 
 window.onload = function () {
- createStickyButtons();
+ appendClasses();
+ createTopNav();
  state = 4;
 }
 console.log('starting script');
@@ -29,7 +30,7 @@ console.log('starting script');
 
 function toggle(col) {
  // if 0 => reload the page
- if(col == 0){
+ if (col == 0) {
   location.reload();
  }
  if (col == 1) {
@@ -62,7 +63,7 @@ function toggle(col) {
  }
 
  // hide all except '.word-wrapper'
- if(col==3){
+ if (col == 3) {
   document.querySelectorAll('.phrase-mother').forEach(function (i) {
    i.style.visibility = "visible";
   });
@@ -77,11 +78,11 @@ function toggle(col) {
   });
 
  }
-// hide all except '.phrase container'
- if(col==4)
- document.querySelectorAll('.words-container').forEach(function (i) {
-  i.style.visibility = "hidden";
- });
+ // hide all except '.phrase container'
+ if (col == 4)
+  document.querySelectorAll('.words-container').forEach(function (i) {
+   i.style.visibility = "hidden";
+  });
  document.querySelectorAll('.phases-container').forEach(function (i) {
   i.style.visibility = "visible";
  });
@@ -112,17 +113,21 @@ function changeFont() {
  }
 }
 
-// colorize word-wrappers which have an image child.
-/*
-var words=document.querySelectorAll('.word-wrapper');
-words.forEach(function (i){
-  if(i.querySelector('img')!==null){
-    i.style.color='blue';
-    
-  }
-});
 
-*/
+function appendClasses() {
+ // colorize word-wrappers which have an image child.
+ var words = document.querySelectorAll('.word-wrapper');
+ words.forEach(function (i) {
+  if (i.querySelector('img') !== null) {
+   i.style.color = 'blue';
+   i.setAttribute('class', 'word-wrapper has-image');
+  }
+  else {
+   i.setAttribute('class', 'word-wrapper no-image');
+  }
+ });
+}
+
 
 // create sticky buttons:
 
@@ -131,34 +136,75 @@ words.forEach(function (i){
 </header> */
 
 
-function createStickyButtons() {
+function createTopNav() {
  console.log('createStickyButtons()...');
  // count words,phrases:
- var total_words=document.querySelectorAll('.word-target').length;
- var total_phrases=document.querySelectorAll('.phrase-target').length;
+ var total_words = document.querySelectorAll('.word-target').length;
+ var total_phrases = document.querySelectorAll('.phrase-target').length;
  var str = `
+ <a href="#" class="active">قاموس مونج</a>
+ <a href="../index.html">الصفحة الرئيسية</a>
+ <a href="../others/personal_pronouns_chart.html">ملخص الضمائر الشخصية</a>
+ <a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a>
+ <a href="../others/important_vocabularies.html">كلمات مهمة</li>
+ <a href="javascript:void(0);" class="icon" onclick="toggleTopNav()">
+   <i class="fa fa-bars"></i>
+ </a>
 
- <nav class="sticky">
-  <ul class="list-inline">
-   <li class="menu-item" onclick="changeFont();">تبديل الخط</li>
-   <li class="menu-item" id="toggle" onclick="toggleCol(this);">إخفاء</li>
-   <li class="menu-item" id="home"><a href="../index.html">الصفحة الرئيسية </a></li>
-   <ul class="sub-list"> 
-     <li class="menu-item"><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
-     <li class="menu-item"><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
-     <li class="menu-item"><a href="../others/important_vocabularies.html">كلمات مهمة</a></li>
-   </ul>
-    <li class="counter">الكلمات :<span class="total-words"> ${total_words}</span>العبارات :<span class="total_phrases"> ${total_phrases}</span></li>
-  </ul>
-  
- </nav>
  `;
 
  var divBox = document.createElement('div');
- divBox.setAttribute('id','navbar');
+ divBox.setAttribute('id', 'myTopnav');
+ divBox.setAttribute('class','topnav');
  divBox.innerHTML = str;
  var location = document.querySelector('body');
  // location.insertAdjacentElement("afterend", divBox);
  location.prepend(divBox);
 }
 
+
+function createFooter(){
+ var str=`
+
+ `
+
+}
+
+
+
+
+
+function toggleTopNav(){
+ var x = document.getElementById("myTopnav");
+ if (x.className === "topnav") {
+   x.className += " responsive";
+ } else {
+   x.className = "topnav";
+ }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+ <nav class="sticky">
+  <ul class="list-inline">
+   <li class="menu-item" onclick="changeFont();">تبديل الخط</li>
+   <li class="menu-item" id="toggle" onclick="toggleCol(this);">إخفاء</li>
+   <li class="menu-item" id="home"><a href="../index.html">الصفحة الرئيسية </a></li>
+   <details class="sub-list"> 
+   <summary>روابط</summary>
+     <li class="menu-item"><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
+     <li class="menu-item"><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
+     <li class="menu-item"><a href="../others/important_vocabularies.html">كلمات مهمة</a></li>
+   </details>
+    <li class="counter">الكلمات :<span class="total-words"> ${total_words}</span>العبارات :<span class="total_phrases"> ${total_phrases}</span></li>
+  </ul>
+ </nav>
+*/

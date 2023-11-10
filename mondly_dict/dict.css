@@ -9,7 +9,7 @@ html {
 /* ----- images -------  */
 
 .image-wrapper {
- background-color: white;
+ background-color: whitesmoke;
  width: 120px;
  border: 1px solid brown;
  border-radius: 50px;
@@ -27,11 +27,14 @@ body {
  background-color: white;
  background-image: url('bg-3.jpeg');
  background-size: 90% 400px;
-  background-position: left top;
+ background-position: left top;
+ opacity: 1;
 }
+
 .phrase-wrapper,
 .word-wrapper {
  border: 1px solid green;
+
 }
 
 .total-words,
@@ -41,9 +44,15 @@ body {
  padding-left: 6px;
 }
 
+div[class$="target"] {
+ color: yellow;
+
+}
+
 /* --------- layouts -----------*/
 
 .lesson-wrapper {
+
  opacity: 1;
  color: greenyellow;
  font-size: 1.2rem;
@@ -52,37 +61,78 @@ body {
 .lesson-wrapper>header {
  direction: ltr;
  opacity: 0.5;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 }
 
 .words-container,
 .phrases-container {
  display: flex;
  flex-direction: column;
- flex: 1;
+
 }
 
+.image-wrapper {
+ width: 30px;
+}
 
+.word-wrapper,
+.phrase-wrapper {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+
+}
+
+div[class$="target"] {
+ color: yellow;
+
+}
+
+div[class$="mother"] {
+ color: white;
+}
 
 /* media queries */
+/* 
+  background-color: rgba(60,255,100,0.4);
+  background: linear-gradient(150deg, rgba(150,50,232,1) 0%, rgba(10,123,165,1) 0%, rgba(100,20,10,100) 100%);
+  color: #40081a;
+  opacity: 0.8;
+*/
 
+@media screen and (max-width:350px) {
 
-@media screen and (max-width:400px) {
+ .word-wrapper,
+ .phrase-wrapper {
+  flex: 1 1 100%;
+ }
 
-}
-@media screen and (max-width:600px) {
- div[class$="target"] {
-  color: red;
-  
+ .word-wrapper > .word-target,
+ .word-wrapper > .word-mother
+ {
+  font-size: 0.9rem;
+  flex:1 1 50%;
+ }
+
+ .word-wrapper,
+ .phrase-wrapper {
+  justify-content: space-between;
  }
 }
+
+@media screen and (max-width:600px) {}
 
 @media screen and (min-width:800px) {
- body {}
-
  div[class$="target"] {
   color: yellow;
-
+  font-size: 1rem;
  }
 
+ div[class$="mother"] {
+  font-size: 1rem;
+ }
 
 }
