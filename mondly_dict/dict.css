@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
 
 html {
- font-size: 16px;
+ font-size: 14px;
  /* margin-left: 10px;
  margin-right: 10px; */
 }
@@ -26,19 +26,17 @@ body {
  font-family: 'Noto Naskh Arabic', serif;
  background-color: white;
  background-image: url('bg-3.jpeg');
- background-size: 90% 400px;
- background-position: left top;
- opacity: 1;
-}
-
-.phrase-wrapper,
-.word-wrapper {
- border: 1px solid green;
+ background-size: contain;
+ resize: both;
+ /* background-position: left top; */
 
 }
+
+
 
 .total-words,
 .total_phrases {
+
  color: blue;
  padding-right: 6px;
  padding-left: 6px;
@@ -52,15 +50,11 @@ div[class$="target"] {
 /* --------- layouts -----------*/
 
 .lesson-wrapper {
-
- opacity: 1;
- color: greenyellow;
- font-size: 1.2rem;
+ color: white;
 }
 
 .lesson-wrapper>header {
  direction: ltr;
- opacity: 0.5;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -81,18 +75,49 @@ div[class$="target"] {
 .word-wrapper,
 .phrase-wrapper {
  display: flex;
- justify-content: space-around;
+ justify-content: space-between;
  align-items: center;
+ border-top: 1px solid white;
 
+}
+
+.word-wrapper:hover,
+.phrase-wrapper:hover {
+ font-size: 1.2rem;
+ background-color: teal;
+}
+
+.image-wrapper:hover {
+ width: 160px;
+}
+
+.has-image:hover {
+ line-height: 1rem;
 }
 
 div[class$="target"] {
  color: yellow;
-
+ font-size: 1.4rem;
 }
 
 div[class$="mother"] {
  color: white;
+ font-size: 1.4rem;
+}
+.image-wrapper{
+ 
+}
+
+.word-target,
+.word-mother,
+.phrase-target,
+.phrase-mother {
+ padding-right: 0.4rem;
+}
+
+.lesson-title {
+ font-size: 0.6rem;
+ direction: ltr;
 }
 
 /* media queries */
@@ -103,36 +128,79 @@ div[class$="mother"] {
   opacity: 0.8;
 */
 
-@media screen and (max-width:350px) {
+
+@media screen and (max-width:450px) {
+
+ .word-wrapper,
+ .phrase-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  /* change this for phrases font size */
+ }
 
  .word-wrapper,
  .phrase-wrapper {
   flex: 1 1 100%;
  }
 
- .word-wrapper > .word-target,
- .word-wrapper > .word-mother
- {
-  font-size: 0.9rem;
-  flex:1 1 50%;
+ .word-target,
+ .word-mother,
+ .phrase-target,
+ .phrase-mother {
+  flex: 1 1 20%;
  }
 
- .word-wrapper,
- .phrase-wrapper {
-  justify-content: space-between;
+ .has-image>.word-target,
+ .has-image>.word-mother {
+  flex: 2 1 20%;
  }
-}
 
-@media screen and (max-width:600px) {}
-
-@media screen and (min-width:800px) {
+ .word-wrapper.has-image>.image-wrapper {
+  flex: 3 1 20%;
+ }
  div[class$="target"] {
   color: yellow;
-  font-size: 1rem;
+  font-size: 1.6rem;
+ }
+ 
+ div[class$="mother"] {
+  color: white;
+  font-size: 1.6rem;
+ }
+ .image-wrapper{
+  width:15%;
  }
 
+}
+
+@media screen and (max-width:700px) {
+ div[class$="target"] {
+  color: yellow;
+  font-size: 1.6rem;
+ }
+ 
  div[class$="mother"] {
-  font-size: 1rem;
+  color: white;
+  font-size: 1.6rem;
+ }
+ .image-wrapper{
+  width:15%;
+ }
+
+}
+
+@media screen and (width>700px) {
+ div[class$="target"] {
+  color: yellow;
+  font-size: 2rem;
+ }
+ 
+ div[class$="mother"] {
+  color: white;
+  font-size: 2rem;
+ }
+ .image-wrapper{
+  width:15%;
  }
 
 }

@@ -142,11 +142,14 @@ function createTopNav() {
  var total_words = document.querySelectorAll('.word-target').length;
  var total_phrases = document.querySelectorAll('.phrase-target').length;
  var str = `
- <a href="#" class="active">قاموس مونج</a>
+ <a href="#" class="active">قاموس موندلي</a>
  <a href="../index.html">الصفحة الرئيسية</a>
  <a href="../others/personal_pronouns_chart.html">ملخص الضمائر الشخصية</a>
  <a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a>
- <a href="../others/important_vocabularies.html">كلمات مهمة</li>
+ <a href="../others/important_vocabularies.html">كلمات مهمة</a>
+ <hr>
+ <button href="#" onclick="changeFont();">تغيير الخط</button>
+ <button href="#" onclick="toggleCol(this);">إخفاء</button>
  <a href="javascript:void(0);" class="icon" onclick="toggleTopNav()">
    <i class="fa fa-bars"></i>
  </a>
