@@ -211,7 +211,7 @@ flex-wrap: wrap;
   justify-content: center;
  
  }
- .btn{
+ .btn,.box-2{
   width: 100%;
  }
 }
