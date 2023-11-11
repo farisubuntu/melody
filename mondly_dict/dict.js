@@ -137,7 +137,10 @@ function appendClasses() {
 
 
 function createTopNav() {
- console.log('createStickyButtons()...');
+ console.log('createTopNav()...');
+ console.log('count words/phrases');
+ var words_total=document.querySelectorAll('.word-wrapper').length;
+ var phrases_total=document.querySelectorAll('.phrase-wrapper').length;
  // count words,phrases:
  var total_words = document.querySelectorAll('.word-target').length;
  var total_phrases = document.querySelectorAll('.phrase-target').length;
@@ -153,7 +156,7 @@ function createTopNav() {
  <a href="javascript:void(0);" class="icon" onclick="toggleTopNav()">
    <i class="fa fa-bars"></i>
  </a>
-
+ <a href="javascript:void(0);"><span class="totals">الكلمات: ${words_total}, العبارات : ${phrases_total}</span></a>
  `;
 
  var divBox = document.createElement('div');

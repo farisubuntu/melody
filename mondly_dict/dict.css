@@ -34,10 +34,8 @@ body {
 
 
 
-.total-words,
-.total_phrases {
-
- color: blue;
+.totals{
+ color: yellow;
  padding-right: 6px;
  padding-left: 6px;
 }
