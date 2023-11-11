@@ -87,6 +87,8 @@ function toggle(col) {
   i.style.visibility = "visible";
  });
 }
+
+
 function toggleCol(btn) {
  console.log(state);
  if (state < 0) {
@@ -104,12 +106,17 @@ function changeFont() {
   document.querySelectorAll('.word-target').forEach(function (i) {
    i.style.fontFamily = "Noto Nastaliq Urdu, serif";
   });
+  document.querySelectorAll('.phrase-target').forEach(function (i) {
+   i.style.fontFamily = "Noto Nastaliq Urdu, serif";
+  });
  } else {
   selectedFont = 0;
   document.querySelectorAll('.word-target').forEach(function (i) {
    i.style.fontFamily = "Noto Naskh Arabic, serif";
   });
-
+  document.querySelectorAll('.phrase-target').forEach(function (i) {
+   i.style.fontFamily = "Noto Naskh Arabic, serif";
+  });
  }
 }
 
@@ -139,55 +146,35 @@ function appendClasses() {
 function createTopNav() {
  console.log('createTopNav()...');
  console.log('count words/phrases');
- var words_total=document.querySelectorAll('.word-wrapper').length;
- var phrases_total=document.querySelectorAll('.phrase-wrapper').length;
+ var words_total = document.querySelectorAll('.word-wrapper').length;
+ var phrases_total = document.querySelectorAll('.phrase-wrapper').length;
  // count words,phrases:
  var total_words = document.querySelectorAll('.word-target').length;
  var total_phrases = document.querySelectorAll('.phrase-target').length;
+
  var str = `
- <a href="#" class="active">قاموس موندلي</a>
- <a href="../index.html">الصفحة الرئيسية</a>
- <a href="../others/personal_pronouns_chart.html">ملخص الضمائر الشخصية</a>
- <a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a>
- <a href="../others/important_vocabularies.html">كلمات مهمة</a>
+ <button class="sticky-btn" onclick="changeFont();">تبديل الخط</button>
+ <button id="toggle" class="sticky-btn" onclick="toggleCol(this);">إخفاء</button>
+ <button id="home" class="sticky-btn"><a href="../index.html">الصفحة الرئيسية </a></button>
  <hr>
- <button href="#" onclick="changeFont();">تغيير الخط</button>
- <button href="#" onclick="toggleCol(this);">إخفاء</button>
- <a href="javascript:void(0);" class="icon" onclick="toggleTopNav()">
-   <i class="fa fa-bars"></i>
- </a>
- <a href="javascript:void(0);"><span class="totals">الكلمات: ${words_total}, العبارات : ${phrases_total}</span></a>
- `;
+ <p class="counter"><span>كلمات: ${words_total}</span><span> عبارات: ${phrases_total}</span></p>
+ <details class="sticky-btn">
+<summary>جداول</summary>
+<li><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
+<li><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
+<li><a href="../others/important_vocabularies.html">كلمات مهمة</a></li>
+<li><a href="../mondly_dict/dict.html">قاموس ماندلي</a></li>
+</details>
+`;
 
  var divBox = document.createElement('div');
- divBox.setAttribute('id', 'myTopnav');
- divBox.setAttribute('class','topnav');
+ divBox.setAttribute('class', 'btns-wrapper');
  divBox.innerHTML = str;
- var location = document.querySelector('body');
- // location.insertAdjacentElement("afterend", divBox);
- location.prepend(divBox);
-}
-
-
-function createFooter(){
- var str=`
-
- `
+ var location = document.querySelector('#media-bar');
+ location.insertAdjacentElement("afterend", divBox);
 
 }
 
-
-
-
-
-function toggleTopNav(){
- var x = document.getElementById("myTopnav");
- if (x.className === "topnav") {
-   x.className += " responsive";
- } else {
-   x.className = "topnav";
- }
-}
 
 
 

@@ -6,6 +6,40 @@ html {
  margin-right: 10px; */
 }
 
+/* menu */
+.btns-wrapper {
+ position: fixed;
+ top: 20px;
+ left: 10px;
+ padding: 10px 20px;
+ border-radius: 10px;
+ cursor: pointer;
+ transition: 0.3s ease;
+}
+button#home {
+ position: sticky;
+ bottom: 20px;
+ right: 20px;
+
+}
+
+.btns-wrapper .sticky-btn {
+ border-radius: 15px;
+ background-color: gold;
+ color: green;
+ font-size: 1.1rem;
+ padding: 0 0.5rem;
+}
+
+p.counter{
+ color:green;
+ background-color: white;
+}
+.counter span{
+ color:blue;
+}
+
+
 /* ----- images -------  */
 
 .image-wrapper {
