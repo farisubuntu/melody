@@ -15,7 +15,13 @@ html {
  border-radius: 10px;
  cursor: pointer;
  transition: 0.3s ease;
+ opacity: 0.7;
+ order: 1;
+ /* box-shadow */
+ -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -34px 11px 26px 1px rgba(0, 0, 0, 0);
+ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -34px 11px 26px 1px rgba(0, 0, 0, 0);
 }
+
 button#home {
  position: sticky;
  bottom: 20px;
@@ -31,12 +37,13 @@ button#home {
  padding: 0 0.5rem;
 }
 
-p.counter{
- color:green;
+p.counter {
+ color: green;
  background-color: white;
 }
-.counter span{
- color:blue;
+
+.counter span {
+ color: blue;
 }
 
 
@@ -68,7 +75,7 @@ body {
 
 
 
-.totals{
+.totals {
  color: yellow;
  padding-right: 6px;
  padding-left: 6px;
@@ -136,9 +143,8 @@ div[class$="mother"] {
  color: white;
  font-size: 1.4rem;
 }
-.image-wrapper{
- 
-}
+
+.image-wrapper {}
 
 .word-target,
 .word-mother,
@@ -190,17 +196,19 @@ div[class$="mother"] {
  .word-wrapper.has-image>.image-wrapper {
   flex: 3 1 20%;
  }
+
  div[class$="target"] {
   color: yellow;
   font-size: 1.6rem;
  }
- 
+
  div[class$="mother"] {
   color: white;
   font-size: 1.6rem;
  }
- .image-wrapper{
-  width:15%;
+
+ .image-wrapper {
+  width: 15%;
  }
 
 }
@@ -210,13 +218,14 @@ div[class$="mother"] {
   color: yellow;
   font-size: 1.6rem;
  }
- 
+
  div[class$="mother"] {
   color: white;
   font-size: 1.6rem;
  }
- .image-wrapper{
-  width:15%;
+
+ .image-wrapper {
+  width: 15%;
  }
 
 }
@@ -226,13 +235,14 @@ div[class$="mother"] {
   color: yellow;
   font-size: 2rem;
  }
- 
+
  div[class$="mother"] {
   color: white;
   font-size: 2rem;
  }
- .image-wrapper{
-  width:15%;
+
+ .image-wrapper {
+  width: 15%;
  }
 
 }

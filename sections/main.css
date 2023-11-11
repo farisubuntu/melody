@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+@import url('snow.css');
 /* ---------- */
 html {
  font-size: 16px;
@@ -6,7 +7,7 @@ html {
 
 body {
  font-family: 'Noto Naskh Arabic', serif;
- background-color: rgb(38, 35, 31);
+ background-image:url(icons/bg-4.png);
  display: flex;
  flex-direction: column;
  padding: 0.3rem;
@@ -26,70 +27,66 @@ body {
 
 body header {
  text-align: center;
- background-color: teal;
- color: white;
+ color: #FFFFFF;
+ background: #333333;
+ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+ color: #FFFFFF;
 }
 
-.list {
- display: flex;
- flex-direction: column;
- padding-right: 5px;
-}
+
+/* -------------------------- */
 
 .target {
- color: blue;
- flex: 50%;
+ color:yellow!important;
+ font-size: 1.3rem;
+ flex: 1;
  border-bottom: 1px solid silver;
  padding-right: 1rem;
 }
 
 .mother {
- color: green;
- flex: 50%;
+ color: white!important;
+ font-size: 1.3rem;
+ flex: 1;
  border-bottom: 1px solid silver;
  padding-right: 1rem;
- background-color: azure;
-
+ /* background-color: azure; */
 }
 
 .text {
  display: flex;
+ justify-content: space-around;
+ border:1px solid silver;
 }
 
 .text:hover {
- background-color: yellow;
+ background-color: blue;
  font-size: larger;
 }
 
 .words.is-content-card {
- background-color: beige;
-}
-
-.verbs {
- display: flex;
- flex-direction: column;
 
 }
+
 
 
 .verb-name {
- font-size: 2rem;
  text-align: center;
- padding: 1rem;
- background-color: honeydew;
- margin-top: 1rem;
- margin-bottom: 1rem;
+ 
+
+}
+.verb-name > .inner span {
+ color:green;
+ font-size: 1.5rem;
+ border:1px 
 }
 
-.verb-name>* {
- flex: 1;
-}
 
 .verb-tenses-container {
  display: flex;
  flex-direction: column;
- justify-content: center;
-
+ border:10px solid #30282D;
+ 
 }
 
 .verb-titles {
@@ -97,47 +94,20 @@ body header {
 }
 
 .sep {
- height: 5px;
- background-color: goldenrod;
+display: none;
 }
 
 .verb-tenses {
  display: flex;
- flex-direction: column;
- /* width: 100%; */
- text-align: center;
+ flex-wrap: wrap;
+ /* justify-content: stretch; */
 }
 
 .tense {
- background-color: #F6F1F4;
+ /* background-image: url(''); */
  display: flex;
  justify-content: space-around;
- align-items: center;
-}
-
-
-.tense .conj {
- flex: 5;
- align-self: center;
-
-}
-
-.tense p.title {
- flex: 2;
- border: 2px solid blue;
- border-radius: 15px;
- background-color: indianred;
- color: white;
-}
-
-.conj-inner *:hover {
- background-color: yellow;
- font-size: large;
-}
-
-.conj {
- background-color: lightgrey;
- border: 1px solid blue;
+ flex: 1;
 }
 
 #media-bar {
@@ -166,6 +136,8 @@ body header {
  font-size: 1.3rem;
 }
 
+
+
 .btns-wrapper {
  position: fixed;
  top: 20px;
@@ -174,6 +146,11 @@ body header {
  border-radius: 10px;
  cursor: pointer;
  transition: 0.3s ease;
+ opacity: 0.7;
+ order: 1;
+ /* box-shadow */
+ -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -34px 11px 26px 1px rgba(0, 0, 0, 0);
+ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -34px 11px 26px 1px rgba(0, 0, 0, 0);
 }
 
 button#home {
@@ -203,41 +180,38 @@ audio {
 /* top video player */
 .op-player {
  /* height: 30px; */
- width: 100%;
- max-height: 5rem;
+ width: 90%;
+ height: 4em;
+ /* max-height: 5rem; */
+ 
 }
 
-.video-wrapper video {
- background-image: url('icons/video_player_bg.png');
+/* ---------- video/audio ----------- */
+
+/*------------------*/
+
+
+.conj.tense-0{
+ background-color:whtite;
+ background-image: url('icons/past-1.png');
 
 }
+
+.conj.tense-1{
+ background-color:whtite;
+ background-image: url('icons/present');
+
+}
+.conj.tense-2{
+ background-color:whtite;
+ background-image: url('icons/future-2.png');
+
+}
+
 
 @media screen and (max-width:500px) {
  .target {
   flex: 1 1 50%;
-  /* flex:6 4 10%; */
-  /* padding: unset; */
-  /* font-size: 16px; */
  }
-
- .mother {
-  /* flex:6 3 10%; */
-  /* padding: unset; */
-  /* font-size: 16px; */
- }
-
- p.title {
-  /* flex:1 1 20px; */
-
- }
-
- .word-inner {
-  font-size: larger;
- }
-
- .conj.mother,
- .conj.target {
-  flex: 1 1 40%;
- }
-
 }
+

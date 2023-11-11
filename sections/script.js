@@ -15,6 +15,7 @@ var selectedFont = 0;
 onload = function () {
  createStickyButtons();
  appendTenseTitles();
+ appendClasses();
  state = 2;
 }
 console.log('starting script');
@@ -25,21 +26,25 @@ function appendTenseTitles() {
   for (var k = 0; k < 3; k++) {
    var tense = verb_tenses[i].children[k];
 
-   var elem = document.createElement('p');
-   elem.setAttribute('class', 'title');
-
+   var elem = document.createElement('div');
+   
+   
+   
    var node = '';
    if (k == 0) {
-    node = document.createTextNode('الماضي');
+    node=`<img src="https://farisubuntu.github.io/mondly/sections/icons/past.png" />`;
    }
    if (k == 1) {
-    node = document.createTextNode('الحاضر');
+    node=`<img src="https://farisubuntu.github.io/mondly/sections/icons/present.png" />`;
+    
    }
    if (k == 2) {
-    node = document.createTextNode('المستقبل');
+    node=`<img src="https://farisubuntu.github.io/mondly/sections/icons/future.png" />`;
+ 
    }
-   elem.appendChild(node);
-   tense.append(elem);
+   elem.setAttribute('class', `conj tense-${k}`);
+   elem.innerHTML=node;
+   tense.prepend(elem);
   }
 
  }
@@ -221,3 +226,13 @@ function getSectionVariables() {
 
  }
 
+function appendClasses(){
+ // append 'snow' class to .is-content-card-wraper
+ var elements=document.querySelectorAll('.is-content-card-wrapper:first-child');
+ console.log('elements.lenght= ',elements.length);
+
+ elements[0].className="snow";
+ elements[3].className="snow";
+ elements[5].className="snow";
+
+ }
