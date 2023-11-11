@@ -15,7 +15,7 @@ var selectedFont = 0;
 onload = function () {
  createStickyButtons();
  appendTenseTitles();
- appendClasses();
+ // appendClasses();
  state = 2;
 }
 console.log('starting script');
