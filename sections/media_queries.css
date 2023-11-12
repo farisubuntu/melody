@@ -1,0 +1,5 @@
+@media screen and (max-width:500px) {
+ .target {
+  flex: 1 1 50%;
+ }
+}
