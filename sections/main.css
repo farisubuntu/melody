@@ -5,23 +5,12 @@
  box-sizing: border-box;
 }
 body {
-<<<<<<< HEAD
- min-width: 400px;
- 
- font-family: 'Noto Naskh Arabic', serif;
- background-image: url(icons/bg-4.png);
- display: flex;
- flex-direction: column;
- justify-content: stretch;
- align-items: center;
-=======
  /* min-width: 400px; */
  width:98vw;
  text-align: center;
  padding:1rem;
  font-family: 'Noto Naskh Arabic', serif;
  background-image: url(icons/bg-4.png);
->>>>>>> dev
  padding: 0;
  margin: 0;
 }
@@ -52,79 +41,6 @@ body header {
 
 /* -------------------------- */
 
-<<<<<<< HEAD
-.target {
- color: yellow !important;
- border-bottom: 1px solid silver;
- padding-right: 1rem;
-}
-
-.mother {
- color: white !important;
- border-bottom: 1px solid silver;
- padding-right: 1rem;
- /* background-color: azure; */
-}
-
-.text {
- display: flex;
- justify-content: space-around;
- border: 1px solid silver;
-}
-
-.text:hover {
- background-color: blue;
-}
-
-
-
-.verb-name {
- /* text-align: center; */
- color: white;
- background-color: red;
- border: solid black;
- border-width: 0 3px 3px 0;
- opacity: 0.6;
- display: inline-block;
- margin-top: 2rem;
- padding: 1rem;
- /* transform: rotate(45deg); */
- /* -webkit-transform: rotate(45deg); */
- border-radius: 50%;
-
-}
-
-.verb-name>.inner {
- border: 1px solid green;
-}
-
-
-
-.verb-tenses-container {
- display: flex;
- flex-direction: column;
- border: 10px solid gold;
-}
-
-.verb-titles {
- display: none;
-}
-
-.sep {
- display: none;
-}
-
-.verb-tenses {
-
-
-.tense {
- display: flex;
- flex:1;
-
-}
-=======
-
->>>>>>> dev
 
 #media-bar {
  display: flex;
@@ -202,39 +118,6 @@ audio {
 
 /* ------------------------ */
 
-<<<<<<< HEAD
-
-.conj.tense-0 {
- background-color: white;
- display: flex;
- justify-content: center;
- flex: 1;
-}
-
-.conj.tense-1 {
- background-color: white;
- flex: 1;
- display: flex;
- justify-content: center;
-}
-
-.conj.tense-2 {
- background-color: white;
- flex: 1;
- display: flex;
- justify-content: center;
-}
-
-.tense img {
- width: 100%;
-}
-
-
-@media screen and (width > 400px) {
-
- .tense {
-  flex-direction: column;
-=======
 .target {
  color: yellow !important;
  border-bottom: 1px solid silver;
@@ -336,7 +219,6 @@ audio {
 
 @media screen and (width <=800px) {
  div.verb-tenses {
->>>>>>> dev
  }
  .tense>.target,
  .tense>.mother {
