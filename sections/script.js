@@ -107,8 +107,7 @@ function createStickyButtons() {
  var divBox = document.createElement('div');
  divBox.setAttribute('class', 'btns-wrapper');
  divBox.innerHTML = str;
- var location = document.querySelector('#media-bar');
- location.insertAdjacentElement("afterend", divBox);
+ document.body.prepend(divBox);
 
 }
 
