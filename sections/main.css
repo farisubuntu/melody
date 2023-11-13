@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
 /* @import url('snow.css'); */
 /* ---------- */
-
+*{
+ box-sizing: border-box;
+}
 body {
+<<<<<<< HEAD
  min-width: 400px;
  
  font-family: 'Noto Naskh Arabic', serif;
@@ -11,10 +14,21 @@ body {
  flex-direction: column;
  justify-content: stretch;
  align-items: center;
+=======
+ /* min-width: 400px; */
+ width:98vw;
+ text-align: center;
+ padding:1rem;
+ font-family: 'Noto Naskh Arabic', serif;
+ background-image: url(icons/bg-4.png);
+>>>>>>> dev
  padding: 0;
  margin: 0;
 }
 
+main{
+
+}
 .page-header header {
  color: white;
  background-color: #3D588C;
@@ -38,6 +52,7 @@ body header {
 
 /* -------------------------- */
 
+<<<<<<< HEAD
 .target {
  color: yellow !important;
  border-bottom: 1px solid silver;
@@ -107,6 +122,9 @@ body header {
  flex:1;
 
 }
+=======
+
+>>>>>>> dev
 
 #media-bar {
  display: flex;
@@ -181,10 +199,10 @@ audio {
 
 }
 
-/* ---------- video/audio ----------- */
 
-/*------------------*/
+/* ------------------------ */
 
+<<<<<<< HEAD
 
 .conj.tense-0 {
  background-color: white;
@@ -216,6 +234,109 @@ audio {
 
  .tense {
   flex-direction: column;
+=======
+.target {
+ color: yellow !important;
+ border-bottom: 1px solid silver;
+ padding-inline-start: 1rem;
+}
+
+.mother {
+ color: white !important;
+ border-bottom: 1px solid silver;
+ padding-inline-start: 1rem;
+ /* background-color: azure; */
+}
+
+.text {
+ border: 1px solid silver;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+}
+
+.text:hover {
+ background-color: blue;
+ font-size: larger;
+}
+
+.text > .target{
+ text-align: right;
+ border-left:1px solid green;
+}
+
+.text > .mother{
+ text-align: right;
+}
+
+.verb-name {
+ /* text-align: center; */
+ color: white;
+ background-color: red;
+ border: solid black;
+ border-width: 0 3px 3px 0;
+ opacity: 0.8;
+ display: inline-block;
+ margin-top: 2rem;
+ padding: 1rem;
+ transform: rotate(30deg);
+ -webkit-transform: rotate(20deg);
+ border-radius: 50%;
+ font-size: larger;
+}
+
+.verb-name>.inner {
+ border: 1px solid green;
+}
+
+
+
+.verb-titles {
+ display: none;
+}
+
+.sep {
+ display: none;
+}
+
+.verb-tenses {
+
+ /* flex-wrap:nowrap; */
+}
+
+.tense {
+ display: grid;
+ grid-template-columns: 2rem 2fr 2fr;
+ border:1px dashed red;
+}
+
+.tense > .conj{
+}
+
+.conj.tense-0 {
+ background-color: white;
+}
+
+.conj.tense-1 {
+ background-color: white;
+}
+
+.conj.tense-2 {
+ background-color: white;
+}
+
+.tense img {
+ width: 100%;
+}
+
+
+@media screen and (width <=1100px) {
+
+
+}
+
+@media screen and (width <=800px) {
+ div.verb-tenses {
+>>>>>>> dev
  }
  .tense>.target,
  .tense>.mother {
