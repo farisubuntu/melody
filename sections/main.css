@@ -210,7 +210,10 @@ audio {
 .tense img {
  width: 100%;
 }
-
+.tense>.target,
+.tense>.mother {
+ background-color: black;
+}
 
 @media screen and (width <=1100px) {
 
@@ -220,10 +223,7 @@ audio {
 @media screen and (width <=800px) {
  div.verb-tenses {
  }
- .tense>.target,
- .tense>.mother {
-  background-color: black;
- }
+
 
 }
 
