@@ -1,0 +1,340 @@
+/* ****************************** 
+ * Button-54    
+
+*/
+.button-54 {
+ font-size: 16px;
+ /* letter-spacing: 2px; */
+ text-decoration: none;
+ text-transform: uppercase;
+ color: #000;
+ cursor: pointer;
+ border: 3px solid;
+ padding: 0.25em 0.5em;
+ box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+ position: relative;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+}
+
+.button-54:active {
+ box-shadow: 0px 0px 0px 0px;
+ top: 5px;
+ left: 5px;
+}
+
+@media (min-width: 768px) {
+ .button-54 {
+   padding: 0.25em 0.75em;
+ }
+}
+
+/* ************************************************************************ 
+ * Button-14   
+*/
+/*
+<button class="button-14" role="button">
+  <div class="button-14-top text">Button 14</div>
+  <div class="button-14-bottom"></div>
+  <div class="button-14-base"></div>
+</button>
+*/
+/* CSS */
+.button-14 {
+  touch-action: manipulation;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  border-width: 0;
+  padding: 0 8px 12px;
+  min-width: 10em;
+  box-sizing: border-box;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.button-14-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  padding: 8px 16px;
+  transform: translateY(0);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, .25);
+  transition-property: transform;
+  transition-duration: .2s;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.button-14:active .button-14-top {
+  transform: translateY(6px);
+}
+
+.button-14-top::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  background-image: radial-gradient(#cd3f64, #9d3656);
+  text-align: center;
+  color: #fff;
+  box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, .2), 0 1px 2px 1px rgba(255, 255, 255, .2);
+  transition-property: border-radius, padding, width, transform;
+  transition-duration: .2s;
+}
+
+.button-14:active .button-14-top::after {
+  border-radius: 6px;
+  padding: 0 2px;
+}
+
+.button-14-bottom {
+  position: absolute;
+  z-index: -1;
+  bottom: 4px;
+  left: 4px;
+  border-radius: 8px / 16px 16px 8px 8px;
+  padding-top: 6px;
+  width: calc(100% - 8px);
+  height: calc(100% - 10px);
+  box-sizing: content-box;
+  background-color: #803;
+  background-image: radial-gradient(4px 8px at 4px calc(100% - 8px), rgba(255, 255, 255, .25), transparent), radial-gradient(4px 8px at calc(100% - 4px) calc(100% - 8px), rgba(255, 255, 255, .25), transparent), radial-gradient(16px at -4px 0, white, transparent), radial-gradient(16px at calc(100% + 4px) 0, white, transparent);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5), inset 0 -1px 3px 3px rgba(0, 0, 0, .4);
+  transition-property: border-radius, padding-top;
+  transition-duration: .2s;
+}
+
+.button-14:active .button-14-bottom {
+  border-radius: 10px 10px 8px 8px / 8px;
+  padding-top: 0;
+}
+
+.button-14-base {
+  position: absolute;
+  z-index: -2;
+  top: 4px;
+  left: 0;
+  border-radius: 12px;
+  width: 100%;
+  height: calc(100% - 4px);
+  background-color: rgba(0, 0, 0, .15);
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, .75), inset 0 2px 2px rgba(0, 0, 0, .25);
+}
+
+
+/* ********************************
+ * Button-85
+*/
+
+/* CSS */
+.button-85 {
+ padding: 0.6em 2em;
+ border: none;
+ outline: none;
+ color: rgb(255, 255, 255);
+ background: #111;
+ cursor: pointer;
+ position: relative;
+ z-index: 0;
+ border-radius: 10px;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+}
+
+.button-85:before {
+ content: "";
+ background: linear-gradient(
+   45deg,
+   #ff0000,
+   #ff7300,
+   #fffb00,
+   #48ff00,
+   #00ffd5,
+   #002bff,
+   #7a00ff,
+   #ff00c8,
+   #ff0000
+ );
+ position: absolute;
+ top: -2px;
+ left: -2px;
+ background-size: 400%;
+ z-index: -1;
+ filter: blur(5px);
+ -webkit-filter: blur(5px);
+ width: calc(100% + 4px);
+ height: calc(100% + 4px);
+ animation: glowing-button-85 20s linear infinite;
+ transition: opacity 0.3s ease-in-out;
+ border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+ 0% {
+   background-position: 0 0;
+ }
+ 50% {
+   background-position: 400% 0;
+ }
+ 100% {
+   background-position: 0 0;
+ }
+}
+
+.button-85:after {
+ z-index: -1;
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background: #222;
+ left: 0;
+ top: 0;
+ border-radius: 10px;
+}
+/* *********************************************
+ * Button-73
+*/
+/* CSS */
+.button-73 {
+ appearance: none;
+ background-color: #FFFFFF;
+ border-radius: 40em;
+ border-style: none;
+ box-shadow: #ADCFFF 0 -12px 6px inset;
+ box-sizing: border-box;
+ color: #000000;
+ cursor: pointer;
+ display: inline-block;
+ font-family: -apple-system,sans-serif;
+ font-size: 1rem;
+ font-weight: 700;
+ /* letter-spacing: -.24px; */
+ margin: 0;
+ outline: none;
+ padding: 1rem 0.5rem;
+ quotes: auto;
+ text-align: center;
+ text-decoration: none;
+ transition: all .15s;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+}
+
+.button-73:hover {
+ background-color: #FFC229;
+ box-shadow: #FF6314 0 -6px 8px inset;
+ transform: scale(1.125);
+}
+
+.button-73:active {
+ transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+ .button-73 {
+   font-size: 1.1rem;
+   padding: 0.2rem 0.1rem;
+ }
+}
+/* ************************************************
+ * Button-26
+********* /
+
+<!-- HTML !-->
+<button class="button-26" role="button">
+  <div class="button-26__content">
+    <span class="button-26__text text">
+      Button 26
+    </span>
+  </div>
+</button>
+
+/* CSS */
+.button-26 {
+ background: blue;
+ border: 2px solid #888;
+ /* font-size: 18px; */
+ cursor: pointer;
+ border-radius: 10px;
+ outline: none;
+ padding: 0;
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15), 5px 14px 20px rgba(0, 0, 0, 0.15);
+ transition: all 0.1s ease-in-out;
+}
+.button-26__content {
+ padding: 0.5rem 0.5rem;
+ border-radius: 8px;
+ box-shadow: inset 0 -6px #d5d7de, 0 -2px #ffffff;
+ transition: all 0.1s ease-in-out;
+}
+.button-26__text {
+ color: #fff;
+ display: block;
+ transform: translate3d(0, -4px, 0);
+ transition: all 0.1s ease-in-out;
+}
+.button-26:active {
+ box-shadow: none;
+}
+.button-26:active .button-26__content {
+ box-shadow: none;
+}
+.button-26:active .button-26__text {
+ transform: translate3d(0, 0, 0);
+}
+/* *******************************************************************
+
+<!-- HTML !-->
+<button class="button-44" role="button">
+  <span class="text">Button 44</span>
+</button>
+
+/* CSS */
+.button-44 {
+ background: #4162a8;
+ border-top: 1px solid #38538c;
+ border-right: 1px solid #1f2d4d;
+ border-bottom: 1px solid #151e33;
+ border-left: 1px solid #1f2d4d;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+ -moz-box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+ box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+ color: #fff;
+ font-family: 'Noto Naskh Arabic',serif;
+ /* line-height: 1; */
+ padding: 10px 0 12px 0;
+ text-align: center;
+ text-shadow: 0px -1px 1px #1e2d4d;
+ width: 150px;
+ -webkit-background-clip: padding-box;
+}
+
+.button-44:hover {
+ -webkit-box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+ -moz-box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+ box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+ cursor: pointer;
+}
+
+.button-44:active {
+ -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+ -moz-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+ box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+ transform: translateY(4px);
+}
