@@ -13,11 +13,11 @@ body {
  background-image: url(icons/bg-4.png);
  padding: 0;
  margin: 0;
+ background-size: contain;
+ resize: both;
 }
 
-main{
 
-}
 .page-header header {
  color: white;
  background-color: #3D588C;

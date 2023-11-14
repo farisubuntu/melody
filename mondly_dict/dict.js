@@ -126,10 +126,11 @@ function appendClasses() {
  var words = document.querySelectorAll('.word-wrapper');
  words.forEach(function (i) {
   if (i.querySelector('img') !== null) {
-   i.style.color = 'blue';
+ 
    i.setAttribute('class', 'word-wrapper has-image');
   }
   else {
+
    i.setAttribute('class', 'word-wrapper no-image');
   }
  });
