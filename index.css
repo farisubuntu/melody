@@ -30,6 +30,9 @@ section#buttons-wrapper{
  display: grid;
 
 }
+div.conj.tense-0{
+ max-width:10%;
+}
 
 @media screen and (width>400px)
 {
