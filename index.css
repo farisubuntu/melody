@@ -1,5 +1,6 @@
 @import url('./w3pro.css');
-
+@import url('buttons.css');
+@import url('nav.css');
 body{
  font-size:16px;
  /* background-image: url('main-ink-black-wallpaper.jpg'); */
@@ -27,6 +28,7 @@ section#buttons-wrapper{
 }
 .nav-wrapper{
  display: grid;
+
 }
 
 @media screen and (width>400px)
@@ -36,12 +38,15 @@ section#buttons-wrapper{
  }
  section#buttons-wrapper{
   grid-template-columns: 1fr 1fr;
+  
  } 
  .top-menu .nav-wrapper{
   grid-template-columns: 1fr 1fr;
   row-gap: 1rem;
  }
-
+ main{
+ /* margin-top: 20vw;  */
+ }
 }
 @media screen and (width>700px){
  section#buttons-wrapper{
