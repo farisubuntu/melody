@@ -14,7 +14,7 @@ main{
 }
 
 button{
- padding:0.1rem;
+
 }
 button > a{
  all:unset;
@@ -25,11 +25,7 @@ section{
  background-color: black;
 }
 /* footer{
- display: flex;
- justify-content: space-around;
 
- background-color: black;
-} */
 /* CSS */
 .button-73 {
   appearance: none;
@@ -181,13 +177,13 @@ section{
  position: fixed;
  height: auto;
  top:0;
- /* bottom: 0px; */
+ bottom: 0px;
  left: 0px;
  right: 0.2rem;
  margin-bottom: 0;
 }
 .footer > button{
- font-size: 12px;
+ /* font-size: 12px; */
 
 }
 
