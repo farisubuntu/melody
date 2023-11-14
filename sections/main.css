@@ -18,11 +18,14 @@ body {
 }
 
 
-.page-header header {
- color: white;
- background-color: #3D588C;
- border-radius: 15px 30px;
- margin-bottom: 1rem;
+.page-header{
+ background-image: url('../mondly-logo.jpeg');
+ color:green!important;
+}
+
+.page-header > h1
+{
+font-size: 2rem;
 }
 
 .btn,
