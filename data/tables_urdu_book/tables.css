@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+html{
+
+}
+
+body {
+text-align: center;
+}
+
+
+ .bg-primary{
+  background-color: green;
+ }
+ text-white{
+  color:white;
+ }
+ .chapter-sec{
+  max-width:98%;
+ }
+ 
+ .table-hover tr:hover{
+  background-color: skyblue;
+  color:white;
+  font-size: 1.1rem;
+ }
+
+ .table-bordered td{
+  border:1px solid black;
+ }
+table.w3-table{
+ margin:1rem;
+}
+ .w3-table,thead,tbody{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ table tr{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+ }
+tr td{
+ font-size: 1.2rem;
+  flex:1 1 33%;
+ }
