@@ -5,13 +5,12 @@
 
 body{
  font-family: 'Noto Nash Arabic',serif;
- text-align: center;
 }
-[dir=rtl]{
+[dir="rtl"]{
  color:brown;
  direction: rtl;
 }
-#main{
+main{
  border: 3px solid gold;
  width: 100%;
  height: fit-content;
@@ -42,9 +41,26 @@ img.size-full{
  height: 200px;
 
 }
+
+
 .w3-table-all td{
  border:1px solid silver;
+ 
 }
+.w3-table-all thead,.w3-table-all thead{
+ background-color: teal;
+
+ }
+
+ tr {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+ }
+ tr:hover{
+  font-size: 1.2rem;
+ }
+
 
  .c-5-15-80,
 .c-5-15-80 thead,.c-5-15-80 tbody {
