@@ -2201,9 +2201,6 @@ var ch3=`<div class="part-wrapper" id="part-chapter-3-family-wrapper">
    </div>
    <p dir="rtl"" lang="ur"><strong>!شکریہ</strong></p>
   </div>
-
-
-
  </div>
 
 </div>`;

@@ -5,6 +5,11 @@
 
 body{
  font-family: 'Noto Nash Arabic',serif;
+ text-align: center;
+}
+[dir=rtl]{
+ color:brown;
+ direction: rtl;
 }
 #main{
  border: 3px solid gold;
