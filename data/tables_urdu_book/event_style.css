@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
 @import url('chapters/w3.css');
 @import url('button-44.css');
-
+@import url('tables.css');
 
 main{
  margin-top:3rem;
+ background-image: url('night.jpg');
+ background-color: white;
 }
