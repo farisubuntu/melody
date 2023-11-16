@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+@import url('chapters/w3.css');
+@import url('button-44.css');
+@import url('tables.css');
+
+body{
+ font-family: 'Noto Nash Arabic',serif;
+}
+#main{
+ border: 3px solid gold;
+ width: 100%;
+ height: fit-content;
+ margin-top:3rem;
+ background-image: url('black_clouds.avif');
+ background-color: white;
+ /* text-align:center; */
+}
+
+
+
+/* colors */
+h1{
+ color:white;
+ 
+}
+h2{
+ color:green;
+ border:2px solid silver;
+}
 
 img{
   width:150px;
@@ -22,5 +51,8 @@ img.size-full{
   grid-template-columns: 5% 15% 80%;
  }
  .w3-table-all{
-  direction: rtl;
+  direction: ltr;
+  text-align: center;
  }
+
+ 
