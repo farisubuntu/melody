@@ -1,3 +1,7 @@
+onload=function(){
+ cleanLayoutStyles();
+ 
+}
 var navButtons = document.querySelector('.nav-btns');
 var active = 'button-44 active';
 var inactive = 'button-44 inactive';
@@ -10,7 +14,6 @@ function buildNav(button) {
  }
  button.classList = active;
 }
-
 function showContent(n, sender) {
  buildNav(sender);
  switch (n) {
@@ -42,6 +45,20 @@ function showContent(n, sender) {
    ch_content_wrapper.innerHTML = "Press to show chapter content";
    break;
  }
-
+ cleanLayoutStyles();
+ styleElements();
 }
 
+// remove inline width,height
+function cleanLayoutStyles() {
+ var allMainElements = [...document.body.querySelectorAll('#chapter-wrapper *')];
+ allMainElements.forEach(e => e.removeAttribute('style'));
+}
+
+// style elements
+function styleElements(){
+ var textboxes=document.querySelectorAll('.textbox--examples');
+ textboxes.forEach(function(i){
+  i.classList +=' w3-panel w3-pale-green w3-bottombar w3-border-green w3-border';
+ });
+}

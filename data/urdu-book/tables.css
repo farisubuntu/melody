@@ -3,11 +3,14 @@
 @import url('button-44.css');
 @import url('tables.css');
 
+
+
+
 body{
  font-family: 'Noto Nash Arabic',serif;
 }
 [dir="rtl"]{
- color:brown;
+ color:red;
  direction: rtl;
 }
 main{
@@ -15,21 +18,23 @@ main{
  width: 100%;
  height: fit-content;
  margin-top:3rem;
- background-image: url('black_clouds.avif');
- background-color: white;
- /* text-align:center; */
+ 
 }
+
 
 
 
 /* colors */
 h1{
  color:white;
+ background-color: #5577E1;
+ padding:0.2rem;
  
 }
 h2{
  color:green;
  border:2px solid silver;
+ padding-inline-start: 0.2rem;
 }
 
 img{
@@ -41,15 +46,27 @@ img.size-full{
  height: 200px;
 
 }
-
-
-.w3-table-all td{
- border:1px solid silver;
+h1 > img{
+ background-color: white;
+}
+li,div > p,tr p{
+ font-size: 1.1rem;
  
 }
-.w3-table-all thead,.w3-table-all thead{
- background-color: teal;
 
+ tr p{
+  color:black;
+ }
+
+table{
+}
+.w3-table-all td{
+ border:1px solid grey;
+ font-size: 1.3rem;
+ padding:0.5rem;
+ }
+.w3-table-all thead tr,.w3-table-all thead tr{
+ background-color: teal;
  }
 
  tr {
@@ -75,5 +92,6 @@ img.size-full{
   direction: ltr;
   text-align: center;
  }
+
 
  
