@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+@import url('w3.css');
+@import url('button-44.css');
+@import url('tables.css');
+
+
+
+
+body{
+ font-family: 'Noto Nash Arabic',serif;
+}
+
+.nav-btns{
+ margin:1rem 15%;
+}
+main{
+ border: 3px solid gold;
+ width: 100%;
+ height: fit-content;
+ margin-top:2rem;
+ 
+}
+
+
+
+
+/* colors */
+h1{
+ color:white;
+ background-color: #5577E1;
+ padding:0.2rem;
+ 
+}
+h2{
+ color:green;
+ border:2px solid silver;
+ padding-inline-start: 0.2rem;
+}
+
+img{
+  width:150px;
+  height: 150px;
+ }
+img.size-full{
+ width:250px;
+ height: 200px;
+
+}
+h1 > img{
+ background-color: white;
+}
+li,div > p,tr p{
+ font-size: 1.1rem;
+ 
+}
+
+ tr p{
+  color:black;
+ }
+
+.w3-table-all td,.no-lines td{
+ border:1px solid grey;
+ font-size: 1.3rem;
+ padding:0.5rem;
+ border:1px solid black;
+ }
+
+thead,.thead,thead td{
+ font-size: 1.1rem;
+ padding:1rem;
+ text-align: center;
+ }
+ thead *,.thead *{
+background-color: teal;
+color:white;
+
+ }
+
+ tr {
+border:1px solid black;
+  padding:0.4rem;
+
+ }
+ p:hover{
+  font-size: 1.3rem;
+  color:red;
+  background-color: yellow;
+ }
+ tr:hover{
+  font-size: 1.2rem;
+  color:black!important;
+  background-color:yellow!important;
+  padding:2rem;
+ }
+
+td{
+ padding:0.2rem;
+}
+
+ .w3-table-all{
+  direction: ltr;
+  text-align: center;
+ }
+
+
+ [dir="rtl"]{
+  color:red;
+  direction: rtl;
+  text-align: right;
+ }
