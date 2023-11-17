@@ -13,6 +13,9 @@ body{
  color:red;
  direction: rtl;
 }
+.nav-btns{
+ margin:1rem 15%;
+}
 main{
  border: 3px solid gold;
  width: 100%;
