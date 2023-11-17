@@ -1,5 +1,6 @@
 onload=function(){
  cleanLayoutStyles();
+
  
 }
 var navButtons = document.querySelector('.nav-btns');
@@ -62,3 +63,6 @@ function styleElements(){
   i.classList +=' w3-panel w3-pale-green w3-bottombar w3-border-green w3-border';
  });
 }
+// function animateLeft(){
+//  document.querySelector('#chapter-wrapper').classList.add('w3-animate-left');
+// }

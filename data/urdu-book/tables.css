@@ -9,10 +9,7 @@
 body{
  font-family: 'Noto Nash Arabic',serif;
 }
-[dir="rtl"]{
- color:red;
- direction: rtl;
-}
+
 .nav-btns{
  margin:1rem 15%;
 }
@@ -63,10 +60,11 @@ li,div > p,tr p{
 
 table{
 }
-.w3-table-all td{
+.w3-table-all td,.no-lines td{
  border:1px solid grey;
  font-size: 1.3rem;
  padding:0.5rem;
+ border:1px solid black;
  }
 
 thead,.thead,thead td{
@@ -81,10 +79,14 @@ color:white;
  }
 
  tr {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+border:1px solid black;
   padding:0.4rem;
 
+ }
+ p:hover{
+  font-size: 1.3rem;
+  color:red;
+  background-color: yellow;
  }
  tr:hover{
   font-size: 1.2rem;
@@ -103,4 +105,8 @@ td{
  }
 
 
- 
+ [dir="rtl"]{
+  color:red;
+  direction: rtl;
+  text-align: right;
+ }

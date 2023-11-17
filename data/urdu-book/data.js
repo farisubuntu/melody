@@ -1082,7 +1082,7 @@ var ch3=`<div class="part-wrapper" id="part-chapter-3-family-wrapper">
    <p><a href="https://openbooks.lib.msu.edu/app/uploads/sites/69/2021/09/Chapter-3.3-Activity.pdf" data-url="https://openbooks.lib.msu.edu/app/uploads/sites/69/2021/09/Chapter-3.3-Activity.pdf">Chapter 3.3 Pre Reading Activity</a></p>
    <h2><strong>Reading</strong></h2>
    <p>Please read the following text aloud.</p>
-   <table style="border-collapse: collapse;width: 100%">
+   <table class="w3-right" style="border-collapse: collapse;width: 100%">
     <tbody>
      <tr>
       <td style="width: 100%">
