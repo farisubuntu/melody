@@ -68,29 +68,35 @@ table{
  font-size: 1.3rem;
  padding:0.5rem;
  }
-.w3-table-all thead tr,.w3-table-all thead tr{
- background-color: teal;
+
+thead,.thead,thead td{
+ font-size: 1.1rem;
+ padding:1rem;
+ text-align: center;
+ }
+ thead *,.thead *{
+background-color: teal;
+color:white;
+
  }
 
  tr {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  padding:0.4rem;
 
  }
  tr:hover{
   font-size: 1.2rem;
+  color:black!important;
+  background-color:yellow!important;
+  padding:2rem;
  }
 
+td{
+ padding:0.2rem;
+}
 
- .c-5-15-80,
-.c-5-15-80 thead,.c-5-15-80 tbody {
-  display: flex;
-  flex-direction: column;
- }
- .c-5-15-80 tr{
-  display: grid;
-  grid-template-columns: 5% 15% 80%;
- }
  .w3-table-all{
   direction: ltr;
   text-align: center;

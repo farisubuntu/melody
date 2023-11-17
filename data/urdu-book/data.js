@@ -5865,7 +5865,7 @@ var ch6=`<div class="part-wrapper" id="part-chapter-6-wrapper">
    <h2 dir="rtl"" lang="ur"><strong>میرا پسندیدہ کھانا اوراسے بنانے کا طریقہ</strong></h2>
    <p><strong>Context:</strong> Umer and Ayesha are talking about their favorite foods during their lunch break. Umer tells Ayesha about his favorite food and its recipe.</p>
    <table class="no-lines" style="border-collapse: collapse;width: 100%">
-    <tbody>
+    <tbody class="thead">
      <tr>
       <td style="width: 43.9783%"><strong>English</strong></td>
       <td style="width: 48.5792%">
