@@ -193,8 +193,7 @@ audio {
  border:1px dashed red;
 }
 
-.tense > .conj{
-}
+
 
 .conj.tense-0 {
  background-color: white;
@@ -216,18 +215,28 @@ audio {
  background-color: black;
 }
 
-@media screen and (width <=1100px) {
+@media screen and (width < 450px){
+ div.btns-wrapper{
+  text-align: center;
+ }
+ div.btns-wrapper .sticky-btn {
+  padding:4px;
+  font-size: x-small;
+  color:blue;
+ }
+}
+
+@media screen and (width <= 1100px) {
 
 
 }
 
-@media screen and (width <=800px) {
- div.verb-tenses {
+@media screen and (width > 450px) {
+ div.btns-wrapper .sticky-btn {
+  padding:4px;
+  font-size: medium;
+  color:blue;
  }
 
-
 }
 
-@media screen and (width <=800px) {
-
-}
