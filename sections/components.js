@@ -19,5 +19,7 @@ var floatButtons = `
 var buttonBar=`
 <div id="button-bar">
 <button class="feedback" onclick="toggleVerbs(this);">بدون الأفعال</button>
+<button class="feedback" onclick="toggleTheme(this);">تغيير الثيم</button>
+
 </div>
 `;

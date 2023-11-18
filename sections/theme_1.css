@@ -1,0 +1,94 @@
+
+body  {
+ background-image: none;
+ background-size: inherit;
+ resize: initial;
+}
+
+.page-header {
+ background-image: none;
+}
+
+
+
+body header {
+ background: white;
+ /* text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00; */
+ color: green;
+}
+
+
+/* -------------------------- */
+
+
+
+.wrapper .audio-no {
+ color: initial;
+}
+
+
+
+
+.btns-wrapper .sticky-btn {
+ border:1px solid black;
+
+ background-color: white;
+ color: green;
+
+}
+
+
+
+.target * {
+ color: red;
+
+}
+
+.mother {
+ color: blue; 
+}
+
+.text:hover {
+ background-color: yellow;
+ 
+}
+
+.text>.target {
+ border-left: 1px solid green;
+}
+
+.verb-name {
+ color: green;
+ background-color: white;
+}
+
+.tense {
+ border: 1px dashed red;
+ 
+}
+
+.tense>.target,
+.tense>.mother {
+ background-color: white;
+ border:1px solid black;
+}
+
+.conj.tense-0 {
+ background-color: white;
+}
+
+.conj{
+ background-color: white;
+}
+
+
+
+
+.target .conj-inner b{
+ color:brown;
+ 
+
+}
+.mother .conj-inner b{
+ color:blue;
+}

@@ -1,5 +1,7 @@
-@media screen and (max-width:500px) {
- .target {
-  flex: 1 1 50%;
- }
+*{
+ background-color: white;
+ color:initial;
+}
+body{
+ background-color: ;
 }

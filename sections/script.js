@@ -236,6 +236,7 @@ function toggleVerbs(sender) {
   document.querySelectorAll('.verbs').forEach(function name(e) {
    e.style.display = 'none';
   });
+  sender.innerText="الأفعال";
   verbs = 0;
  }
  else {
@@ -243,5 +244,26 @@ function toggleVerbs(sender) {
    e.style.display = 'initial';
   });
   verbs = 1;
+  sender.innerText="بدون الأفعال";
+
  }
 }
+
+
+/* ---------------------------------------------- */
+var theme1=document.createElement('link');
+theme1.setAttribute('rel','stylesheet');
+theme1.setAttribute('href','theme_1.css');
+theme1
+var currentTheme=1; // black-initial
+function toggleTheme(sender){
+if(currentTheme==1){
+ document.head.appendChild(theme1);
+ currentTheme=0;
+}
+ else{
+document.head.removeChild(theme1);
+  currentTheme=1;
+ }
+}
+// -------------------------------------------------------
