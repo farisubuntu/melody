@@ -1,31 +1,420 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
- <link rel="manifest" href="/site.webmanifest">
- <title>plusToggle Button Example</title>
-</head>
-
-<body>
- <h4>plusToggle Button Example</h4>
-
- <div class="sticky">
-  <div class="centered">
-   <div class="plus" id="plus">
-    <div class="plus__line plus__line--v">
-     <a href="#" class="plus__link">بدون الأفعال</a>
-     <a href="#" class="plus__link">كلمات فقط</a>
-     <!-- <a href="#" class="plus__link-note">ملاحظة</a> -->
-     <a href="#" class="plus__link">جُمل فقط</a>
-    </div>
-    <div class="plus__line plus__line--h"></div>
-   </div>
-  </div>
+<div class="all">
+ <div class="cat">
+  <div class="cat-title">مرحبا"</div>
+  <div class="lesson">أسرتي"</div>
+  <div class="lesson">التحيات"</div>
+  <div class="lesson">مقابلة الناس"</div>
+  <div class="lesson">أنا لدي ..."</div>
+  <div class="lesson">أنا أشرب ..."</div>
+  <div class="lesson">المقدمات"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">مرحبًا"</div>
  </div>
-</body>
-</html>
+ <div class="cat">
+  <div class="cat-title">الأسرة"</div>
+  <div class="lesson">الوالدان والأطفال"</div>
+  <div class="lesson">الأسرة والحيوانات الأليفة"</div>
+  <div class="lesson">الأجداد"</div>
+  <div class="lesson">الأسرة والأصدقاء"</div>
+  <div class="lesson">الأقارب"</div>
+  <div class="lesson">أسرتي"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">أسرتي"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">‫البلدان واللغات‬"</div>
+  <div class="lesson">اللغات 1"</div>
+  <div class="lesson">اللغات 2"</div>
+  <div class="lesson">اللغات 3"</div>
+  <div class="lesson">الجنسيات"</div>
+  <div class="lesson">من أين أنت؟"</div>
+  <div class="lesson">البلدان والمدن"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">سعدتُ بلقائك!"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">الرومانسية"</div>
+  <div class="lesson">الإطراءات"</div>
+  <div class="lesson">العلاقات"</div>
+  <div class="lesson">الزواج"</div>
+  <div class="lesson">استقبال زفاف"</div>
+  <div class="lesson">الخروج 1"</div>
+  <div class="lesson">الخروج 2"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">طلب الخروج مع أحدهم"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">الطعام والمشروبات"</div>
+  <div class="lesson">الفاكهة"</div>
+  <div class="lesson">المشروبات"</div>
+  <div class="lesson">الطعام"</div>
+  <div class="lesson">الخضروات"</div>
+  <div class="lesson">الوجبات"</div>
+  <div class="lesson">قائمة التسوق"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">قائمة التسوق"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">الطقس"</div>
+  <div class="lesson">ألوان الطبيعة"</div>
+  <div class="lesson">كيف الطقس اليوم؟"</div>
+  <div class="lesson">الطقس والملابس"</div>
+  <div class="lesson">الفصول"</div>
+  <div class="lesson">الفصل المفضل"</div>
+  <div class="lesson">الفصول والملابس"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">الطقس"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">السفر"</div>
+  <div class="lesson">الاتجاهات"</div>
+  <div class="lesson">حول المدينة"</div>
+  <div class="lesson">استكشاف الطبيعة"</div>
+  <div class="lesson">في الفندق"</div>
+  <div class="lesson">عند الاستقبال"</div>
+  <div class="lesson">الوصول والمغادرة"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">حول المدينة"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">‫أنشطة العطلات‬"</div>
+  <div class="lesson">في إجازة"</div>
+  <div class="lesson">جولة بالقارب"</div>
+  <div class="lesson">عند الشاطئ"</div>
+  <div class="lesson">ارتياد المعالم"</div>
+  <div class="lesson">الفن"</div>
+  <div class="lesson">في حديقة الحيوانات"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">خطط الإجازة"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">‫الإعداد للسفر‬"</div>
+  <div class="lesson">وجهات العطلات"</div>
+  <div class="lesson">قائمة المهام"</div>
+  <div class="lesson">في وكالة السفر"</div>
+  <div class="lesson">رحلة شتوية"</div>
+  <div class="lesson">حزم الأمتعة 1"</div>
+  <div class="lesson">حزم الأمتعة 2"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">خطط العطلة"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">‫المواصلات العامة"</div>
+  <div class="lesson">وسائل النقل"</div>
+  <div class="lesson">تذاكر القطار"</div>
+  <div class="lesson">الاتجاهات"</div>
+  <div class="lesson">في الحافلة"</div>
+  <div class="lesson">في المترو"</div>
+  <div class="lesson">في سيارة الأجرة"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">في محطة القطار"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">الحيوانات"</div>
+  <div class="lesson">الحيوانات"</div>
+  <div class="lesson">الحيوانات الأليفة 1"</div>
+  <div class="lesson">الحيوانات الأليفة 2"</div>
+  <div class="lesson">حيوانات المزرعة"</div>
+  <div class="lesson">في حديقة الحيوانات 1"</div>
+  <div class="lesson">في حديقة الحيوانات 2"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">في محل الحيوانات الأليفة"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">الترفيه"</div>
+  <div class="lesson">في السينما 1"</div>
+  <div class="lesson">في السينما 2"</div>
+  <div class="lesson">في المسرح"</div>
+  <div class="lesson">في حفلة موسيقية"</div>
+  <div class="lesson">أعياد الميلاد"</div>
+  <div class="lesson">حفلة عيد ميلاد"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">حفلة موسيقية"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">‫التسوق‬"</div>
+  <div class="lesson">المحلات"</div>
+  <div class="lesson">قائمة التسوق"</div>
+  <div class="lesson">حقائب اليد"</div>
+  <div class="lesson">في محل الملابس 1"</div>
+  <div class="lesson">في محل الملابس 2"</div>
+  <div class="lesson">طرق الدفع"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">مفاجأة تسوق"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">‫فى البيت‬"</div>
+  <div class="lesson">أين تعيشون؟"</div>
+  <div class="lesson">ما أجمل المنزل!"</div>
+  <div class="lesson">أجزاء من البيت"</div>
+  <div class="lesson">غرف البيت"</div>
+  <div class="lesson">في الغرفة"</div>
+  <div class="lesson">في متجر المفروشات"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">استئجار بيت"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">قواعد 1"</div>
+  <div class="lesson">أفعال الكينونة"</div>
+  <div class="lesson">صيغ المُلكية"</div>
+  <div class="lesson">المُلكية"</div>
+  <div class="lesson">المضارع"</div>
+  <div class="lesson">الضمائر"</div>
+  <div class="lesson">أين ...؟"</div>
+  <div class="lesson">null</div>
+  <<div class="lesson">div
+ </div>
+ <div class="cat">
+  <div class="cat-title">قواعد 2"</div>
+  <div class="lesson">العادات والروتين"</div>
+  <div class="lesson">الماضي 1"</div>
+  <div class="lesson">الماضي 2"</div>
+  <div class="lesson">المستقبل"</div>
+  <div class="lesson">الاتجاهات"</div>
+  <div class="lesson">أنا أود ..."</div>
+  <div class="lesson">null</div>
+  <<div class="lesson">div
+ </div>
+ <div class="cat">
+  <div class="cat-title">قواعد 3"</div>
+  <div class="lesson">الإضافة"</div>
+  <div class="lesson">المقارنات"</div>
+  <div class="lesson">التفضيل"</div>
+  <div class="lesson">المستقبل: التنبؤات والقرارات"</div>
+  <div class="lesson">الجميع ولا أحد"</div>
+  <div class="lesson">السبب والتأثير"</div>
+  <div class="lesson">null</div>
+  <<div class="lesson">div
+ </div>
+ <div class="cat">
+  <div class="cat-title">المفردات الأساسية"</div>
+  <div class="lesson">مقابلة الناس"</div>
+  <div class="lesson">هل يمكنني أن ...؟"</div>
+  <div class="lesson">من فضلك كرر"</div>
+  <div class="lesson">هل أنت تائه؟"</div>
+  <div class="lesson">أنا أحتاج إلى ..."</div>
+  <div class="lesson">في المتجر"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">هل تستطيع مساعدتي؟"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">المدرسة"</div>
+  <div class="lesson">اللوازم المدرسية"</div>
+  <div class="lesson">الكتب"</div>
+  <div class="lesson">في المدرسة"</div>
+  <div class="lesson">العمل الجماعي"</div>
+  <div class="lesson">الأنشطة اللامنهجية"</div>
+  <div class="lesson">المواد الدراسية"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">العمل الجماعي"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">‫الرياضة‬"</div>
+  <div class="lesson">الرياضات 1"</div>
+  <div class="lesson">الرياضات 2"</div>
+  <div class="lesson">مباراة كرة قدم"</div>
+  <div class="lesson">الحفاظ على النشاط"</div>
+  <div class="lesson">الرياضات المائية"</div>
+  <div class="lesson">منافسة رقص"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">جولة في المتنزه"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">مقدمات"</div>
+  <div class="lesson">تقديم نفسك"</div>
+  <div class="lesson">المهن"</div>
+  <div class="lesson">التحدث عن نفسك"</div>
+  <div class="lesson">أحب ولا أحب"</div>
+  <div class="lesson">الهوايات"</div>
+  <div class="lesson">ماذا تحب أن تشاهد؟"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">التعرف على بعضنا البعض"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">في المطار"</div>
+  <div class="lesson">حجز رحلة طيران 1"</div>
+  <div class="lesson">حجز رحلة طيران 2"</div>
+  <div class="lesson">الحجز: التغييرات"</div>
+  <div class="lesson">في المطار"</div>
+  <div class="lesson">مناطق المطار"</div>
+  <div class="lesson">تسجيل الوصول في المطار"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">حجز رحلة طيران"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">في الطائرة"</div>
+  <div class="lesson">الصعود 1"</div>
+  <div class="lesson">الصعود 2"</div>
+  <div class="lesson">إيضاحات السلامة"</div>
+  <div class="lesson">رسالة الكابتن"</div>
+  <div class="lesson">الخدمات على متن الطائرة"</div>
+  <div class="lesson">استرجاع حقائب السفر"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">على متن الطائرة"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">الفندق|الحجز"</div>
+  <div class="lesson">إجراء حجز"</div>
+  <div class="lesson">أنواع الغرف"</div>
+  <div class="lesson">المرافق"</div>
+  <div class="lesson">طلب المعلومات"</div>
+  <div class="lesson">متى ستصل؟"</div>
+  <div class="lesson">كم يكلف؟"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">حجز"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">الفندق|في الغرفه"</div>
+  <div class="lesson">تسجيل الوصول"</div>
+  <div class="lesson">طلب المعلومات"</div>
+  <div class="lesson">خدمات الفندق"</div>
+  <div class="lesson">في الغرفة"</div>
+  <div class="lesson">الشكاوى"</div>
+  <div class="lesson">تسجيل المغادرة"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">الشكاوى"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">مطعم 1‬"</div>
+  <div class="lesson">حجز مطعم"</div>
+  <div class="lesson">في المطعم"</div>
+  <div class="lesson">قائمة الطعام"</div>
+  <div class="lesson">طلب المشروبات 1"</div>
+  <div class="lesson">طلب المشروبات 2"</div>
+  <div class="lesson">طلب الطعام"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">الطلب في مطعم"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">مطعم 2‬"</div>
+  <div class="lesson">ماذا أستطيع أن أجلب لك؟"</div>
+  <div class="lesson">الحلويات"</div>
+  <div class="lesson">القيود الغذائية"</div>
+  <div class="lesson">الأواني"</div>
+  <div class="lesson">الإطراءات والشكاوى"</div>
+  <div class="lesson">الفاتورة"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">في المطعم"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">‫زيارة المدينة‬"</div>
+  <div class="lesson">جولة بالحافلة"</div>
+  <div class="lesson">في سيارة الأجرة"</div>
+  <div class="lesson">استئجار السيارات"</div>
+  <div class="lesson">في موقف السيارات"</div>
+  <div class="lesson">هل تستطيع أن تدلني على الطريق؟"</div>
+  <div class="lesson">زيارة متحف"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">استئجار سيارة"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">مصرف"</div>
+  <div class="lesson">في المصرف"</div>
+  <div class="lesson">ماكينة الصراف الآلي"</div>
+  <div class="lesson">المعاملات المصرفية"</div>
+  <div class="lesson">البطاقات"</div>
+  <div class="lesson">تفاصيل الحساب"</div>
+  <div class="lesson">طلب المساعدة"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">في المصرف"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">التجارة"</div>
+  <div class="lesson">أين تعمل؟"</div>
+  <div class="lesson">الوظائف"</div>
+  <div class="lesson">مقابلة عمل"</div>
+  <div class="lesson">في المكتب"</div>
+  <div class="lesson">المواعيد"</div>
+  <div class="lesson">الاجتماعات"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">مقابلة عمل"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">الترفيه"</div>
+  <div class="lesson">الدعوات 1"</div>
+  <div class="lesson">الدعوات 2"</div>
+  <div class="lesson">ماذا تحب أن تفعل؟"</div>
+  <div class="lesson">في الطبيعة"</div>
+  <div class="lesson">أنشطة ممتعة"</div>
+  <div class="lesson">الأصدقاء"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">الهوايات"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">!النجده"</div>
+  <div class="lesson">إلى المطار"</div>
+  <div class="lesson">أين ...؟"</div>
+  <div class="lesson">التذاكر"</div>
+  <div class="lesson">أحتاج بعض المساعدة"</div>
+  <div class="lesson">المركبات الخضراء"</div>
+  <div class="lesson">في مكتب البريد"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">هل تستطيع مساعدتي؟"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">الطواريء"</div>
+  <div class="lesson">حالة طارئة"</div>
+  <div class="lesson">جواز سفر مسروق"</div>
+  <div class="lesson">مكالمة طوارئ"</div>
+  <div class="lesson">قوة الطبيعة"</div>
+  <div class="lesson">على الطريق"</div>
+  <div class="lesson">الإصلاحات"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">حادث"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">‫عند الطبيب‬"</div>
+  <div class="lesson">أين المستشفى؟"</div>
+  <div class="lesson">عند طبيب الأسنان"</div>
+  <div class="lesson">التاريخ الطبي"</div>
+  <div class="lesson">‫أين موضع الألم؟‬"</div>
+  <div class="lesson">نمط الحياة"</div>
+  <div class="lesson">الإنفلوانزا"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">عند الطبيب"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">الأشياء والأرقام"</div>
+  <div class="lesson">الأشياء الثمينة"</div>
+  <div class="lesson">الأشياء اليومية"</div>
+  <div class="lesson">الأجهزة"</div>
+  <div class="lesson">الأشياء المدرسية"</div>
+  <div class="lesson">الأرقام 1"</div>
+  <div class="lesson">الأرقام 2"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">أسرِع!"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">الوقت والتقويم"</div>
+  <div class="lesson">ما الوقت الآن؟"</div>
+  <div class="lesson">عن الوقت"</div>
+  <div class="lesson">أيام الأسبوع 1"</div>
+  <div class="lesson">أيام الأسبوع 2"</div>
+  <div class="lesson">الشهور 1"</div>
+  <div class="lesson">الشهور 2"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">وضع الخطط"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">وضع الخطط"</div>
+  <div class="lesson">قرارات السنة الجديدة"</div>
+  <div class="lesson">حفلة عيد ميلاد"</div>
+  <div class="lesson">بعد العمل"</div>
+  <div class="lesson">الخطط مع الأصدقاء"</div>
+  <div class="lesson">السفر 1"</div>
+  <div class="lesson">السفر 2"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">حفلة عيد ميلاد"</div>
+ </div>
+ <div class="cat">
+  <div class="cat-title">تجارب الماضي"</div>
+  <div class="lesson">أين ترعرعت؟"</div>
+  <div class="lesson">حول البلدة"</div>
+  <div class="lesson">أمسية في الخارج"</div>
+  <div class="lesson">نحن تُهنا"</div>
+  <div class="lesson">الصيف الماضي"</div>
+  <div class="lesson">العمل والدراسة"</div>
+  <div class="lesson">null</div>
+  <div class="lesson">تجارب الماضي"</div>
+ </div>
+</div>
