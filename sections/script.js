@@ -236,7 +236,8 @@ function toggleVerbs(sender) {
   document.querySelectorAll('.verbs').forEach(function name(e) {
    e.style.display = 'none';
   });
-  sender.innerText="الأفعال";
+  sender.innerText="بدون الأفعال";
+
   verbs = 0;
  }
  else {
@@ -244,7 +245,8 @@ function toggleVerbs(sender) {
    e.style.display = 'initial';
   });
   verbs = 1;
-  sender.innerText="بدون الأفعال";
+  sender.innerText="الأفعال";
+
 
  }
 }
