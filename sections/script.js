@@ -15,6 +15,7 @@ var selectedFont = 0;
 onload = function () {
  createStickyButtons();
  appendTenseTitles();
+ embedVerbsShow();
  // appendClasses();
  state = 2;
 }
@@ -234,4 +235,11 @@ function appendClasses(){
  elements[3].className="snow";
  elements[5].className="snow";
 
+ }
+
+
+
+ function embedVerbsShow(){
+  var lessonHeader=document.querySelector('header.page-header');
+  
  }
