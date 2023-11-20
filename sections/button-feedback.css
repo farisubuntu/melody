@@ -13,9 +13,11 @@
 }
 
 #button-bar {
+ display: flex;
  position: fixed;
- bottom: -4px;
- right: 10px;
+ bottom: 20px;
+ left: 10px;
+ flex-direction: column;
 }
 
 @media screen and (width > 400px) {
