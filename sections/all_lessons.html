@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>المدرسة</title>
+<link rel="stylesheet" href="all_lessons.css">
+</head>
+<body>
+
+
+
 <div class="content">
 <div class="category" id="1">
  <header class="cat-header">مرحبا</header>
@@ -1017,3 +1030,16 @@
  </div>
 </div>
 </div>
+<script>
+onload=function (){
+var lessons=document.querySelectorAll('.cat-header');
+var counter=0;
+lessons.forEach(function name(e) {
+  e.innerHTML=`<span class='les-no'>${counter+1} </span>` + e.innerText;  
+  counter++;
+});
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  border: 1px solid green;
+  padding: 1rem;
+}
+
+.category {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+}
+
+header.cat-header {
+  background: teal;
+}
+
+.content {
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.lesson-wrapper {
+  display: flex;
+  flex: 1;
+  align-self: flex-start;
+}
+
+.lesson-wrapper {
+}
+
+header.lesson-name {}
+
+header.lesson-name {
+  border: 1px solid blue;
+}
+
+html {
+  direction: rtl;
+} 
