@@ -236,7 +236,7 @@ function toggleVerbs(sender) {
   document.querySelectorAll('.verbs').forEach(function name(e) {
    e.style.display = 'none';
   });
-  sender.innerText="بدون الأفعال";
+  sender.innerText="الأفعال";
 
   verbs = 0;
  }
@@ -245,7 +245,7 @@ function toggleVerbs(sender) {
    e.style.display = 'initial';
   });
   verbs = 1;
-  sender.innerText="الأفعال";
+  sender.innerText="بدون الأفعال";
 
 
  }
@@ -269,3 +269,11 @@ document.head.removeChild(theme1);
  }
 }
 // -------------------------------------------------------
+
+// topFunction button:
+function topFunction() {
+ // Get the button
+let mybutton = document.getElementById("myBtn");
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

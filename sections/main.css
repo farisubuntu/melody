@@ -7,6 +7,9 @@
 * {
  box-sizing: border-box;
 }
+ body {
+    overscroll-behavior-y: contain;
+ }
 
 body {
  /* min-width: 400px; */
@@ -227,9 +230,10 @@ audio {
  }
 
  div.btns-wrapper .sticky-btn {
-  padding: 2px;
-  font-size: 0.9rem;
-  color: blue;
+  padding: 4px;
+  font-size: 1.3rem;
+  color: #106DBD;
+  
  }
  .feedback{
   font-size: 0.9rem;
