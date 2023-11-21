@@ -12,17 +12,22 @@ var state;
  */
 var selectedFont = 0;
 
+
+
 onload = function() {
   createStickyButtons();
   appendTenseTitles();
   embedCollapseSide();
- embedVerbsShow();
+  embedVerbsShow();
 
   // appendClasses();
   state = 2;
 };
 console.log("starting script");
+
+
 function appendTenseTitles() {
+ console.log('appendTenseTitles() .....');
   var verb_tenses = document.querySelectorAll(".verb-tenses");
 
   for (var i = 0; i < verb_tenses.length; i++) {
@@ -232,29 +237,28 @@ function embedVerbsShow() {
 
 
 //  hide all verbs by default:
-// document.querySelectorAll(".verb-tenses-container").forEach(function name(e) { e.style.display = "none";});
-// document.querySelectorAll(".verbs").forEach(function name(e) {
-//  e.style.display = "none";
-// });
+document.querySelectorAll(".verbs").forEach(function name(e) {
+ e.style.display = "none";
+});
 
 var verbs = 0; // default, hidden.
 function toggleVerbs(sender) {
-  console.log("toggleVerbs() invoked");
+ 
+  console.log("toggleVerbs() invoked",sender);
   if (verbs == 1) {
-    document.querySelectorAll(".verb-tenses-container").forEach(function name(e) {
+    document.querySelectorAll(".verbs").forEach(function name(e) {
       e.style.display = "none";
     });
     sender.innerText = "الأفعال";
     verbs = 0;
   } else {
    
-    document.querySelectorAll(".verb-tenses-container").forEach(function name(e) {
+    document.querySelectorAll(".verbs").forEach(function name(e) {
       e.style.display = "initial";
     });
     verbs = 1;
     sender.innerText = "بدون الأفعال";
   }
-  // embedVerbsShow();
 }
 
 /* ---------------------------------------------- */
