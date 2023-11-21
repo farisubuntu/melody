@@ -21,7 +21,6 @@ onload = function () {
   appendClasses();
   embedCollapseSide();
 
-
   state = 4;
 };
 console.log("starting script");
@@ -144,8 +143,16 @@ function topFunction() {
 // **************** collapsedPanel   *************************
 
 /* Set the width of the sidebar to 250px (show it) */
+var menu_showed = 0;
 function openNav() {
-  document.getElementById("mySidepanel").style.width = "250px";
+  if (menu_showed == 0) {
+    menu_showed = 1;
+    document.getElementById("mySidepanel").style.width = "250px";
+    var myTimeout = setTimeout(closeNav, 2000);
+  } else {
+    menu_showed = 0;
+    closeNav();
+  }
 }
 
 /* Set the width of the sidebar to 0 (hide it) */
@@ -179,25 +186,28 @@ function embedCollapseSide() {
   collapsedSide.setAttribute("class", "sidePanelWrapper");
   collapsedSide.innerHTML = collapsedSidePanel();
   document.body.prepend(collapsedSide);
-  document.querySelector('#mySidepanel').addEventListener("mouseenter",mouseEnter);
-  document.querySelector('#mySidepanel').addEventListener("mouseleave",mouseLeave);
-
-
+  
 }
 
-function mouseEnter(){
+function mouseOut() {
+  console.log("mouse out event .....");
+}
+function focusEvent() {
+  console.log("focus .....");
+}
+function mouseEnter() {
   console.log("mouse Enter...");
 }
-function mouseLeave(){
-  console.log('mouse Leave');
+function mouseLeave() {
+  console.log("mouse Leave");
   closeNav();
 }
+function blurEvent() {
+  console.log("blurEvent ......");
+}
 
-
-
-function menuClose(){
-  console.log('menuClose() ....mouse action');
+function menuClose() {
+  console.log("menuClose() ....mouse action");
   // self.opener=this;
   // self.close();
-  
 }
