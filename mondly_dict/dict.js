@@ -149,6 +149,7 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
+
 function collapsedSidePanel(){
  var words_total = document.querySelectorAll(".word-wrapper").length;
  var phrases_total = document.querySelectorAll(".phrase-wrapper").length;
