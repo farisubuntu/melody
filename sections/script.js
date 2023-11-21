@@ -15,11 +15,8 @@ var selectedFont = 0;
 onload = function() {
   createStickyButtons();
   appendTenseTitles();
-  embedVerbsShow();
   embedCollapseSide();
-
-  // hide verbs by default:
-  // toggleVerbs(hidden_elem);
+ embedVerbsShow();
 
   // appendClasses();
   state = 2;
@@ -103,13 +100,18 @@ function changeFont() {
   if (selectedFont == 0) {
     selectedFont = 1;
     document.querySelectorAll(".text .target").forEach(function(i) {
-      i.style.fontFamily = "Noto Nastaliq Urdu, serif";
-    });
+      i.style.fontFamily = "Noto Nastaliq Urdu, serif";});
+    document.querySelectorAll(".text .target").forEach(function(i) {
+     i.style.lineHeight=3;});
+
   } else {
     selectedFont = 0;
     document.querySelectorAll(".text .target").forEach(function(i) {
       i.style.fontFamily = "Noto Naskh Arabic, serif";
     });
+    document.querySelectorAll(".text .target").forEach(function(i) {
+     i.style.lineHeight=1;
+   });
   }
 }
 
@@ -217,36 +219,42 @@ function embedCollapseSide() {
   collapsedSide.style.position = "fixed";
   collapsedSide.style.top = "10px";
   collapsedSide.style.right = "5px";
-  document.body.append(collapsedSide);
+  document.body.prepend(collapsedSide);
 }
 
 function embedVerbsShow() {
   var buttonsContainer = document.createElement("div");
   buttonsContainer.innerHTML = buttonBar;
-  document.body.append(buttonsContainer);
+  buttonsContainer.setAttribute('id','button-bar')
+  document.body.prepend(buttonsContainer);
 }
 
 
 
-var hidden_elem=document.querySelector('#btn-verbs-toggle');
-toggleVerbs(hidden_elem.this);
+//  hide all verbs by default:
+// document.querySelectorAll(".verb-tenses-container").forEach(function name(e) { e.style.display = "none";});
+// document.querySelectorAll(".verbs").forEach(function name(e) {
+//  e.style.display = "none";
+// });
 
 var verbs = 0; // default, hidden.
-function toggleVerbs(sender = "this") {
+function toggleVerbs(sender) {
   console.log("toggleVerbs() invoked");
   if (verbs == 1) {
-    document.querySelectorAll(".verbs").forEach(function name(e) {
-      e.style.display = "initial";
+    document.querySelectorAll(".verb-tenses-container").forEach(function name(e) {
+      e.style.display = "none";
     });
     sender.innerText = "الأفعال";
     verbs = 0;
   } else {
-    document.querySelectorAll(".verbs").forEach(function name(e) {
-      e.style.display = "none";
+   
+    document.querySelectorAll(".verb-tenses-container").forEach(function name(e) {
+      e.style.display = "initial";
     });
     verbs = 1;
     sender.innerText = "بدون الأفعال";
   }
+  // embedVerbsShow();
 }
 
 /* ---------------------------------------------- */
