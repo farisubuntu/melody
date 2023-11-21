@@ -19,7 +19,9 @@ var selectedFont = 0;
 
 onload = function() {
   appendClasses();
+  embedVerbsShow();
   embedCollapseSide();
+
 
   state = 4;
 };

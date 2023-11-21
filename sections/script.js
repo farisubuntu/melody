@@ -13,7 +13,7 @@ var state;
 var selectedFont = 0;
 
 onload = function() {
-  createStickyButtons();
+  // createStickyButtons();
   appendTenseTitles();
   embedCollapseSide();
   embedVerbsShow();
@@ -87,15 +87,15 @@ function toggleCol(btn) {
   state--;
 }
 
-// create sticky buttons:
-function createStickyButtons() {
-  console.log("createStickyButtons()...");
+// // create sticky buttons:
+// function createStickyButtons() {
+//   console.log("createStickyButtons()...");
 
-  var divBox = document.createElement("div");
-  divBox.setAttribute("class", "btns-wrapper");
-  divBox.innerHTML = floatButtons;
-  document.body.prepend(divBox);
-}
+//   var divBox = document.createElement("div");
+//   divBox.setAttribute("class", "btns-wrapper");
+//   divBox.innerHTML = floatButtons;
+//   document.body.prepend(divBox);
+// }
 
 function changeFont() {
   console.log("changeFont() ");
@@ -212,6 +212,21 @@ function appendClasses() {
   elements[0].className = "snow";
   elements[3].className = "snow";
   elements[5].className = "snow";
+}
+
+
+function collapsedSidePanel() {
+  var element = `
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <a href="../index.html" target="_blank">الصفحة الرئيسية</a>
+<a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a>
+<a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a>
+<a href="../others/important_vocabularies.html">كلمات مهمة</a>
+</div>
+<button class="openbtn" onclick="openNav()">&#9776; Toggle</button>
+`;
+  return element;
 }
 
 function embedCollapseSide() {
