@@ -12,8 +12,6 @@ var state;
  */
 var selectedFont = 0;
 
-
-
 onload = function() {
   createStickyButtons();
   appendTenseTitles();
@@ -25,9 +23,8 @@ onload = function() {
 };
 console.log("starting script");
 
-
 function appendTenseTitles() {
- console.log('appendTenseTitles() .....');
+  console.log("appendTenseTitles() .....");
   var verb_tenses = document.querySelectorAll(".verb-tenses");
 
   for (var i = 0; i < verb_tenses.length; i++) {
@@ -105,18 +102,19 @@ function changeFont() {
   if (selectedFont == 0) {
     selectedFont = 1;
     document.querySelectorAll(".text .target").forEach(function(i) {
-      i.style.fontFamily = "Noto Nastaliq Urdu, serif";});
+      i.style.fontFamily = "Noto Nastaliq Urdu, serif";
+    });
     document.querySelectorAll(".text .target").forEach(function(i) {
-     i.style.lineHeight=3;});
-
+      i.style.lineHeight = 3;
+    });
   } else {
     selectedFont = 0;
     document.querySelectorAll(".text .target").forEach(function(i) {
       i.style.fontFamily = "Noto Naskh Arabic, serif";
     });
     document.querySelectorAll(".text .target").forEach(function(i) {
-     i.style.lineHeight=1;
-   });
+      i.style.lineHeight = 1;
+    });
   }
 }
 
@@ -148,7 +146,6 @@ function getSectionVariables() {
   // select all phrases (one line container of (text elements {target,mother} ) =>
   phrases_array = document.querySelectorAll(".phrase .text");
 }
-
 // template
 
 function getDictionaryData() {
@@ -230,21 +227,18 @@ function embedCollapseSide() {
 function embedVerbsShow() {
   var buttonsContainer = document.createElement("div");
   buttonsContainer.innerHTML = buttonBar;
-  buttonsContainer.setAttribute('id','button-bar')
+  buttonsContainer.setAttribute("id", "button-bar");
   document.body.prepend(buttonsContainer);
 }
 
-
-
 //  hide all verbs by default:
 document.querySelectorAll(".verbs").forEach(function name(e) {
- e.style.display = "none";
+  e.style.display = "none";
 });
 
 var verbs = 0; // default, hidden.
 function toggleVerbs(sender) {
- 
-  console.log("toggleVerbs() invoked",sender);
+  console.log("toggleVerbs() invoked", sender);
   if (verbs == 1) {
     document.querySelectorAll(".verbs").forEach(function name(e) {
       e.style.display = "none";
@@ -252,7 +246,6 @@ function toggleVerbs(sender) {
     sender.innerText = "الأفعال";
     verbs = 0;
   } else {
-   
     document.querySelectorAll(".verbs").forEach(function name(e) {
       e.style.display = "initial";
     });
@@ -276,7 +269,7 @@ function toggleTheme(sender) {
     currentTheme = 1;
   }
 }
-// -------------------------------------------------------
+// ------------------collapsedSidePanel-------------------------------------
 
 // topFunction button:
 function topFunction() {

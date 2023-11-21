@@ -19,9 +19,11 @@ var state;
  */
 var selectedFont = 0;
 
-window.onload = function () {
+onload = function () {
  appendClasses();
  createTopNav();
+ embedCollapseSide();
+
  state = 4;
 }
 console.log('starting script');
@@ -137,11 +139,6 @@ function appendClasses() {
 }
 
 
-// create sticky buttons:
-
-/* <header class="page-header">
-<h1>قاموس ماندلي</h1>
-</header> */
 
 
 function createTopNav() {
@@ -178,27 +175,49 @@ function createTopNav() {
 
 
 
+// topFunction button:
+function topFunction() {
+ // Get the button
+ let mybutton = document.getElementById("myBtn");
+ document.body.scrollTop = 0;
+ document.documentElement.scrollTop = 0;
+}
+
+// **************** collapsedPanel   *************************
+
+/* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+ document.getElementById("mySidepanel").style.width = "250px";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+ document.getElementById("mySidepanel").style.width = "0";
+}
 
 
 
 
 
 
+var collapsedSidePanel=`
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">الدروس بالترتيب</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+</div>
+<button class="openbtn" onclick="openNav()">&#9776; Toggle</button>
+`;
 
-
-/*
- <nav class="sticky">
-  <ul class="list-inline">
-   <li class="menu-item" onclick="changeFont();">تبديل الخط</li>
-   <li class="menu-item" id="toggle" onclick="toggleCol(this);">إخفاء</li>
-   <li class="menu-item" id="home"><a href="../index.html">الصفحة الرئيسية </a></li>
-   <details class="sub-list"> 
-   <summary>روابط</summary>
-     <li class="menu-item"><a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a></li>
-     <li class="menu-item"><a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a></li> 
-     <li class="menu-item"><a href="../others/important_vocabularies.html">كلمات مهمة</a></li>
-   </details>
-    <li class="counter">الكلمات :<span class="total-words"> ${total_words}</span>العبارات :<span class="total_phrases"> ${total_phrases}</span></li>
-  </ul>
- </nav>
-*/
+function embedCollapseSide() {
+ var collapsedSide = document.createElement("div");
+ collapsedSide.innerHTML = collapsedSidePanel;
+ collapsedSide.setAttribute("class", "sidePanelWrapper");
+ collapsedSide.style.position = "fixed";
+ collapsedSide.style.top = "10px";
+ collapsedSide.style.right = "5px";
+ document.body.prepend(collapsedSide);
+ var livePanel=document.querySelector('mySidepanel');
+}
