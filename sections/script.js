@@ -15,8 +15,8 @@ var selectedFont = 0;
 onload = function () {
   // createStickyButtons();
   appendTenseTitles();
-  embedVerbsShow();
   embedCollapseSide();
+  embedVerbsShow();
 
   // appendClasses();
   state = 2;
@@ -109,9 +109,10 @@ function changeFont() {
     });
   } else {
     selectedFont = 0;
-    document.querySelectorAll(".text .target").forEach(function (i) {
-      i.style.fontFamily = "Noto Naskh Arabic, serif";
-    });
+    document.querySelectorAll(".text .target")
+      .forEach(function (i) {
+        i.style.fontFamily = "Noto Naskh Arabic, serif";
+      });
     document.querySelectorAll(".text .target").forEach(function (i) {
       i.style.lineHeight = 1;
     });
@@ -225,17 +226,20 @@ var buttonBar = `
 function collapsedSidePanel() {
   var element = `
 <div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
- <a href="../index.html" target="_blank">الصفحة الرئيسية</a>
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="javascript:void(0)" onclick="toggleCol(this)">أخفاء </a>
+<a href="javascript:void(0)" onclick="changeFont()">تغيير الخط</a>
+<a href="../index.html" target="_blank">الصفحة الرئيسية</a>
 <a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a>
 <a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a>
 <a href="../others/important_vocabularies.html">كلمات مهمة</a>
-<a href="#" onclick="hideFunc()">إخفاء</a>
 </div>
 <button class="openbtn" onclick="openNav()">&#9776; Toggle</button>
 `;
   return element;
 }
+
+
 
 
 function embedCollapseSide() {
@@ -280,7 +284,7 @@ function toggleVerbs(sender) {
 var theme1 = document.createElement("link");
 theme1.setAttribute("rel", "stylesheet");
 theme1.setAttribute("href", "theme_1.css");
-theme1;
+// theme1;
 var currentTheme = 1; // black-initial
 function toggleTheme(sender) {
   if (currentTheme == 1) {
@@ -302,10 +306,21 @@ function topFunction() {
 }
 
 // **************** collapsedPanel   *************************
-
+/* Set the width of the sidebar to 250px (show it) */
+var menu_showed = 0;
+function showMenu() {
+  if (menu_showed == 0) {
+    menu_showed = 1;
+    document.getElementById("mySidepanel").style.width = "250px";
+    var myTimeout = setTimeout(closeNav, 4000);
+  } else {
+    menu_showed = 0;
+    closeNav();
+  }
+}
 /* Set the width of the sidebar to 250px (show it) */
 function openNav() {
-  document.getElementById("mySidepanel").style.width = "250px";
+  showMenu();
 }
 
 /* Set the width of the sidebar to 0 (hide it) */

@@ -104,7 +104,7 @@ button#home {
 }
 
 audio {
-  width: 80%;
+  width: 60%;
 }
 
 .page-header {
@@ -180,9 +180,7 @@ audio {
   display: none;
 }
 
-.verb-tenses {
-  /* flex-wrap:nowrap; */
-}
+
 
 .tense {
   display: grid;
@@ -230,6 +228,19 @@ audio {
   }
 }
 
+header.lesson-header{
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+header.lesson-header h1{
+  font-size: 0.9rem;
+  flex:3;
+}
+header.lesson-header audio{
+ flex:4;
+ border:1px solid black;
+}
 @media screen and (width > 450px) {
   div.btns-wrapper .sticky-btn {
     /* padding: 10px; */ font-size: 1rem;
@@ -244,5 +255,5 @@ audio {
 @media screen and (width > 800px) {
  span.conj-inner > span {
   font-size: 1.5rem;
-}
+ }
 }
