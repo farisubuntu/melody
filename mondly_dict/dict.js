@@ -19,7 +19,6 @@ var selectedFont = 0;
 
 onload = function () {
   appendClasses();
-  embedVerbsShow();
   embedCollapseSide();
 
 
@@ -178,7 +177,8 @@ function collapsedSidePanel() {
 function embedCollapseSide() {
   var collapsedSide = document.createElement("div");
   collapsedSide.setAttribute("class", "sidePanelWrapper");
+  
   collapsedSide.innerHTML = collapsedSidePanel();
 
-  document.body.prepend(collapsedSide);
+  document.body.append(collapsedSide);
 }

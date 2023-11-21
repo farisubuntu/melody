@@ -15,21 +15,5 @@ var floatButtons = `
 </details>
 `;
 
-var collapsedSidePanel=`
-<div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">الدروس بالترتيب</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-  <a href="#">Link 4</a>
-</div>
-<button class="openbtn" onclick="openNav()">&#9776; Toggle</button>
-`;
 
-var buttonBar=`
-<div id="button-bar">
-<button class="feedback" onclick="topFunction(this)" id="myBtn" title="Go to top">Top</button>
-<button id="btn-verbs-toggle" class="feedback" onclick="toggleVerbs(this);">الأفعال</button>
-<button class="feedback" onclick="toggleTheme(this);">تغيير الثيم</button>
-</div>
-`;
+

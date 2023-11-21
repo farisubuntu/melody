@@ -12,11 +12,11 @@ var state;
  */
 var selectedFont = 0;
 
-onload = function() {
+onload = function () {
   // createStickyButtons();
   appendTenseTitles();
-  embedCollapseSide();
   embedVerbsShow();
+  embedCollapseSide();
 
   // appendClasses();
   state = 2;
@@ -212,6 +212,16 @@ function appendClasses() {
   elements[3].className = "snow";
   elements[5].className = "snow";
 }
+
+var buttonBar = `
+<div id="button-bar">
+<button class="feedback" onclick="topFunction(this)" id="myBtn" title="Go to top">Top</button>
+<button id="btn-verbs-toggle" class="feedback" onclick="toggleVerbs(this);">الأفعال</button>
+<button class="feedback" onclick="toggleTheme(this);">تغيير الثيم</button>
+</div>
+`;
+
+
 function collapsedSidePanel() {
   var element = `
 <div id="mySidepanel" class="sidepanel">
@@ -228,30 +238,12 @@ function collapsedSidePanel() {
 }
 
 
-function collapsedSidePanel() {
-  var element = `
-<div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
- <a href="../index.html" target="_blank">الصفحة الرئيسية</a>
-<a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a>
-<a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a>
-<a href="../others/important_vocabularies.html">كلمات مهمة</a>
-</div>
-<button class="openbtn" onclick="openNav()">&#9776; Toggle</button>
-`;
-  return element;
-}
-
 function embedCollapseSide() {
-  var side_panel_wrapper=document.createElement('div');  
-  side_panel_wrapper.innerHTML=collapsedSidePanel();
-  
+  var side_panel_wrapper = document.createElement("div");
+  side_panel_wrapper.innerHTML = collapsedSidePanel();
   side_panel_wrapper.setAttribute("class", "sidePanelWrapper");
-  
-  side_panel_wrapper.style.position = "fixed";
-  side_panel_wrapper.style.top = "10px";
-  side_panel_wrapper.style.right = "5px";
-
+  console.log(side_panel_wrapper);
+  document.body.prepend(side_panel_wrapper);
 }
 
 function embedVerbsShow() {
