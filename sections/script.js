@@ -13,7 +13,7 @@ var state;
 var selectedFont = 0;
 
 onload = function() {
-  createStickyButtons();
+  // createStickyButtons();
   appendTenseTitles();
   embedCollapseSide();
   embedVerbsShow();
@@ -51,7 +51,7 @@ function appendTenseTitles() {
 }
 
 // Toggle button:
-
+ 
 function toggle(col) {
   if (col == 1) {
     document.querySelectorAll(".text .target").forEach(function(i) {
@@ -88,14 +88,15 @@ function toggleCol(btn) {
 }
 
 // create sticky buttons:
-function createStickyButtons() {
-  console.log("createStickyButtons()...");
 
-  var divBox = document.createElement("div");
-  divBox.setAttribute("class", "btns-wrapper");
-  divBox.innerHTML = floatButtons;
-  document.body.prepend(divBox);
-}
+// function createStickyButtons() {
+  // console.log("createStickyButtons()...");
+// 
+  // var divBox = document.createElement("div");
+  // divBox.setAttribute("class", "btns-wrapper");
+  // divBox.innerHTML = floatButtons;
+  // document.body.prepend(divBox);
+// }
 
 function changeFont() {
   console.log("changeFont() ");
@@ -213,6 +214,23 @@ function appendClasses() {
   elements[3].className = "snow";
   elements[5].className = "snow";
 }
+
+
+function collapsedSidePanel() {
+  var element = `
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <a href="../index.html" target="_blank">الصفحة الرئيسية</a>
+<a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a>
+<a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a>
+<a href="../others/important_vocabularies.html">كلمات مهمة</a>
+<a href="#" onclick="hideFunc()">إخفاء</a>
+</div>
+<button class="openbtn" onclick="openNav()">&#9776; Toggle</button>
+`;
+  return element;
+}
+
 
 function embedCollapseSide() {
   var collapsedSide = document.createElement("div");

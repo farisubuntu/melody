@@ -27,7 +27,7 @@ td,th{
 
 tr th:nth-child(1),
 tr td:nth-child(1){
-  widht:20%;
+  width:20%;
   color:blue;
   font-size:1.3rem;
   
@@ -37,7 +37,7 @@ tr td:nth-child(1){
 
 tr th:nth-child(2),
 tr td:nth-child(2){
-  widht:15%;
+  width:15%;
   color:red;
   font-size:1.2rem;
   padding:0 3px;
@@ -47,7 +47,7 @@ tr td:nth-child(2){
 
 tr th:nth-child(3),
 tr td:nth-child(3){
-  widht:15%;
+  width:15%;
   color:green;
     text-decoration:double;
   font-size:2rem;
@@ -58,7 +58,7 @@ tr td:nth-child(3){
 
 tr th:nth-child(4),
 tr td:nth-child(4){
-  widht:15%;
+  width:15%;
   color:red;
   font-size:1.2rem;
   padding:0 3px;
@@ -66,7 +66,7 @@ tr td:nth-child(4){
 
 tr th:nth-child(5),
 tr td:nth-child(5){
-  widht:15%;
+  width:15%;
   color:blue;
   font-size:1.2rem;
   padding:0 5px;
