@@ -177,8 +177,27 @@ function collapsedSidePanel() {
 function embedCollapseSide() {
   var collapsedSide = document.createElement("div");
   collapsedSide.setAttribute("class", "sidePanelWrapper");
-  
   collapsedSide.innerHTML = collapsedSidePanel();
+  document.body.prepend(collapsedSide);
+  document.querySelector('#mySidepanel').addEventListener("mouseenter",mouseEnter);
+  document.querySelector('#mySidepanel').addEventListener("mouseleave",mouseLeave);
 
-  document.body.append(collapsedSide);
+
+}
+
+function mouseEnter(){
+  console.log("mouse Enter...");
+}
+function mouseLeave(){
+  console.log('mouse Leave');
+  closeNav();
+}
+
+
+
+function menuClose(){
+  console.log('menuClose() ....mouse action');
+  // self.opener=this;
+  // self.close();
+  
 }
