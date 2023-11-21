@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
 @import url('../w3pro.css');
 @import url('collapsedPanel.css');
+@import url('../sections/button-85.css');
 
 * {
   box-sizing: border-box;
@@ -14,13 +15,24 @@ body {
   overscroll-behavior-y: contain;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
 }
-
+.phrase-target{
+  color:yellowgreen;
+}
+.phrase-mother{
+  color:white;
+}
+.word-target{
+  color:yellowgreen;
+}
+.word-mother{
+  color:white;
+}
 /* menu */
 .btns-wrapper {
   position: fixed;
@@ -119,25 +131,29 @@ p.lesson-title {
 .phrases-container {
   display: flex;
   flex-direction: column;
-
+  justify-content: stretch;
+  /* align-items: center; */
 }
 
 
 .word-wrapper,
 .phrase-wrapper {
   display: flex;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   border-top: 1px solid white;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
 
+div.phrase-target,div.phrase-mother{
 
 }
 
-.word-wrapper:hover,
-.phrase-wrapper:hover {
-  background-color: blue;
-  /* line-height: 1.3; */
+
+article:hover {
+
+color:yellow;
+background-color: blue;
 }
 
 
@@ -149,78 +165,37 @@ p.lesson-title {
 
 
 
-.lesson-title {
-  font-size: 1.4rem;
-  direction: ltr;
-  color: white;
+header>p {
+  /* font-size: 3rem; */
+   direction: ltr;
+  color: black;
+  text-align: center;
+
 }
 
 
-div[class$="target"] {
-  color: yellow;
-  font-size: 1.2rem;
-}
-
-div[class$="mother"] {
-  color: white;
-  font-size: 1.2rem;
-}
 
 .image-wrapper {
   width: 15%;
 }
 
-/* media queries */
-/* 
-  background-color: rgba(60,255,100,0.4);
-  background: linear-gradient(150deg, rgba(150,50,232,1) 0%, rgba(10,123,165,1) 0%, rgba(100,20,10,100) 100%);
-  color: #40081a;
-  opacity: 0.8;
-*/
-
-
-@media screen and (width<=600px) {
-
-  .word-wrapper,
-  .phrase-wrapper {
-    justify-content: space-between;
-    /* change this for phrases font size */
-  }
-
-  .word-wrapper,
-  .phrase-wrapper {
-    flex: 1 1 100%;
-  }
-
-
-
-  .has-image>.word-target,
-  .has-image>.word-mother {
-    flex: 2 1 30%;
-    font-size: 1.3rem;
-
-
-  }
-
-  .has-image>.image-wrapper {
-    flex: 1 1 10%;
-  }
-
-  div.phrase-target,
-  div.phrase-mother {
-    font-size: 1.5rem;
-    display: flex;
-
-  }
-
-
-  .image-wrapper {
-    width: 20px;
-  }
-
+@media screen and (max-width:400px){
+    .image-wrapper {
+        width: 10%;
+      }
+    
+      .has-image,
+      .no-image,
+      .phrase-wrapper {
+        font-size: smaller;
+        justify-content: space-between;
+        align-items: center;
+      }
 }
 
-@media screen and (width>=601px) {
+
+
+@media screen and (min-width:601px) {
   .image-wrapper {
     width: 10%;
   }
@@ -229,7 +204,7 @@ div[class$="mother"] {
   .no-image,
   .phrase-wrapper {
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
   }
 
 
@@ -241,28 +216,38 @@ div[class$="mother"] {
     border: 2px solid brown;
 
   }
- 
-  .lesson-wrapper{
+
+  .lesson-wrapper {
     /* background-color: black;  */
     display: flex;
     flex-direction: column;
+    
     /* column-gap: 1rem; */
     /* row-gap: 1rem; */
   }
 
 
-.words-container,.phrases-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border:2px solid silver;
-}
-.word-wrapper,.phrase-wrapper{
-  border:1px solid gold;
-  padding-inline-start: 5px;
-  margin-inline-start: 5px;
+  .words-container,
+  .phrases-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid silver;
+  }
 
-  
-}
+  .word-wrapper,
+  .phrase-wrapper {
+    border: 1px solid silver;
+    /* padding-inline-start: 5px;
+    margin-inline-start: 5px; */
 
+  }
+
+  div[class$="target"] {
+    font-size: 1.2rem;
+  }
+
+  div[class$="mother"] {
+    font-size: 1.2rem;
+  }
 
 }

@@ -126,6 +126,11 @@ function appendClasses() {
       i.setAttribute("class", "word-wrapper no-image");
     }
   });
+  // add button-85 for each header titles:
+  var titles=document.querySelectorAll('header p');
+  titles.forEach((e) => e.classList.add("button-85"));
+  titles.forEach((e) => e.setAttribute("role", "button"));
+
 }
 
 
