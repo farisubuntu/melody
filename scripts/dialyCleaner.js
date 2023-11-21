@@ -16,7 +16,6 @@ function extractQuizGameWords() {
   i++;
  });
 
-
 }
 function getImages() {
  wordsImages = document.querySelectorAll('.phrase-image');

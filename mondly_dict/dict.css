@@ -5,7 +5,9 @@
 * {
  box-sizing: border-box;
 }
-
+.yellow{
+ color:yellow;
+}
 body {
  overscroll-behavior-y: contain;
 }
