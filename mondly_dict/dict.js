@@ -154,20 +154,11 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
-<<<<<<< HEAD
 function collapsedSidePanel() {
   var words_total = document.querySelectorAll(".word-wrapper").length;
   var phrases_total = document.querySelectorAll(".phrase-wrapper").length;
   console.log(words_total, phrases_total);
   var element = `
-=======
-
-function collapsedSidePanel(){
- var words_total = document.querySelectorAll(".word-wrapper").length;
- var phrases_total = document.querySelectorAll(".phrase-wrapper").length;
- console.log(words_total,phrases_total);
- var element = `
->>>>>>> spare
 <div id="mySidepanel" class="sidepanel">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
  <hr>
@@ -186,8 +177,8 @@ function collapsedSidePanel(){
 
 function embedCollapseSide() {
   var collapsedSide = document.createElement("div");
-  collapsedSide.innerHTML = collapsedSidePanel();
   collapsedSide.setAttribute("class", "sidePanelWrapper");
+  collapsedSide.innerHTML = collapsedSidePanel();
 
   document.body.prepend(collapsedSide);
 }

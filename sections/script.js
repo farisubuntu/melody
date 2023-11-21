@@ -12,11 +12,7 @@ var state;
  */
 var selectedFont = 0;
 
-<<<<<<< HEAD
-onload = function () {
-=======
 onload = function() {
->>>>>>> spare
   // createStickyButtons();
   appendTenseTitles();
   embedCollapseSide();
@@ -91,17 +87,6 @@ function toggleCol(btn) {
   state--;
 }
 
-<<<<<<< HEAD
-// create sticky buttons:
-
-// function createStickyButtons() {
-// console.log("createStickyButtons()...");
-//
-// var divBox = document.createElement("div");
-// divBox.setAttribute("class", "btns-wrapper");
-// divBox.innerHTML = floatButtons;
-// document.body.prepend(divBox);
-=======
 // // create sticky buttons:
 // function createStickyButtons() {
 //   console.log("createStickyButtons()...");
@@ -110,7 +95,6 @@ function toggleCol(btn) {
 //   divBox.setAttribute("class", "btns-wrapper");
 //   divBox.innerHTML = floatButtons;
 //   document.body.prepend(divBox);
->>>>>>> spare
 // }
 
 function changeFont() {

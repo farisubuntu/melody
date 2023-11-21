@@ -56,9 +56,19 @@
  background-color: #444;
 }
 
+/* dynamically added elements */
+.sidePanelWrapper{
+ position: fixed;
+ top:0;
+ right:0;
+ 
+}
+
+
 
 @media screen and (max-width:450px){
  .sidePanelWrapper{
    
  }
 }
+
