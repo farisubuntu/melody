@@ -12,7 +12,7 @@ var state;
  */
 var selectedFont = 0;
 
-onload = function() {
+onload = function () {
   // createStickyButtons();
   appendTenseTitles();
   embedCollapseSide();
@@ -51,30 +51,30 @@ function appendTenseTitles() {
 }
 
 // Toggle button:
- 
+
 function toggle(col) {
   if (col == 1) {
-    document.querySelectorAll(".text .target").forEach(function(i) {
+    document.querySelectorAll(".text .target").forEach(function (i) {
       i.style.visibility = "hidden";
     });
-    document.querySelectorAll(".text .mother").forEach(function(i) {
+    document.querySelectorAll(".text .mother").forEach(function (i) {
       i.style.visibility = "visible";
     });
   }
   if (col == 2) {
-    document.querySelectorAll(".text .target").forEach(function(i) {
+    document.querySelectorAll(".text .target").forEach(function (i) {
       i.style.visibility = "visible";
     });
-    document.querySelectorAll(".text .mother").forEach(function(i) {
+    document.querySelectorAll(".text .mother").forEach(function (i) {
       i.style.visibility = "hidden";
     });
   }
   if (col == 0) {
     // all visible
-    document.querySelectorAll(".text .target").forEach(function(i) {
+    document.querySelectorAll(".text .target").forEach(function (i) {
       i.style.visibility = "visible";
     });
-    document.querySelectorAll(".text .mother").forEach(function(i) {
+    document.querySelectorAll(".text .mother").forEach(function (i) {
       i.style.visibility = "visible";
     });
   }
@@ -90,30 +90,30 @@ function toggleCol(btn) {
 // create sticky buttons:
 
 // function createStickyButtons() {
-  // console.log("createStickyButtons()...");
-// 
-  // var divBox = document.createElement("div");
-  // divBox.setAttribute("class", "btns-wrapper");
-  // divBox.innerHTML = floatButtons;
-  // document.body.prepend(divBox);
+// console.log("createStickyButtons()...");
+//
+// var divBox = document.createElement("div");
+// divBox.setAttribute("class", "btns-wrapper");
+// divBox.innerHTML = floatButtons;
+// document.body.prepend(divBox);
 // }
 
 function changeFont() {
   console.log("changeFont() ");
   if (selectedFont == 0) {
     selectedFont = 1;
-    document.querySelectorAll(".text .target").forEach(function(i) {
+    document.querySelectorAll(".text .target").forEach(function (i) {
       i.style.fontFamily = "Noto Nastaliq Urdu, serif";
     });
-    document.querySelectorAll(".text .target").forEach(function(i) {
+    document.querySelectorAll(".text .target").forEach(function (i) {
       i.style.lineHeight = 3;
     });
   } else {
     selectedFont = 0;
-    document.querySelectorAll(".text .target").forEach(function(i) {
+    document.querySelectorAll(".text .target").forEach(function (i) {
       i.style.fontFamily = "Noto Naskh Arabic, serif";
     });
-    document.querySelectorAll(".text .target").forEach(function(i) {
+    document.querySelectorAll(".text .target").forEach(function (i) {
       i.style.lineHeight = 1;
     });
   }
@@ -136,7 +136,7 @@ function getSectionVariables() {
 
   var urlValue;
 
-  images_container.forEach(function(i) {
+  images_container.forEach(function (i) {
     urlValue = i.style.backgroundImage;
     urlValue = urlValue.replace('url("', "");
     urlValue = urlValue.replace(")", "");
@@ -154,8 +154,7 @@ function getDictionaryData() {
   words_len = words_array.length;
   images_len = images_array.length;
   phrases_len = phrases_array.length;
-  var top_container = `<div class="lesson-wrapper"><!-- ${window.location
-    .pathname} -->
+  var top_container = `<div class="lesson-wrapper"><!-- ${window.location.pathname} -->
  <header><p class="lesson-title">${window.location.pathname}</p></header>
  <section class="words-container">`;
 
@@ -214,8 +213,6 @@ function appendClasses() {
   elements[3].className = "snow";
   elements[5].className = "snow";
 }
-
-
 function collapsedSidePanel() {
   var element = `
 <div id="mySidepanel" class="sidepanel">
@@ -231,15 +228,16 @@ function collapsedSidePanel() {
   return element;
 }
 
-
 function embedCollapseSide() {
-  var collapsedSide = document.createElement("div");
-  collapsedSide.innerHTML = collapsedSidePanel;
-  collapsedSide.setAttribute("class", "sidePanelWrapper");
-  collapsedSide.style.position = "fixed";
-  collapsedSide.style.top = "10px";
-  collapsedSide.style.right = "5px";
-  document.body.prepend(collapsedSide);
+  var side_panel_wrapper=document.createElement('div');  
+  side_panel_wrapper.innerHTML=collapsedSidePanel();
+  
+  side_panel_wrapper.setAttribute("class", "sidePanelWrapper");
+  
+  side_panel_wrapper.style.position = "fixed";
+  side_panel_wrapper.style.top = "10px";
+  side_panel_wrapper.style.right = "5px";
+
 }
 
 function embedVerbsShow() {
