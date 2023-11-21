@@ -148,7 +148,7 @@ function openNav() {
   if (menu_showed == 0) {
     menu_showed = 1;
     document.getElementById("mySidepanel").style.width = "250px";
-    var myTimeout = setTimeout(closeNav, 2000);
+    // var myTimeout = setTimeout(closeNav, 2000);
   } else {
     menu_showed = 0;
     closeNav();
@@ -186,28 +186,7 @@ function embedCollapseSide() {
   collapsedSide.setAttribute("class", "sidePanelWrapper");
   collapsedSide.innerHTML = collapsedSidePanel();
   document.body.prepend(collapsedSide);
+
   
-}
-
-function mouseOut() {
-  console.log("mouse out event .....");
-}
-function focusEvent() {
-  console.log("focus .....");
-}
-function mouseEnter() {
-  console.log("mouse Enter...");
-}
-function mouseLeave() {
-  console.log("mouse Leave");
-  closeNav();
-}
-function blurEvent() {
-  console.log("blurEvent ......");
-}
-
-function menuClose() {
-  console.log("menuClose() ....mouse action");
-  // self.opener=this;
-  // self.close();
+  
 }
