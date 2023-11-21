@@ -4,12 +4,14 @@
  direction: rtl;
  height: 250px; /* Specify a height */
  /* my setting */
- height: 45%;
+ height: auto;
  width: 0; /* 0 width - change this with JavaScript */
  position: fixed; /* Stay in place */
  z-index: 1; /* Stay on top */
  top: 20%;
  left: 0;
+ border:1px solid yellow;
+border-radius: 15px;
  background-color: #111; /* Black*/
  overflow-x: hidden; /* Disable horizontal scroll */
  padding-top: 2rem; /* Place content 60px from the top */
