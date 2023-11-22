@@ -79,7 +79,7 @@ function toggle(col) {
     });
   }
 }
-function toggleCol(btn) {
+function toggleCol() {
   if (state < 0) {
     state = 2;
   }
@@ -286,7 +286,7 @@ theme1.setAttribute("rel", "stylesheet");
 theme1.setAttribute("href", "theme_1.css");
 // theme1;
 var currentTheme = 1; // black-initial
-function toggleTheme(sender) {
+function toggleTheme() {
   if (currentTheme == 1) {
     document.head.appendChild(theme1);
     currentTheme = 0;
@@ -327,3 +327,30 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
+
+
+// keyboard shortcuts
+
+document.onkeydown = function () {
+  let key = event.key;
+  // if (key == "p") {
+  //   document.body.style.backgroundColor = "blue";
+  // }
+
+  switch (key) {
+    case "t":
+      toggleTheme();
+      break;
+    case "h":
+      toggleCol();
+      break;
+    case "v":
+      toggleVerbs();
+      break;
+    case "f":
+    changeFont();
+    default:
+      console.log(key," ...pressed");
+      break;
+  }
+};
