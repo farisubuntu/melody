@@ -86,15 +86,15 @@ self.addEventListener("install", evt => {
     "/sections/audio/8905.mp3",
     "/sections/audio/link_template.txt",
     "/sections/audio/TODO.txt",
-    "/sections/audio/combined01.mp3",
-    "/sections/audio/combined02.mp3",
-    "/sections/audio/combined04.mp3",
-    "/sections/audio/combined07.mp3",
-    "/sections/audio/combined14.mp3",
-    "/sections/audio/combined15.mp3",
-    "/sections/audio/combined22_MP3WRAP.mp3",
-    "/sections/audio/combined8801_MP3WRAP.mp3",
-    "/sections/audio/combined89_1_to_5.mp3"
+    "/sections/audio/combined/01.mp3",
+    "/sections/audio/combined/02.mp3",
+    "/sections/audio/combined/04.mp3",
+    "/sections/audio/combined/07.mp3",
+    "/sections/audio/combined/14.mp3",
+    "/sections/audio/combined/15.mp3",
+    "/sections/audio/combined/22_MP3WRAP.mp3",
+    "/sections/audio/combined/8801_MP3WRAP.mp3",
+    "/sections/audio/combined/89_1_to_5.mp3"
    ]))
    .catch(err => console.error(err))
  );
