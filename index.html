@@ -2,199 +2,232 @@
 <html lang="en" dir="rtl">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Mondly - My Course</title>
- <link rel="stylesheet" href="index.css">
-<style>
- .new{
-  background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+   <title>Mondly - My Course</title>
+  <meta name="description" content="Urdu Ref - PWA version" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <!-- (B2) ANDROID/CHROME -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="white">
 
- }
-</style>
+  <!-- (B3) IOS APP ICON + MOBILE SAFARI -->
+  <link rel="apple-touch-icon" href="icon-512.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Hello World">
+
+  <!-- (B4) WINDOWS -->
+  <meta name="msapplication-TileImage" content="icon-512.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+
+  <!-- (C) WEB APP MANIFEST -->
+  <!-- https://web.dev/add-manifest/ -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- (D) SERVICE WORKER -->
+  <script>
+    if ("serviceWorker" in navigator) { navigator.serviceWorker.register("sw.js"); }
+  </script>
+
+  <!-- (E) STYLESHEET + JAVASCRIPT -->
+
+  <link rel="stylesheet" href="index.css" />
+
+  <style>
+    .new {
+      background: #0f2027;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right,
+          #2c5364,
+          #203a43,
+          #0f2027);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right,
+          #2c5364,
+          #203a43,
+          #0f2027);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+  </style>
+        <script defer src="app.js"></script>
+
 </head>
 
 <body>
- <nav class="top-menu">
-  <div class="nav-wrapper">
-   
-   <button class="button-26" role="button">
-    <div class="button-26__content">
-     <a class="button-26__text text" href="others/pronouns.html">الضمائر</a>
-    </div>
-   </button>
+  <nav class="top-menu">
+    <div class="nav-wrapper">
+      <button class="button-26" role="button">
+        <div class="button-26__content">
+          <a class="button-26__text text" href="others/pronouns.html">الضمائر</a>
+        </div>
+      </button>
 
-   <button class="button-26 new" role="button">
-    <div class="button-26__content">
-     <a class="button-26__text text" href="data/urdu-book/home.html">كتاب أساسيات الأوردية</a>
-    </div>
-   </button>
+      <button class="button-26 new" role="button">
+        <div class="button-26__content">
+          <a class="button-26__text text" href="data/urdu-book/home.html">كتاب أساسيات الأوردية</a>
+        </div>
+      </button>
 
-   <button class="button-26" role="button">
-    <div class="button-26__content">
-     <a class="button-26__text text" href="others/important_vocabularies.html">كلمات وعبارات مهمة</a>
+      <button class="button-26" role="button">
+        <div class="button-26__content">
+          <a class="button-26__text text" href="others/important_vocabularies.html">كلمات وعبارات مهمة</a>
+        </div>
+      </button>
+      <button class="button-26" role="button">
+        <div class="button-26__content">
+          <a class="button-26__text text" href="others/verbs_bank/verbs_bank.html">
+            بنك الكلمات - الأفعال</a>
+        </div>
+      </button>
+      <button class="button-26" role="button">
+        <div class="button-26__content">
+          <a class="button-26__text text" href="mondly_dict/dict.html">القاموس - مندلي</a>
+        </div>
+      </button>
+      <button class="button-26" role="button">
+        <div class="button-26__content">
+          <a class="button-26__text text" href="https://farisubuntu.github.io/urdu">صفحة Urdu</a>
+        </div>
+      </button>
     </div>
-   </button>
-   <button class="button-26" role="button">
-    <div class="button-26__content">
-     <a class="button-26__text text" href="others/verbs_bank/verbs_bank.html"> بنك الكلمات - الأفعال</a>
-    </div>
-   </button>
-   <button class="button-26" role="button">
-    <div class="button-26__content">
-     <a class="button-26__text text" href="mondly_dict/dict.html">القاموس - مندلي</a>
-    </div>
-   </button>
-   <button class="button-26" role="button">
-    <div class="button-26__content">
-     <a class="button-26__text text" href="https://farisubuntu.github.io/urdu">صفحة Urdu</a>
-    </div>
-   </button>
-  </div>
- </nav>
-<div id="divider"></div>
- <main>
-  <!-- 
+  </nav>
+  <div id="divider"></div>
+  <main>
+    <!-- 
     button-85: for buttons linked
     button-73: for buttons not linked
     -->
-  <section id="buttons-wrapper">
+    <section id="buttons-wrapper">
+      <button class="button-85" role="button">
+        <a href="dialy/home.html">اليومية</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/01_welcome.html">مرحبا</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/02_family.html">الأسرة</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/3_nat_and_languages.html">البلدان واللغات</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/04_romantic.html">الرومانسية</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/05_food_and_drinks.html">الطعام والمشروبات</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/08_weather.html">الطقس </a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/07_travel.html">السفر</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">أنشطة العطلات</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">الإعداد للسفر</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">المواصلات العامة</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">الحيوانات</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">الترفيه</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">التسوق</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/14_at_home.html">في البيت</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/15_grammar-1.html"> قواعد 1</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">قواعد 2</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">قواعد 3</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/22_basic_vocabularies.html">المفردات الأساسية</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/23_school.html">المدرسة</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">الرياضة</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/25_introductions.html">مقدمات</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">في المطار</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">في الطائرة</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">الفندق|الحجز</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">الفندق|في الغرفه</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">مطعم 1</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">مطعم 2</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">زيارة المدينة</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">مصرف</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">التجارة</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">الترفيه</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">!النجده</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">الطواريء</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">عند الطبيب</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/88_things_and_numbers.html">الأشياء والأرقام</a>
+      </button>
+      <button class="button-85" role="button">
+        <a href="sections/89_times_and_calenders.html">الوقت والتقويم</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">وضع الخطط</a>
+      </button>
+      <button class="button-73" role="button">
+        <a href="#">تجارب الماضي</a>
+      </button>
+    </section>
+  </main>
 
-   <button class="button-85" role="button">
-    <a href="dialy/home.html">اليومية</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/01_welcome.html">مرحبا</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/02_family.html">الأسرة</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/3_nat_and_languages.html">البلدان واللغات</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/04_romantic.html">الرومانسية</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/05_food_and_drinks.html">الطعام والمشروبات</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/08_weather.html">الطقس </a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/07_travel.html">السفر</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">أنشطة العطلات</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">الإعداد للسفر</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">المواصلات العامة</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">الحيوانات</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">الترفيه</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">التسوق</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/14_at_home.html">في البيت</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/15_grammar-1.html"> قواعد 1</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">قواعد 2</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">قواعد 3</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/22_basic_vocabularies.html">المفردات الأساسية</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/23_school.html">المدرسة</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">الرياضة</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/25_introductions.html">مقدمات</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">في المطار</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">في الطائرة</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">الفندق|الحجز</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">الفندق|في الغرفه</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">مطعم 1</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">مطعم 2</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">زيارة المدينة</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">مصرف</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">التجارة</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">الترفيه</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">!النجده</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">الطواريء</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">عند الطبيب</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/88_things_and_numbers.html">الأشياء والأرقام</a>
-   </button>
-   <button class="button-85" role="button">
-    <a href="sections/89_times_and_calenders.html">الوقت والتقويم</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">وضع الخطط</a>
-   </button>
-   <button class="button-73" role="button">
-    <a href="#">تجارب الماضي</a>
-   </button>
-  </section>
- </main>
-
-
-
- <script>
-
-  var buttons73 = document.querySelectorAll('.button-73');
-  console.log('count of buttons= ', buttons73.length);
-  buttons73.forEach(
-   function (i) {
-    i.style.disabled = true;
-   }
-  )
- </script>
-
+  <script>
+    var buttons73 = document.querySelectorAll(".button-73");
+    console.log("count of buttons= ", buttons73.length);
+    buttons73.forEach(function (i) {
+      i.style.disabled = true;
+    });
+  </script>
 </body>
 
 </html>
