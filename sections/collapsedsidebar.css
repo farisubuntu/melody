@@ -4,12 +4,12 @@
  direction: rtl;
  height: 250px; /* Specify a height */
  /* my setting */
- height: auto;
+ height: 100%;
  width: 0; /* 0 width - change this with JavaScript */
  position: fixed; /* Stay in place */
- z-index: -100; /* Stay on top */
- top: 20%;
- left: 0;
+ z-index: 500; /* Stay on top */
+ top: 2%;
+ right: 0;
  border:1px solid yellow;
 border-radius: 15px;
  background-color: #111; /* Black*/
@@ -26,7 +26,6 @@ border-radius: 15px;
  color: #818181;
  display: block;
  text-align: right;
-
  transition: 0.3s;
 }
 
@@ -65,9 +64,10 @@ border-radius: 15px;
  position: fixed;
  top: 10px;
  left: 10px;
-
+ z-index: 600;
 }
 
 @media screen and (max-width:450px){
+ 
 
 }

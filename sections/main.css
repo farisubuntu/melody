@@ -105,6 +105,7 @@ button#home {
 
 audio {
   width: 60%;
+  z-index: 0;
 }
 
 .page-header {
