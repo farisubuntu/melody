@@ -15,7 +15,7 @@
 #button-bar {
  display: flex;
  position: fixed;
- bottom: 20px;
+ bottom: 0px;
  left: 10px;
  flex-direction: column;
 }

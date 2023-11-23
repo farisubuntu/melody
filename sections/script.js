@@ -313,7 +313,7 @@ var menu_showed = 0;
 function showMenu() {
   if (menu_showed == 0) {
     menu_showed = 1;
-    document.getElementById("mySidepanel").style.width = "250px";
+    document.getElementById("mySidepanel").style.width = "200px";
     var myTimeout = setTimeout(closeNav, 4000);
   } else {
     menu_showed = 0;
