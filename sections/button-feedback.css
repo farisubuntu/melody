@@ -23,7 +23,7 @@
 @media screen and (width > 400px) {
  .feedback {
   background-color : black;
-  color: white;
+  color: yellow;
   font-size: small;
   padding: 10px 10px;
   border-radius: 4px;
