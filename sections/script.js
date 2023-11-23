@@ -154,7 +154,9 @@ function getDictionaryData() {
   words_len = words_array.length;
   images_len = images_array.length;
   phrases_len = phrases_array.length;
-  var top_container = `<div class="lesson-wrapper"><!-- ${window.location.pathname} -->
+  var top_container = `
+  <!-- ${window.location.pathname} -->  
+  <div class="lesson-wrapper">
  <header><p class="lesson-title">${window.location.pathname}</p></header>
  <section class="words-container">`;
 
@@ -354,3 +356,19 @@ document.onkeydown = function () {
       break;
   }
 };
+
+// other functions:
+
+function getLessonsTitles() {
+  var items_boxes = document.querySelectorAll(".items-boxes .subtitle");
+  var html = ``;
+  for (const [index, element] of items_boxes.entries()) {
+    if (index < 8) {
+      html += `<header id='${index + 1}' class="lessson-header"><h1>${index +
+        1} - ${element.innerText}</h1>
+  </header>`;
+    }
+  }
+  html = html.replaceAll("\n", "");
+  return html;
+}
