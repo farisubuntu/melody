@@ -4,14 +4,11 @@ body{
 font-family: 'Noto Naskh Nastaliq',serif;
 
 }
-.op-player{
-}
-
 header.page-header{
  width:100%;
  height: auto;
 }
-.op-player{
+.player{
  /* background-color: black; */
  width: 80%;
  height: 400px;
