@@ -221,6 +221,9 @@ var buttonBar = `
 <button class="feedback" onclick="topFunction(this)" id="myBtn" title="Go to top">Top</button>
 <button id="btn-verbs-toggle" class="feedback" onclick="toggleVerbs(this);">الأفعال</button>
 <button class="feedback" onclick="toggleTheme(this);">تغيير الثيم</button>
+<button class="feedback" onclick="changeFont()">تغيير الخط</button>
+<button class="feedback" onclick="toggleCol(this)">أخفاء</button>
+
 </div>
 `;
 
@@ -229,13 +232,14 @@ function collapsedSidePanel() {
   var element = `
 <div id="mySidepanel" class="sidepanel">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<a href="javascript:void(0)" onclick="toggleCol(this)">أخفاء </a>
-<a href="javascript:void(0)" onclick="changeFont()">تغيير الخط</a>
 <a href="../index.html" target="_blank">الصفحة الرئيسية</a>
-<a href="../others/personal_pronouns_chart.html" target="_blank">ملخص الضمائر الشخصية</a>
+<a href="https://www.lingohut.com/ar/v482979/%D8%AF%D8%B1%D9%88%D8%B3-%D9%81%D9%8A-%D8%A7%D9%84%D9%84%D8%BA%D8%A9-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%8A%D8%A9-%D8%B6%D9%85%D8%A7%D8%A6%D8%B1-%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9" target="_blank">ضمائر الملكية (Lingho)</a>
 <a href="../others/verbs.html">الأفعال - الأزمنة البسيطة</a>
-<a href="../others/important_vocabularies.html">كلمات مهمة</a>
+<a href="https://www.lingohut.com/ar/v482982/%D8%AF%D8%B1%D9%88%D8%B3-%D9%81%D9%8A-%D8%A7%D9%84%D9%84%D8%BA%D8%A9-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%8A%D8%A9-%D8%AD%D8%B1%D9%88%D9%81-%D8%A7%D9%84%D8%AC%D8%B1">حروف الجر (Lingho)</a>
+<a href="https://www.lingohut.com/ar/v482983/%D8%AF%D8%B1%D9%88%D8%B3-%D9%81%D9%8A-%D8%A7%D9%84%D9%84%D8%BA%D8%A9-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%8A%D8%A9-%D8%AD%D8%B1%D9%88%D9%81-%D8%A7%D9%84%D8%AC%D8%B1-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83%D8%A9">حروف الجر المشتركة (Lingho)</a>
+<a href="https://www.lingohut.com/ar/v482984/%D8%AF%D8%B1%D9%88%D8%B3-%D9%81%D9%8A-%D8%A7%D9%84%D9%84%D8%BA%D8%A9-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%8A%D8%A9-%D8%AD%D8%B1%D9%88%D9%81-%D8%A7%D9%84%D8%B9%D8%B7%D9%81">حروف العطف (Lingho)</a>
 </div>
+
 <button class="openbtn" onclick="openNav()">&#9776; Toggle</button>
 `;
   return element;
