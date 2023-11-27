@@ -204,7 +204,8 @@ header>p {
   .no-image,
   .phrase-wrapper {
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
+    
   }
 
 

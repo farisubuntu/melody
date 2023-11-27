@@ -1,0 +1,16 @@
+body{
+ text-align: center;
+}
+.op-player{
+}
+
+header.page-header{
+ width:100%;
+ height: auto;
+}
+.op-player{
+ /* background-color: black; */
+ width: 80%;
+ height: 400px;
+z-index:1500 ; 
+}
